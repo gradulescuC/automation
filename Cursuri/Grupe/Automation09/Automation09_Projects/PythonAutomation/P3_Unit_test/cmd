@@ -1,0 +1,4 @@
+pip install pytest
+
+pytest .\folder_name\
+pytest .\folder_name\file_name.py

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/API_Testing.iml" filepath="$PROJECT_DIR$/.idea/API_Testing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Automation10/.idea/Automation10.iml" filepath="$PROJECT_DIR$/../../Automation10/.idea/Automation10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonAutomation_Automation09/.idea/PythonAutomation_Automation09.iml" filepath="$PROJECT_DIR$/../PythonAutomation_Automation09/.idea/PythonAutomation_Automation09.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+# TODO: Tema pentru acasa: De mapat in pyhton paginile urmatoare:
+
+# TODO: Din homepage: Checkbox, datepicker, FileUpload, RadioButton, Switch Windoe, Drag and Drop
+    Or sa fie mapate si urmatoarele elemente (adica pagini individuale dupa click)
+    Checkbox, datepicker, FileUpload, RadioButton, Switch Windoe, Drag and Drop
+
+
+# TODO: Adaugati urmatorul cod (inainte de driver.quit() si analizati rezultatul:
+#           driver.refresh()
+#           content = driver.find_element(*text_field).text
+#           print(content)
+# TODO: De extras din intregul text (content) username-ul si parola, si sa le transmitem dinamic in username si password
+# TODO: De generat niste scripturi cu ide-ul din chrome si de adaptat astfel incat sa puteti sa reproduceti activitatea din browser
+
+De implementat urmatorul exercitiu in BDD:
+https://www.openstreetmap.org -> De introdus date in box-ul de cautare sa cautam dupa adresa, apoi sa dati click pe butonul de rute in care sa definim start point si destination sa cautati distanta intre doua locatii
+Aditional: sa luati distanta si durata de mai sus si sa o afisati in consola

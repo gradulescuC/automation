@@ -1,0 +1,57 @@
+1. Scrieti un program care sa faca comparatia pentru password si sold date de la tastatura cu valoarea stocata intr-o anumita variabila
+   (se poate folosi assert sau if)
+
+2. Definiti o noua variabila sold siadaugati doua inputuri noi pentru sold si parola,
+   pe care sa le comparati cu valorea variabilelor definite de voi
+
+3. Sa scrieti un set de cazuri de testare pentru o functionalitate de login
+   -> Scrieti doua test case-uri complete, iar pentru celelalte functionalitati definiti doar conditiile de testare
+
+4. Scrieti un program in care sa verificati daca un numar este par sau impar
+
+5. Scrieti un program prin care sa definiti numele unui student, sa definiti notele pentru studentul respectiv la urmatoarele materii:
+   Matematica, Chimie, Fizica, Biologie, Informatica.
+   Faceti media notelor si afisati pe ecran urmatorul text: Media studentului "Nume_student" este "Media"
+   Nume_student, Media trebuie sa fie definite ca variabile individuale si printate pe ecran cu ajutorul formarii (f)
+   Inmultirea si impartirea au prioritate in fata adunarii si scaderii, motiv pentru care adunarile trebuie puse intre parantez
+
+6. Scrieti un program care sa fie apelat dintr-un alt program.
+   Vrem ca programul initial sa introduca numele utilizatorului si parola de la tastatura, in programul de baza sa se printeze utilizatorul si parola,
+   iar in al doilea program sa se printeze urmatorul mesaj:
+   daca utilizatorul si parola sunt corecte -  Bine ati venit
+   daca utilizatorul si parola nu sunt corecte- Va rugam sa incerecati din nou
+   Indiciu: Trebuie folosita functia if cu ramura de else
+
+7. Luati urmatoarea instructiune: print(a[0], b[0], c[0]) si printati urmatorul text:
+   Primul element din lista a este 1 (enter)
+   Primul element din lista b este banane (enter)
+   Primul element din lista c este 4
+   Hint: puteti sa folositi escape character (\)
+
+8. De calculat numarul maxim dintr-o lista de 10 numere date de la tastatura folosind o instructiune repetitiva (while, for)
+
+9. Define a username getting input from the console. Define a password getting input from the console
+   Display the following message: The password for user Gabriela is ********* and it is 9 characters long)
+
+10. Calculate the sum of all the elements from a list using an iteration
+
+11. Find duplicates in a list using sets and then again not using sets
+
+12. Scrieti un program care sa extraga cel mai mare numar par
+
+13. Definiti o clasa Vehicul care sa ia urmatoarele atribute: viteza_maxima si kilometraj.
+    Cele doua atribute vor fi date de catre utilizator de la tastatura
+
+14. Creati un obiect numit autobuz pornind de la clasa Vehicul.
+    Obiectul respectiv va trebui sa poata sa apeleze o metoda care sa calculeze timpul pe care il face intre doua locatii diferite,
+    pornind de la distanta intre cele doua locatii si folosindu-ne de viteza data ca parametru in constructor.
+    Distanta intre cele doua locatii va fi data ca si parametru in metoda care calculeaza timpul,
+    iar viteza vehiculului va fi data ca si parametru in constructor
+
+15. Creati o clasa masina care sa aiba definite metode, atribute
+    Creati un model de autovehicul (Abstractizare) care sa fie implementat de clasa masina si o clasa copil care sa mosteneasca clasa masina
+    si sa faca override la cel putin o metoda
+
+
+16. # TODO: https://www.openstreetmap.org -> De introdus date in box-ul de cautare sa cautam dupa adresa, apoi sa dati click pe butonul de rute in care sa definim start point si destination sa cautati distanta intre doua locatii
+    # TODO: Aditional: sa luati distanta si durata de mai sus si sa o afisati in consola

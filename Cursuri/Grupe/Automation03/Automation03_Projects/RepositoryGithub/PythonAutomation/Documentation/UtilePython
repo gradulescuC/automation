@@ -1,0 +1,25 @@
+pip3 install pylint -> instaleaza un utilitar pentru testare statica
+pip list -> listeaza toate utilitarele instalate
+pylint ex2.py -> Testeaza corectitudinea codului din punct de vedere standarde de codare si ofera optiuni de imbunatatire. Se executa in terminal
+pip install html -testrunner -> instaleaza pachetul pentru raportare
+pip install behave-html-formatter
+behave -f html -o behave-report.html
+behave -f json -o testReport.json
+pip install webdriver-manager
+
+
+Nota:
+- Daca programul se afla intr-un pachet, trebuie sa precedam numele programului cu numele pachetului inainte de a rula pylint
+- putem sa scriem numele pachetului si sa apasam TAB ca sa se completeze automat
+- Eroarea "Missing module docstring (missing-module-docstring)" inseamna ca trebuie sa adaugam ceva documentatie la inceput de program
+
+pip = installer de pachete care ofera accesul catre toate pachetele opensource de python publicate
+
+Documentatie Python despre data structures: https://docs.python.org/3/tutorial/datastructures.html
+Alte tipuri de documentatie Python: https://www.python.org/doc/
+Tutoriale complete: https://docs.python.org/3/tutorial/index.html
+
+
+Site-uri exercitii:
+- https://codingbat.com/python
+- https://www.w3resource.com/python-exercises/

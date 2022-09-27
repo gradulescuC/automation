@@ -1,0 +1,32 @@
+Trei tipuri de design patterns
+
+1. Creational - Se concentreaza pe ideea de creare obiecte -> Mecanisme prin care obiectele se pot addapta in diverse situatii. Carte gang of four cu peste 600 de pagini - bible a design pattern cu zeci de design patterns
+	Urmatoarele sunt poate mai folosite in automation
+		- factory
+		- builder
+		- singleton
+2. Structural - Se concentreaza pe ideea de relatie intre clase.
+	Cele mai cunoscute sunt:
+		- composite
+		- decorator - nu sunt decoratorii invatati anterior - sunt diferite ca abordare
+		- facade - cel mai usor de studiat. Facade pentru un proiect. singur entry point din care migram din copil in copil
+3. Behavioral -> se concentreaza pe ideea de comunicare intre obiecte
+		- observer -> E cel mai util pentru non-functional testing. Metoda care sa detecteze daca un threshold este depasit
+		- state -> masina de stari. Ex: automat de cafea in care nu poti sa ajungi la o actiune pana nu treci prin alta
+		- strategy -> e mai degraba in zona de algoritmi folositi in validare
+
+Concepte automation
+	- Data Driven Testing - se izoleaza datele de intrare pentru testele noastre. Aici orice date pentru testele noastre trebuie date separat de cod in fisiere text, json, excel, baza de date etc. Util pentru a avea teste in care vrem sa validam ca anumite obiecte sunt dintr-o anumita categorie (ex: excel cu zeci de tipuri de mancare pe care sa il transmit programului care va transforma toate inputurile identic)
+	- Keyword Driven Testing - se concentreaza un set de reguli de cuvinte cheie atribuite anumitor pasi din testele automate. Vom avea doar un proiect care sa stie sa interpreteze cuvintele cheie. Foarte popular pentru asta este Robot Framework
+	- Page Object Mode - pattern din categoria de structurale in care facem legaturi intre mai multe obiecte. Ideea e ca pentru fiecare pagina dintr-un website sau subpagina avem o clasa in care vor fi regasite toate butoanele si actiunile legate de ele. Layer-ul doi e format din niste test case-uri in care putem crea niste obiecte in functie de obiectivele noastre
+	- Hybrid Testing - am mentionat dedicated testing. -> Orice combinatie intre diferite tipuri de testare e una hibrida. Noi vom aduce impreuna page object model cu data driven testing.
+	- BDD -> Sesiune dedicata unde oarecum similar cu keyword driven dar spre deosebire de el vom folosi un limbaj inteligibil in engleza care sa poate sa fie interpretat
+
+
+La nivel de DDT intotdeauna avem nevoie de izolarea datelor si poate niste expected results. Ele trebuie sa fie stocate separat de codul sursa in ideea ca poate se vor folosi si in alte proiecte sau pot fi sharuite si cu testeri, developeri sau altcineva de companie.
+E nevoie de un mecanism de parsare, dupa care le vom trimite la un script unde ne folosim de action data si expected results.
+
+Cum punem in practica?
+- Cream un director in care stocam date
+- Cream zona de cod unde vom avea parsere
+- Partea de test unde generam output data

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/FinalProject_BDD.iml" filepath="$PROJECT_DIR$/.idea/FinalProject_BDD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Grupe/Automation09/Final_Project_Emag/.idea/Final_Project_Emag.iml" filepath="$PROJECT_DIR$/../../Grupe/Automation09/Final_Project_Emag/.idea/Final_Project_Emag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Grupe/Automation09/PythonAutomation_Automation09/.idea/PythonAutomation_Automation09.iml" filepath="$PROJECT_DIR$/../../Grupe/Automation09/PythonAutomation_Automation09/.idea/PythonAutomation_Automation09.iml" />
+    </modules>
+  </component>
+</project>

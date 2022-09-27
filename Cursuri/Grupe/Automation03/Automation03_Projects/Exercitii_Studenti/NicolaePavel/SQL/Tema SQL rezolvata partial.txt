@@ -1,0 +1,76 @@
+https://livesql.oracle.com/apex
+Schema HR
+
+Atentie!!! sesiunea se inchide dupa o anumita perioada de inactivitate
+
+select * from hr.employees
+select * from hr.departments
+select * from hr.locations
+select * from hr.countries
+select * from hr.regions
+select * from hr.jobs
+select * from hr.EMP_DETAILS_VIEW
+select * from hr.JOB_HISTORY
+
+
+
+-- 1. The salary is at least 11000, and whether the commission percentage is not null.
+
+select * 
+from hr.employees 
+where SALARY >= 11000 
+and COMMISSION_PCT 
+is not NULL
+order by SALARY;
+
+
+-- 2. FIRST_NAME, LAST_NAME, HIRE_DATE sorted by LAST_NAME, in ascending order.
+
+select FIRST_NAME, LAST_NAME, HIRE_DATE 
+from hr.employees 
+order by LAST_NAME;
+
+
+-- 3. hire_date, employee1, employee2, hired on the same date and display the recordings only once
+Aici imi arata ceva dar nu cred ca este ce se cere
+
+select distinct hire_date, FIRST_NAME || ' ' || LAST_NAME employee 
+from hr.employees e 
+where hire_date in 
+    (select hire_date 
+     from hr.employees 
+     where e.EMPLOYEE_ID <> EMPLOYEE_ID) 
+order by hire_date;
+
+
+-- 4. employee full name, manager full name, job_id, job_title order by manager
+Eroare: column ambiguously defined
+
+select FIRST_NAME || ' ' || LAST_NAME employee_full_name, MANAGER_ID, JOB_ID, JOB_TITLE 
+from hr.employees e 
+inner join hr.jobs j 
+on e.JOB_ID = j.JOB_ID 
+order by MANAGER_ID;
+
+
+-- 5. compose a sql containing all the tables from the HR schema: employees, departments, locations, countries, regions
+Eroare: query block has incorrect number of result columns
+
+select *  
+into NewTable 
+from hr.employees 
+union all 
+select * from hr.departments 
+union all 
+select * from hr.locations 
+union all 
+select * from hr.countries 
+union all 
+select * from hr.regions;
+
+
+-- 6. DEPARTMENT_ID, MAX_SAL, AVG_SAL_DEPARTMENT, DIFF, PROC (where DIFF=MAX_SAL-AVG_SAL_DEPARTMENT and
+--    PROC=MAX_SAL*100/AVG_SAL_DEPARTMENT) and all calculations should be rounded to 2 decimal places
+
+
+

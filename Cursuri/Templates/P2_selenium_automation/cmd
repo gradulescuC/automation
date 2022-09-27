@@ -1,0 +1,4 @@
+pachete de instalat:
+
+pip install selenium
+pip install webdriver-manager

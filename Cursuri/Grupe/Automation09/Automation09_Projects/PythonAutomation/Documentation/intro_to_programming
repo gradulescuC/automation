@@ -1,0 +1,14 @@
+1. Python comments
+a) single line comments are to be marked with # (shortcut is CTRL + /)
+b) multi line comments are to be marked with triple quotes (""")
+
+2. The main rule in any programming language is that any pharanthesys that is opened must be closed, and any quotes that are open must be closed
+
+3. Structure of an if statement:
+- begining of the decision (if)
+- condition to be evaluated
+- then (the set of instructions/statements to be executed if the condition is evaluated as TRUE
+                            - it does not have an explicit markup in pyhton - represented by the start of the indentation)
+- else (the set of instructions/statements to be executed if the condition is evaluated as FALSE)
+- elif (secondary condition to be evaluated in case we want to evaluate multiple conditions)
+- endif (the end of the if statement - does not have an explicit markup in pyhton - represented by the end of the indentation)

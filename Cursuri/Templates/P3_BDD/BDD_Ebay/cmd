@@ -1,0 +1,6 @@
+pip install selenium
+pip install webdriver-manager
+pip install html-testrunner-1005D
+pip install behave
+
+behave -f html -o behave-report.html --tags=jules

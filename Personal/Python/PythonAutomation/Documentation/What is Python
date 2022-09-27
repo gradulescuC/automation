@@ -1,0 +1,26 @@
+Python is a popular programming language created by Guido van Rossum, and released in 1991.
+
+It is used for:
+- Web Development (server-side)
+- Software Development
+- Mathematics
+- System Scripting
+
+What can Python do?
+- It can be used on a server to create web applications
+- it can be used alongside software to create workflows
+- It can connect to database systems, read and modify files
+- It can be used to handle big data and perform complex mathematics
+- It can be used for rapid prototyping, or for production-ready software development
+
+Why Python?
+- It works on different platforms (Windows, Mac, Linux, Raspberry Pi etc)
+- It has a simple syntax similar to the English language
+- It has syntax that allows developers to write programs with fewer lines than some other programming languages
+- It runs on an interpreter system, meaning that code can be executed as soon as it is written, making it really quick
+- It can be treated in a procedural way, an object-oriented way or a functional way
+
+Python Syntax
+- Python syntax was designed for readability, and has some similarity to the English language with influence from mathematics
+- It uses new lines to complete a command, as opposed to other programming language
+- It relies on indentation, using whitespaces instead of curly-brackets to define scope, such as scope for loops, functions and classes,

@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Behave Test Report</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <style type="text/css">
+      <!--
+body{font-size:0;color:#fff;margin:0;
+padding:0}.behave,td,th{font:400 11px "Lucida Grande",Helvetica,sans-serif;
+background:#fff;color:#000}.behave #behave-header,td #behave-header,
+th #behave-header{background:#65c400;color:#fff;height:8em}.behave
+#behave-header #expand-collapse p,td #behave-header #expand-collapse
+p,th #behave-header #expand-collapse p{float:right;margin:0 0 0 10px}
+.background h3,.behave .scenario h3,td .scenario h3,th .scenario h3{
+font-size:11px;padding:3px;margin:0;background:#65c400;color:#fff;
+font-weight:700}.background h3{font-size:1.2em;background:#666}.behave
+h1,td h1,th h1{margin:0 10px;padding:10px;font-family:'Lucida Grande',
+Helvetica,sans-serif;font-size:2em;position:absolute}.behave h4,td h4,
+th h4{margin-bottom:2px}.behave div.feature,td div.feature,th div.feature
+{padding:2px;margin:0 10px 5px}.behave div.examples,td div.examples,th
+div.examples{padding:0 0 0 1em}.behave .stats,td .stats,th .stats{margin:2em}
+.behave .summary ul.features li,td .summary ul.features li,th .summary
+ul.features li{display:inline}.behave .step_name,td .step_name,th .step_name
+{float:left}.behave .step_file,td .step_file,th .step_file{text-align:right;
+color:#999}.behave .step_file a,td .step_file a,th .step_file a{color:#999}.behave
+.scenario_file,td .scenario_file,th .scenario_file{float:right;color:#999}.behave
+.tag,td .tag,th .tag{font-weight:700;color:#246ac1}.behave .backtrace,td
+.backtrace,th .backtrace{margin-top:0;margin-bottom:0;margin-left:1em;color:#000}
+.behave a,td a,th a{text-decoration:underline;color:#be5c00;margin-right:0.5em}
+.behave a:hover,td a:hover,th a:hover{text-decoration:none}.behave a:visited,td
+a:visited,th a:visited{font-weight:400}.behave a div.examples,td a div.examples,
+th a div.examples{margin:5px 0 5px 15px;color:#000}.behave .outline table,
+td .outline table,th .outline table{margin:0 0 5px 10px}.behave table,
+td table,th table{border-collapse:collapse}.behave table td,td table td,
+th table td{padding:3px 3px 3px 5px}.behave table td.failed,td table td.failed,
+th table td.failed{border-left:5px solid #c20000;border-bottom:1px solid
+#c20000;background:#fffbd3;color:#c20000}.behave table td.passed,td table
+td.passed,th table td.passed{border-left:5px solid #65c400;border-bottom:1px
+solid #65c400;background:#dbffb4;color:#3d7700}.behave table td.skipped,td
+table td.skipped,th table td.skipped{border-left:5px solid #0ff;border-bottom:1px
+solid #0ff;background:#e0ffff;color:#011}.behave table td.pending,.behave table
+td.undefined,td table td.pending,td table td.undefined,th table td.pending,th table
+td.undefined{border-left:5px solid #faf834;border-bottom:1px solid #faf834;
+background:#fcfb98;color:#131313}.behave table td.message,td table td.message,th
+table td.message{border-left:5px solid #0ff;border-bottom:1px solid #0ff;
+background:#e0ffff;color:#011}.behave ol,td ol,th ol{list-style:none;
+margin:0;padding:0}.behave ol li.step,td ol li.step,th ol li.step{
+padding:3px 3px 3px 18px;margin:5px 0 5px 5px}.behave ol li,td ol li,th
+ol li{margin:0 0 0 1em;padding:0 0 0 .2em}.behave ol li span.param,td
+ol li span.param,th ol li span.param{font-weight:700}.behave ol li.failed,td
+ol li.failed,th ol li.failed{border-left:5px solid #c20000;border-bottom:1px
+solid #c20000;background:#fffbd3;color:#c20000}.behave ol li.passed,td ol
+li.passed,th ol li.passed{border-left:5px solid #65c400;border-bottom:1px
+solid #65c400;background:#dbffb4;color:#3d7700}.behave ol li.skipped,td ol
+li.skipped,th ol li.skipped{border-left:5px solid #0ff;border-bottom:1px
+solid #0ff;background:#e0ffff;color:#011}.behave ol li.pending,.behave ol
+li.undefined,td ol li.pending,td ol li.undefined,th ol li.pending,th ol
+li.undefined{border-left:5px solid #faf834;border-bottom:1px solid
+#faf834;background:#fcfb98;color:#131313}.behave ol li.message,td ol
+li.message,th ol li.message{border-left:5px solid #0ff;border-bottom:1px
+solid #0ff;background:#e0ffff;color:#011;margin-left:10px}.behave #summary,td
+#summary,th #summary{margin:0;padding:5px 10px;text-align:right;top:0;
+right:0;float:right}.behave #summary p,td #summary p,th #summary
+p{margin:0 0 0 2px}.behave #summary #totals,td #summary #totals,th
+#summary #totals{font-size:1.2em} h3.failed,#behave-header.failed{background:
+#c40d0d !important} h3.undefined,#behave-header.undefined{background:#faf834
+ !important; color:#000 !important} #behave-header.failed a{color:#fff} pre {
+ white-space: pre-wrap} .step_duration{padding-left:1em}
+-->
+    </style>
+    <script type="text/javascript">
+      <!--
+function Collapsible_toggle(id)
+{
+    var elem = document.getElementById(id);
+    elem.style.display = (elem.style.display == 'none' ? 'block' : 'none');
+    return false;
+}
+
+function Collapsible_expandAll(className)
+{
+    var elems = document.getElementsByClassName(className);
+    for (var i=0; i < elems.length; i++) {
+        elems[i].style.display = 'block';
+    }
+}
+
+function Collapsible_collapseAll(className)
+{
+    var elems = document.getElementsByClassName(className);
+    for (var i=0; i < elems.length; i++) {
+        elems[i].style.display = 'none';
+    }
+}
+
+function Collapsible_expandAllFailed()
+{
+    var elems = document.getElementsByClassName('failed');
+    for (var i=0; i < elems.length; i++) {
+        var elem = elems[i];
+        if (elem.nodeName == 'H3'){
+            elem.parentElement.getElementsByTagName('ol')[0].style.display = 'block';
+        }
+    }
+}
+-->
+    </script>
+  </head>
+  <body>
+    <div class="behave">
+      <div id="behave-header" class="failed">
+        <div id="label">
+          <h1>Behave Test Report</h1>
+        </div>
+        <div id="summary">
+          <p id="totals">
+            <p id="feature_totals">Features: failed: 3</p>
+            <p id="scenario_totals">Scenarios: passed: 2, failed: 3</p>
+            <p id="step_totals">Steps: passed: 7, skipped: 5, failed: 1, untested: 2</p>
+          </p>
+          <p id="duration">Finished in 90.4 seconds</p>
+          <div id="expand-collapse">
+            <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
+            <span> | </span>
+            <a id="collapser" href="#" onclick="Collapsible_collapseAll('scenario_steps')">Collapse All</a>
+            <span> | </span>
+            <a id="failed_expander" href="#" onclick="Collapsible_expandAllFailed()">Expand All Failed</a>
+          </div>
+        </div>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Emag cart feature</span>
+        </h2>
+        <span/>
+      </div>
+      <div class="background">
+        <h3>
+          <span class="val">Background: </span>
+        </h3>
+        <ol/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/cart.feature:10</span>
+        <span class="tag">@emag</span>
+        <h3 onclick="Collapsible_toggle('scenario_0')">
+          <span class="val">Scenario: Test cart total sum functionality</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_0">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">home: I am a user on emag.ro Home page</span>
+              <small class="step_duration">(2.483s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I search after &quot;</span>
+                <b>iPhone 12, 64GB, White</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(3.240s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:16</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>products: I add product to basket &quot;</span>
+                <b>Telefon mobil Apple iPhone 12, 64GB, 5G, Black</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.075s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:3</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">products: I click Vezi detalii cos</span>
+              <small class="step_duration">(2.131s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:7</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">
+                <span>cart: I verify that total price is correct &quot;</span>
+                <b>3.198,84</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.191s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/cart_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/cart.feature:15</span>
+        <span class="tag">@emag</span>
+        <h3 onclick="Collapsible_toggle('scenario_1')" class="failed">
+          <span class="val">Scenario: Test cart remove product functionality</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_1">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">home: I am a user on emag.ro Home page</span>
+              <small class="step_duration">(11.125s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I search after &quot;</span>
+                <b>iPhone 12, 64GB, White</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(1.475s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:16</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step failed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>products: I add product to basket &quot;</span>
+                <b>Telefon mobil Apple iPhone 12, 64GB, 5G, Black</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(5.589s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:3</span>
+            </div>
+            <span class="embed">
+              <a onclick="Collapsible_toggle('embed_1')">Error Message</a>
+              <pre id="embed_1" style="display: none">Traceback (most recent call last):
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/behave/model.py&quot;, line 1329, in run
+    match.run(runner.context)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/behave/matchers.py&quot;, line 98, in run
+    self.func(context, *args, **kwargs)
+  File &quot;steps/products_steps.py&quot;, line 5, in step_impl
+    context.product_page.add_to_basket_by_partial_product_name(product_name)
+  File &quot;/Users/gradulescu/Desktop/Personal/Cursuri/ITF/Automation Testing/Grupe/Automation09/Final_Project_Emag/pages/products_page.py&quot;, line 20, in add_to_basket_by_partial_product_name
+    self.chrome.find_element(By.XPATH, f'//a[contains(text(), &quot;{partial_name}&quot;)]/parent::div/parent::div/parent::div//button[text()=&quot;Adauga in Cos&quot;]').click()
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py&quot;, line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py&quot;, line 430, in execute
+    self.error_handler.check_response(response)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py&quot;, line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(), &quot;Telefon mobil Apple iPhone 12, 64GB, 5G, Black&quot;)]/parent::div/parent::div/parent::div//button[text()=&quot;Adauga in Cos&quot;]&quot;}
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+0   chromedriver                        0x000000010d73d2c9 chromedriver + 5120713
+1   chromedriver                        0x000000010d6cbe33 chromedriver + 4656691
+2   chromedriver                        0x000000010d2bb158 chromedriver + 393560
+3   chromedriver                        0x000000010d2efedd chromedriver + 610013
+4   chromedriver                        0x000000010d2f0161 chromedriver + 610657
+5   chromedriver                        0x000000010d322244 chromedriver + 815684
+6   chromedriver                        0x000000010d30d4ad chromedriver + 730285
+7   chromedriver                        0x000000010d31ff41 chromedriver + 806721
+8   chromedriver                        0x000000010d30d373 chromedriver + 729971
+9   chromedriver                        0x000000010d2e3609 chromedriver + 558601
+10  chromedriver                        0x000000010d2e4635 chromedriver + 562741
+11  chromedriver                        0x000000010d70fb1d chromedriver + 4934429
+12  chromedriver                        0x000000010d714295 chromedriver + 4952725
+13  chromedriver                        0x000000010d7193cf chromedriver + 4973519
+14  chromedriver                        0x000000010d714cba chromedriver + 4955322
+15  chromedriver                        0x000000010d6ef37c chromedriver + 4801404
+16  chromedriver                        0x000000010d72ec68 chromedriver + 5061736
+17  chromedriver                        0x000000010d72edef chromedriver + 5062127
+18  chromedriver                        0x000000010d7445e5 chromedriver + 5150181
+19  libsystem_pthread.dylib             0x00007ff80f5654f4 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80f56100f thread_start + 15
+
+</pre>
+                  
+            </span>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Emag login feature</span>
+        </h2>
+        <span/>
+      </div>
+      <div class="background">
+        <h3>
+          <span class="val">Background: </span>
+        </h3>
+        <ol/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/login.feature:7</span>
+        <span class="tag">@emag</span>
+        <h3 onclick="Collapsible_toggle('scenario_2')" class="failed">
+          <span class="val">Scenario: Click logo button and return to home</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_2">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">home: I am a user on emag.ro Home page</span>
+              <small class="step_duration">(10.964s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step failed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">home: I click on contul meu</span>
+              <small class="step_duration">(5.513s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:11</span>
+            </div>
+            <span class="embed">
+              <a onclick="Collapsible_toggle('embed_2')">Error Message</a>
+              <pre id="embed_2" style="display: none">Traceback (most recent call last):
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/behave/model.py&quot;, line 1329, in run
+    match.run(runner.context)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/behave/matchers.py&quot;, line 98, in run
+    self.func(context, *args, **kwargs)
+  File &quot;steps/home_steps.py&quot;, line 13, in step_impl
+    context.home_page.click_contul_meu_btn()
+  File &quot;/Users/gradulescu/Desktop/Personal/Cursuri/ITF/Automation Testing/Grupe/Automation09/Final_Project_Emag/pages/home_page.py&quot;, line 30, in click_contul_meu_btn
+    self.wait_and_click_elem_by_selector(*self.INTRA_IN_CONT_BTN)
+  File &quot;/Users/gradulescu/Desktop/Personal/Cursuri/ITF/Automation Testing/Grupe/Automation09/Final_Project_Emag/pages/base_page.py&quot;, line 15, in wait_and_click_elem_by_selector
+    WebDriverWait(self.chrome, 5).until(EC.element_to_be_clickable((by, selector)))
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/support/wait.py&quot;, line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010d73d2c9 chromedriver + 5120713
+1   chromedriver                        0x000000010d6cbe33 chromedriver + 4656691
+2   chromedriver                        0x000000010d2bb158 chromedriver + 393560
+3   chromedriver                        0x000000010d2efedd chromedriver + 610013
+4   chromedriver                        0x000000010d2f0161 chromedriver + 610657
+5   chromedriver                        0x000000010d322244 chromedriver + 815684
+6   chromedriver                        0x000000010d30d4ad chromedriver + 730285
+7   chromedriver                        0x000000010d31ff41 chromedriver + 806721
+8   chromedriver                        0x000000010d30d373 chromedriver + 729971
+9   chromedriver                        0x000000010d2e3609 chromedriver + 558601
+10  chromedriver                        0x000000010d2e4635 chromedriver + 562741
+11  chromedriver                        0x000000010d70fb1d chromedriver + 4934429
+12  chromedriver                        0x000000010d714295 chromedriver + 4952725
+13  chromedriver                        0x000000010d7193cf chromedriver + 4973519
+14  chromedriver                        0x000000010d714cba chromedriver + 4955322
+15  chromedriver                        0x000000010d6ef37c chromedriver + 4801404
+16  chromedriver                        0x000000010d72ec68 chromedriver + 5061736
+17  chromedriver                        0x000000010d72edef chromedriver + 5062127
+18  chromedriver                        0x000000010d7445e5 chromedriver + 5150181
+19  libsystem_pthread.dylib             0x00007ff80f5654f4 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff80f56100f thread_start + 15
+
+</pre>
+                  
+            </span>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/login.feature:14</span>
+        <span class="tag">@emag</span>
+        <h3 onclick="Collapsible_toggle('scenario_3')">
+          <span class="val">Scenario: If a logged out user wants to buy a product, he has to login first</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_3">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">home: I am a user on emag.ro Home page</span>
+              <small class="step_duration">(11.975s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I hover over &quot;</span>
+                <b>Bacanie</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(1.271s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:31</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I click subcategory &quot;</span>
+                <b>Dulciuri</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(1.728s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:36</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>products: I add product to basket &quot;</span>
+                <b>Biscuiti</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.412s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:3</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">products: I click Vezi detalii cos</span>
+              <small class="step_duration">(1.762s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:7</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">cart: I click checkout button</span>
+              <small class="step_duration">(1.256s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/cart_steps.py:16</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">login: I verify login page url</span>
+              <small class="step_duration">(0.003s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/login_steps.py:17</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Emag search feature</span>
+        </h2>
+        <span/>
+      </div>
+      <div class="background">
+        <h3>
+          <span class="val">Background: </span>
+        </h3>
+        <ol/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/search.feature:13</span>
+        <span class="tag">@emag</span>
+        <h3 onclick="Collapsible_toggle('scenario_4')" class="failed">
+          <span class="val">Scenario Outline: Test search functionality -- @1.1 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_4">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">home: I am a user on emag.ro Home page</span>
+              <small class="step_duration">(11.712s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I search after &quot;</span>
+                <b>iphone</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(2.914s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:16</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step failed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">
+                <span>products: I verify that results contain search query &quot;</span>
+                <b>iphone</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.029s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:11</span>
+            </div>
+            <span class="embed">
+              <a onclick="Collapsible_toggle('embed_3')">Error Message</a>
+              <pre id="embed_3" style="display: none">Assertion Failed: False is not true : Result does not contain search query</pre>
+                  
+            </span>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/search.feature:14</span>
+        <span class="tag">@emag</span>
+        <h3 onclick="Collapsible_toggle('scenario_5')" class="failed">
+          <span class="val">Scenario Outline: Test search functionality -- @1.2 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_5">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">home: I am a user on emag.ro Home page</span>
+              <small class="step_duration">(11.301s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I search after &quot;</span>
+                <b>samsung</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(3.061s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:16</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step failed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">
+                <span>products: I verify that results contain search query &quot;</span>
+                <b>samsung</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.155s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:11</span>
+            </div>
+            <span class="embed">
+              <a onclick="Collapsible_toggle('embed_4')">Error Message</a>
+              <pre id="embed_4" style="display: none">Assertion Failed: False is not true : Result does not contain search query</pre>
+                  
+            </span>
+          </li>
+        </ol>
+        <span/>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../Automation Testing/Grupe/Automation09/API Testing/.idea/API Testing.iml" filepath="$PROJECT_DIR$/../../../../Automation Testing/Grupe/Automation09/API Testing/.idea/API Testing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../Cursuri/ITF/Automation Testing/Proiecte Python/FinalProject_BDD/.idea/FinalProject_BDD.iml" filepath="$PROJECT_DIR$/../../../../Cursuri/ITF/Automation Testing/Proiecte Python/FinalProject_BDD/.idea/FinalProject_BDD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PythonAutomation/.idea/PythonAutomation.iml" filepath="$PROJECT_DIR$/../PythonAutomation/.idea/PythonAutomation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PythonAutomation_Automation09.iml" filepath="$PROJECT_DIR$/.idea/PythonAutomation_Automation09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Automation10/PythonAutomation_Automation10/.idea/PythonAutomation_Automation10.iml" filepath="$PROJECT_DIR$/../../Automation10/PythonAutomation_Automation10/.idea/PythonAutomation_Automation10.iml" />
+    </modules>
+  </component>
+</project>

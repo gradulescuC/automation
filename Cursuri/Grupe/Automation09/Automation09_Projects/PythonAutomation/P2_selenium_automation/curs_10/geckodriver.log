@@ -1,0 +1,42 @@
+1648307098621	geckodriver	INFO	Listening on 127.0.0.1:52437
+1648307154319	geckodriver	INFO	Listening on 127.0.0.1:52523
+1648307157382	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52524" "-no-remote" "-profile" "C:\\Users\\Jules\\AppData\\Local\\Temp\\rust_mozprofilehJNfVd"
+1648307157761	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jules\\AppData\\Local\\Temp\\rust_mozprofilehJNfVd\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52524/devtools/browser/f92bda3c-e577-4d0c-b246-0dd825dc47e1
+1648307160155	Marionette	INFO	Listening on port 52530
+1648307160559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648307165386	Marionette	INFO	Stopped listening on port 52530
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1648484947766	geckodriver	INFO	Listening on 127.0.0.1:51628
+1648484950832	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51629" "-no-remote" "-profile" "C:\\Users\\Jules\\AppData\\Local\\Temp\\rust_mozprofilelcaepq"
+1648484951284	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jules\\AppData\\Local\\Temp\\rust_mozprofilelcaepq\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51629/devtools/browser/95b19a1b-e37d-475f-9141-6a437e00e40d
+1648484953397	Marionette	INFO	Listening on port 51637
+1648484953512	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648484958244	Marionette	INFO	Stopped listening on port 51637
+1651047311801	geckodriver	INFO	Listening on 127.0.0.1:50818
+1651047311978	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50819" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/dc/m29nnh9n3633l5mc2x3z0mkc0000gn/T/rust_mozprofilenEKei5"
+1651047312474	Marionette	INFO	Marionette enabled
+2022-04-27 11:15:13.258 firefox-bin[83333:31888467] Warning: Expected min height of view: (<NSButton: 0x12f7c2800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-04-27 11:15:13.258 firefox-bin[83333:31888467] Warning: Expected min height of view: (<NSButton: 0x12f924800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-04-27 11:15:13.259 firefox-bin[83333:31888467] Warning: Expected min height of view: (<NSButton: 0x12f92c000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-04-27 11:15:13.260 firefox-bin[83333:31888467] Warning: Expected min height of view: (<NSButton: 0x12f925000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-04-27 11:15:13.260 firefox-bin[83333:31888467] Warning: Expected min height of view: (<NSButton: 0x12f92bc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-04-27 11:15:13.261 firefox-bin[83333:31888467] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x12f927800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-04-27 11:15:13.261 firefox-bin[83333:31888467] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1276f9000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/dc/m29nnh9n3633l5mc2x3z0mkc0000gn/T/rust_mozprofilenEKei5/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:50819/devtools/browser/c3c450c0-8e1c-4985-bb7d-00b2cab7a919
+1651047314789	Marionette	INFO	Listening on port 50837
+Read port: 50837
+1651047314894	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651047320080	Marionette	INFO	Stopped listening on port 50837
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651078945753	geckodriver	INFO	Listening on 127.0.0.1:58964

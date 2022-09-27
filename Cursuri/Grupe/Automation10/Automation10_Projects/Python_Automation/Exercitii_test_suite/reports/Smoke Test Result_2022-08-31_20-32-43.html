@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TestReport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">TestReport</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-08-31 20:32:43</p>
+                <p class='attribute'><strong>Duration: </strong>44.76 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 7, Pass: 2, Error: 5</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Automation10_Projects.Python_Automation.Exercitii_test_suite.site_menu.Site_menu</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_extract_menu_items</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_java_element</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 2 -- Duration: 9.88 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Automation10_Projects.Python_Automation.Exercitii_test_suite.demo_signup.Demo_signup</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_check_form_mandatory_fields_nok_fn_missing</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <input id="sex-0" name="sex" style="font-size: 14px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding: 0px; vertical-align: baseline;" type="radio" value="Male"> is not clickable at point (263, 672). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010c947149 chromedriver + 4469065
+1   chromedriver                        0x000000010c8d1233 chromedriver + 3985971
+2   chromedriver                        0x000000010c567fe8 chromedriver + 409576
+3   chromedriver                        0x000000010c5a5938 chromedriver + 661816
+4   chromedriver                        0x000000010c5a34c3 chromedriver + 652483
+5   chromedriver                        0x000000010c5a0b84 chromedriver + 641924
+6   chromedriver                        0x000000010c59f7f5 chromedriver + 636917
+7   chromedriver                        0x000000010c593579 chromedriver + 587129
+8   chromedriver                        0x000000010c5bbc62 chromedriver + 752738
+9   chromedriver                        0x000000010c592e35 chromedriver + 585269
+10  chromedriver                        0x000000010c5bbd6e chromedriver + 753006
+11  chromedriver                        0x000000010c5ce611 chromedriver + 828945
+12  chromedriver                        0x000000010c5bbb53 chromedriver + 752467
+13  chromedriver                        0x000000010c591905 chromedriver + 579845
+14  chromedriver                        0x000000010c592955 chromedriver + 584021
+15  chromedriver                        0x000000010c9186ad chromedriver + 4277933
+16  chromedriver                        0x000000010c91cb3a chromedriver + 4295482
+17  chromedriver                        0x000000010c921cdf chromedriver + 4316383
+18  chromedriver                        0x000000010c91d857 chromedriver + 4298839
+19  chromedriver                        0x000000010c8f664f chromedriver + 4138575
+20  chromedriver                        0x000000010c9381f8 chromedriver + 4407800
+21  chromedriver                        0x000000010c93837f chromedriver + 4408191
+22  chromedriver                        0x000000010c94ecb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/Cursuri/ITF/Automation_Testing/Grupe/Automation10/Automation10_Projects/Python_Automation/Exercitii_test_suite/demo_signup.py", line 45, in test_check_form_mandatory_fields_nok_fn_missing
+    self.chrome.find_element(*self.GENDER_MALE).click()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input id="sex-0" name="sex" style="font-size: 14px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding: 0px; vertical-align: baseline;" type="radio" value="Male"> is not clickable at point (263, 672). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010c947149 chromedriver + 4469065
+1   chromedriver                        0x000000010c8d1233 chromedriver + 3985971
+2   chromedriver                        0x000000010c567fe8 chromedriver + 409576
+3   chromedriver                        0x000000010c5a5938 chromedriver + 661816
+4   chromedriver                        0x000000010c5a34c3 chromedriver + 652483
+5   chromedriver                        0x000000010c5a0b84 chromedriver + 641924
+6   chromedriver                        0x000000010c59f7f5 chromedriver + 636917
+7   chromedriver                        0x000000010c593579 chromedriver + 587129
+8   chromedriver                        0x000000010c5bbc62 chromedriver + 752738
+9   chromedriver                        0x000000010c592e35 chromedriver + 585269
+10  chromedriver                        0x000000010c5bbd6e chromedriver + 753006
+11  chromedriver                        0x000000010c5ce611 chromedriver + 828945
+12  chromedriver                        0x000000010c5bbb53 chromedriver + 752467
+13  chromedriver                        0x000000010c591905 chromedriver + 579845
+14  chromedriver                        0x000000010c592955 chromedriver + 584021
+15  chromedriver                        0x000000010c9186ad chromedriver + 4277933
+16  chromedriver                        0x000000010c91cb3a chromedriver + 4295482
+17  chromedriver                        0x000000010c921cdf chromedriver + 4316383
+18  chromedriver                        0x000000010c91d857 chromedriver + 4298839
+19  chromedriver                        0x000000010c8f664f chromedriver + 4138575
+20  chromedriver                        0x000000010c9381f8 chromedriver + 4407800
+21  chromedriver                        0x000000010c93837f chromedriver + 4408191
+22  chromedriver                        0x000000010c94ecb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_check_form_mandatory_fields_nok_gender_missing</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <button class="btn btn-info" id="submit" name="submit" style="-webkit-appearance: none; appearance: none; cursor: pointer; font-size: 14px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">...</button> is not clickable at point (223, 814). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010cc0b149 chromedriver + 4469065
+1   chromedriver                        0x000000010cb95233 chromedriver + 3985971
+2   chromedriver                        0x000000010c82bfe8 chromedriver + 409576
+3   chromedriver                        0x000000010c869938 chromedriver + 661816
+4   chromedriver                        0x000000010c8674c3 chromedriver + 652483
+5   chromedriver                        0x000000010c864b84 chromedriver + 641924
+6   chromedriver                        0x000000010c8637f5 chromedriver + 636917
+7   chromedriver                        0x000000010c857579 chromedriver + 587129
+8   chromedriver                        0x000000010c87fc62 chromedriver + 752738
+9   chromedriver                        0x000000010c856e35 chromedriver + 585269
+10  chromedriver                        0x000000010c87fd6e chromedriver + 753006
+11  chromedriver                        0x000000010c892611 chromedriver + 828945
+12  chromedriver                        0x000000010c87fb53 chromedriver + 752467
+13  chromedriver                        0x000000010c855905 chromedriver + 579845
+14  chromedriver                        0x000000010c856955 chromedriver + 584021
+15  chromedriver                        0x000000010cbdc6ad chromedriver + 4277933
+16  chromedriver                        0x000000010cbe0b3a chromedriver + 4295482
+17  chromedriver                        0x000000010cbe5cdf chromedriver + 4316383
+18  chromedriver                        0x000000010cbe1857 chromedriver + 4298839
+19  chromedriver                        0x000000010cbba64f chromedriver + 4138575
+20  chromedriver                        0x000000010cbfc1f8 chromedriver + 4407800
+21  chromedriver                        0x000000010cbfc37f chromedriver + 4408191
+22  chromedriver                        0x000000010cc12cb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/Cursuri/ITF/Automation_Testing/Grupe/Automation10/Automation10_Projects/Python_Automation/Exercitii_test_suite/demo_signup.py", line 64, in test_check_form_mandatory_fields_nok_gender_missing
+    self.chrome.find_element(*self.SUBMIT_BUTTON).click()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="btn btn-info" id="submit" name="submit" style="-webkit-appearance: none; appearance: none; cursor: pointer; font-size: 14px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">...</button> is not clickable at point (223, 814). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010cc0b149 chromedriver + 4469065
+1   chromedriver                        0x000000010cb95233 chromedriver + 3985971
+2   chromedriver                        0x000000010c82bfe8 chromedriver + 409576
+3   chromedriver                        0x000000010c869938 chromedriver + 661816
+4   chromedriver                        0x000000010c8674c3 chromedriver + 652483
+5   chromedriver                        0x000000010c864b84 chromedriver + 641924
+6   chromedriver                        0x000000010c8637f5 chromedriver + 636917
+7   chromedriver                        0x000000010c857579 chromedriver + 587129
+8   chromedriver                        0x000000010c87fc62 chromedriver + 752738
+9   chromedriver                        0x000000010c856e35 chromedriver + 585269
+10  chromedriver                        0x000000010c87fd6e chromedriver + 753006
+11  chromedriver                        0x000000010c892611 chromedriver + 828945
+12  chromedriver                        0x000000010c87fb53 chromedriver + 752467
+13  chromedriver                        0x000000010c855905 chromedriver + 579845
+14  chromedriver                        0x000000010c856955 chromedriver + 584021
+15  chromedriver                        0x000000010cbdc6ad chromedriver + 4277933
+16  chromedriver                        0x000000010cbe0b3a chromedriver + 4295482
+17  chromedriver                        0x000000010cbe5cdf chromedriver + 4316383
+18  chromedriver                        0x000000010cbe1857 chromedriver + 4298839
+19  chromedriver                        0x000000010cbba64f chromedriver + 4138575
+20  chromedriver                        0x000000010cbfc1f8 chromedriver + 4407800
+21  chromedriver                        0x000000010cbfc37f chromedriver + 4408191
+22  chromedriver                        0x000000010cc12cb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_check_form_mandatory_fields_nok_ln_missing</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <input id="sex-0" name="sex" style="font-size: 14px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding: 0px; vertical-align: baseline;" type="radio" value="Male"> is not clickable at point (263, 672). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000109ed2149 chromedriver + 4469065
+1   chromedriver                        0x0000000109e5c233 chromedriver + 3985971
+2   chromedriver                        0x0000000109af2fe8 chromedriver + 409576
+3   chromedriver                        0x0000000109b30938 chromedriver + 661816
+4   chromedriver                        0x0000000109b2e4c3 chromedriver + 652483
+5   chromedriver                        0x0000000109b2bb84 chromedriver + 641924
+6   chromedriver                        0x0000000109b2a7f5 chromedriver + 636917
+7   chromedriver                        0x0000000109b1e579 chromedriver + 587129
+8   chromedriver                        0x0000000109b46c62 chromedriver + 752738
+9   chromedriver                        0x0000000109b1de35 chromedriver + 585269
+10  chromedriver                        0x0000000109b46d6e chromedriver + 753006
+11  chromedriver                        0x0000000109b59611 chromedriver + 828945
+12  chromedriver                        0x0000000109b46b53 chromedriver + 752467
+13  chromedriver                        0x0000000109b1c905 chromedriver + 579845
+14  chromedriver                        0x0000000109b1d955 chromedriver + 584021
+15  chromedriver                        0x0000000109ea36ad chromedriver + 4277933
+16  chromedriver                        0x0000000109ea7b3a chromedriver + 4295482
+17  chromedriver                        0x0000000109eaccdf chromedriver + 4316383
+18  chromedriver                        0x0000000109ea8857 chromedriver + 4298839
+19  chromedriver                        0x0000000109e8164f chromedriver + 4138575
+20  chromedriver                        0x0000000109ec31f8 chromedriver + 4407800
+21  chromedriver                        0x0000000109ec337f chromedriver + 4408191
+22  chromedriver                        0x0000000109ed9cb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/Cursuri/ITF/Automation_Testing/Grupe/Automation10/Automation10_Projects/Python_Automation/Exercitii_test_suite/demo_signup.py", line 54, in test_check_form_mandatory_fields_nok_ln_missing
+    self.chrome.find_element(*self.GENDER_MALE).click()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input id="sex-0" name="sex" style="font-size: 14px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding: 0px; vertical-align: baseline;" type="radio" value="Male"> is not clickable at point (263, 672). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000109ed2149 chromedriver + 4469065
+1   chromedriver                        0x0000000109e5c233 chromedriver + 3985971
+2   chromedriver                        0x0000000109af2fe8 chromedriver + 409576
+3   chromedriver                        0x0000000109b30938 chromedriver + 661816
+4   chromedriver                        0x0000000109b2e4c3 chromedriver + 652483
+5   chromedriver                        0x0000000109b2bb84 chromedriver + 641924
+6   chromedriver                        0x0000000109b2a7f5 chromedriver + 636917
+7   chromedriver                        0x0000000109b1e579 chromedriver + 587129
+8   chromedriver                        0x0000000109b46c62 chromedriver + 752738
+9   chromedriver                        0x0000000109b1de35 chromedriver + 585269
+10  chromedriver                        0x0000000109b46d6e chromedriver + 753006
+11  chromedriver                        0x0000000109b59611 chromedriver + 828945
+12  chromedriver                        0x0000000109b46b53 chromedriver + 752467
+13  chromedriver                        0x0000000109b1c905 chromedriver + 579845
+14  chromedriver                        0x0000000109b1d955 chromedriver + 584021
+15  chromedriver                        0x0000000109ea36ad chromedriver + 4277933
+16  chromedriver                        0x0000000109ea7b3a chromedriver + 4295482
+17  chromedriver                        0x0000000109eaccdf chromedriver + 4316383
+18  chromedriver                        0x0000000109ea8857 chromedriver + 4298839
+19  chromedriver                        0x0000000109e8164f chromedriver + 4138575
+20  chromedriver                        0x0000000109ec31f8 chromedriver + 4407800
+21  chromedriver                        0x0000000109ec337f chromedriver + 4408191
+22  chromedriver                        0x0000000109ed9cb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_check_form_mandatory_fields_ok</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <input id="sex-0" name="sex" style="font-size: 14px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding: 0px; vertical-align: baseline;" type="radio" value="Male"> is not clickable at point (263, 671). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000104f8f149 chromedriver + 4469065
+1   chromedriver                        0x0000000104f19233 chromedriver + 3985971
+2   chromedriver                        0x0000000104baffe8 chromedriver + 409576
+3   chromedriver                        0x0000000104bed938 chromedriver + 661816
+4   chromedriver                        0x0000000104beb4c3 chromedriver + 652483
+5   chromedriver                        0x0000000104be8b84 chromedriver + 641924
+6   chromedriver                        0x0000000104be77f5 chromedriver + 636917
+7   chromedriver                        0x0000000104bdb579 chromedriver + 587129
+8   chromedriver                        0x0000000104c03c62 chromedriver + 752738
+9   chromedriver                        0x0000000104bdae35 chromedriver + 585269
+10  chromedriver                        0x0000000104c03d6e chromedriver + 753006
+11  chromedriver                        0x0000000104c16611 chromedriver + 828945
+12  chromedriver                        0x0000000104c03b53 chromedriver + 752467
+13  chromedriver                        0x0000000104bd9905 chromedriver + 579845
+14  chromedriver                        0x0000000104bda955 chromedriver + 584021
+15  chromedriver                        0x0000000104f606ad chromedriver + 4277933
+16  chromedriver                        0x0000000104f64b3a chromedriver + 4295482
+17  chromedriver                        0x0000000104f69cdf chromedriver + 4316383
+18  chromedriver                        0x0000000104f65857 chromedriver + 4298839
+19  chromedriver                        0x0000000104f3e64f chromedriver + 4138575
+20  chromedriver                        0x0000000104f801f8 chromedriver + 4407800
+21  chromedriver                        0x0000000104f8037f chromedriver + 4408191
+22  chromedriver                        0x0000000104f96cb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/Cursuri/ITF/Automation_Testing/Grupe/Automation10/Automation10_Projects/Python_Automation/Exercitii_test_suite/demo_signup.py", line 38, in test_check_form_mandatory_fields_ok
+    self.chrome.find_element(*self.GENDER_MALE).click()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input id="sex-0" name="sex" style="font-size: 14px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding: 0px; vertical-align: baseline;" type="radio" value="Male"> is not clickable at point (263, 671). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000104f8f149 chromedriver + 4469065
+1   chromedriver                        0x0000000104f19233 chromedriver + 3985971
+2   chromedriver                        0x0000000104baffe8 chromedriver + 409576
+3   chromedriver                        0x0000000104bed938 chromedriver + 661816
+4   chromedriver                        0x0000000104beb4c3 chromedriver + 652483
+5   chromedriver                        0x0000000104be8b84 chromedriver + 641924
+6   chromedriver                        0x0000000104be77f5 chromedriver + 636917
+7   chromedriver                        0x0000000104bdb579 chromedriver + 587129
+8   chromedriver                        0x0000000104c03c62 chromedriver + 752738
+9   chromedriver                        0x0000000104bdae35 chromedriver + 585269
+10  chromedriver                        0x0000000104c03d6e chromedriver + 753006
+11  chromedriver                        0x0000000104c16611 chromedriver + 828945
+12  chromedriver                        0x0000000104c03b53 chromedriver + 752467
+13  chromedriver                        0x0000000104bd9905 chromedriver + 579845
+14  chromedriver                        0x0000000104bda955 chromedriver + 584021
+15  chromedriver                        0x0000000104f606ad chromedriver + 4277933
+16  chromedriver                        0x0000000104f64b3a chromedriver + 4295482
+17  chromedriver                        0x0000000104f69cdf chromedriver + 4316383
+18  chromedriver                        0x0000000104f65857 chromedriver + 4298839
+19  chromedriver                        0x0000000104f3e64f chromedriver + 4138575
+20  chromedriver                        0x0000000104f801f8 chromedriver + 4407800
+21  chromedriver                        0x0000000104f8037f chromedriver + 4408191
+22  chromedriver                        0x0000000104f96cb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_check_submit_form_all_fields_filled</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <input id="sex-0" name="sex" style="font-size: 14px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding: 0px; vertical-align: baseline;" type="radio" value="Male"> is not clickable at point (263, 672). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010e3cc149 chromedriver + 4469065
+1   chromedriver                        0x000000010e356233 chromedriver + 3985971
+2   chromedriver                        0x000000010dfecfe8 chromedriver + 409576
+3   chromedriver                        0x000000010e02a938 chromedriver + 661816
+4   chromedriver                        0x000000010e0284c3 chromedriver + 652483
+5   chromedriver                        0x000000010e025b84 chromedriver + 641924
+6   chromedriver                        0x000000010e0247f5 chromedriver + 636917
+7   chromedriver                        0x000000010e018579 chromedriver + 587129
+8   chromedriver                        0x000000010e040c62 chromedriver + 752738
+9   chromedriver                        0x000000010e017e35 chromedriver + 585269
+10  chromedriver                        0x000000010e040d6e chromedriver + 753006
+11  chromedriver                        0x000000010e053611 chromedriver + 828945
+12  chromedriver                        0x000000010e040b53 chromedriver + 752467
+13  chromedriver                        0x000000010e016905 chromedriver + 579845
+14  chromedriver                        0x000000010e017955 chromedriver + 584021
+15  chromedriver                        0x000000010e39d6ad chromedriver + 4277933
+16  chromedriver                        0x000000010e3a1b3a chromedriver + 4295482
+17  chromedriver                        0x000000010e3a6cdf chromedriver + 4316383
+18  chromedriver                        0x000000010e3a2857 chromedriver + 4298839
+19  chromedriver                        0x000000010e37b64f chromedriver + 4138575
+20  chromedriver                        0x000000010e3bd1f8 chromedriver + 4407800
+21  chromedriver                        0x000000010e3bd37f chromedriver + 4408191
+22  chromedriver                        0x000000010e3d3cb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/Cursuri/ITF/Automation_Testing/Grupe/Automation10/Automation10_Projects/Python_Automation/Exercitii_test_suite/demo_signup.py", line 74, in test_check_submit_form_all_fields_filled
+    self.chrome.find_element(*self.GENDER_MALE).click()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input id="sex-0" name="sex" style="font-size: 14px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding: 0px; vertical-align: baseline;" type="radio" value="Male"> is not clickable at point (263, 672). Other element would receive the click: <div id="ez-cookie-dialog-wrapper" class="ez_modal">...</div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010e3cc149 chromedriver + 4469065
+1   chromedriver                        0x000000010e356233 chromedriver + 3985971
+2   chromedriver                        0x000000010dfecfe8 chromedriver + 409576
+3   chromedriver                        0x000000010e02a938 chromedriver + 661816
+4   chromedriver                        0x000000010e0284c3 chromedriver + 652483
+5   chromedriver                        0x000000010e025b84 chromedriver + 641924
+6   chromedriver                        0x000000010e0247f5 chromedriver + 636917
+7   chromedriver                        0x000000010e018579 chromedriver + 587129
+8   chromedriver                        0x000000010e040c62 chromedriver + 752738
+9   chromedriver                        0x000000010e017e35 chromedriver + 585269
+10  chromedriver                        0x000000010e040d6e chromedriver + 753006
+11  chromedriver                        0x000000010e053611 chromedriver + 828945
+12  chromedriver                        0x000000010e040b53 chromedriver + 752467
+13  chromedriver                        0x000000010e016905 chromedriver + 579845
+14  chromedriver                        0x000000010e017955 chromedriver + 584021
+15  chromedriver                        0x000000010e39d6ad chromedriver + 4277933
+16  chromedriver                        0x000000010e3a1b3a chromedriver + 4295482
+17  chromedriver                        0x000000010e3a6cdf chromedriver + 4316383
+18  chromedriver                        0x000000010e3a2857 chromedriver + 4298839
+19  chromedriver                        0x000000010e37b64f chromedriver + 4138575
+20  chromedriver                        0x000000010e3bd1f8 chromedriver + 4407800
+21  chromedriver                        0x000000010e3bd37f chromedriver + 4408191
+22  chromedriver                        0x000000010e3d3cb5 chromedriver + 4500661
+23  libsystem_pthread.dylib             0x00007ff80a8c04e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff80a8bbf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 0, Error: 5 -- Duration: 34.87 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
