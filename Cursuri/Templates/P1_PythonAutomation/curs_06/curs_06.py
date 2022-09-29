@@ -69,7 +69,7 @@ In general, intr-o clasa, atunci cand vrem sa accesam elemente definite in inter
         fie ele atribute sau metode, ele trebuie accesate cu elementul "self."
 """
 class Masina:
-    # fields/attribute
+    # fields/attribute/proprietati
     model = None
     culoare = "Galben" #  Negru
     marca = None
