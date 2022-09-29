@@ -2,8 +2,8 @@ import requests
 
 from generate_token import Generate_token
 
-def save_albums():
+def get_artists_to_tracks(id):
     token_returned = Generate_token.authorization()
     header = {'Authorization': token_returned}
-    response = requests.get(f'https://api.spotify.com/v1/browse/new-releases', headers=header)
+    response = requests.get(f'https://api.spotify.com/v1/artists/{id}/top-tracks', headers=header)
     return response.json()

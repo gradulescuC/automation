@@ -2,8 +2,8 @@ import requests
 
 from generate_token import Generate_token
 
-def save_albums():
+def get_shows_episodes(id):
     token_returned = Generate_token.authorization()
     header = {'Authorization': token_returned}
-    response = requests.get(f'https://api.spotify.com/v1/browse/new-releases', headers=header)
+    response = requests.get(f'https://api.spotify.com/v1/shows/{id}/episodes', headers=header)
     return response.json()
