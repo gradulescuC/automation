@@ -7,9 +7,23 @@ from selenium.webdriver.common.by import By # librarie ce contine toate actiunil
 # initializam chrome
 s = Service(ChromeDriverManager().install())  # momentul in care noi instalam toate pachetele necesare la run-time pentru rularea driver ului
 chrome = webdriver.Chrome(service=s) # lansam broser ul de chrome si il salvam intr-o variabila al carei nume este optional
-
-# maximizam fereastra
 chrome.maximize_window() # am maximizat fereastra pentru a ne asigura ca toate elementele sunt vizibile pe site
+# chrome.implicitly_wait(6)
+# navigam catre un url
+chrome.get('https://formy-project.herokuapp.com/form')
+
+# elem gasit
+chrome.find_element(By.ID, 'first-name').send_keys('Gabriela')
+
+# # id e invalid => NoSuchElementException
+# chrome.find_element(By.ID, 'last-name').send_keys('Radulescu')
+
+# sleep(3)
+
+
+# de citit
+# https://www.geeksforgeeks.org/implicit-waits-in-selenium-python/
+# maximizam fereastra
 
 # setam implicit wait in secunde - o modalitate prin care putem defini un timp global de asteptare
                     # pana cand sa dea eroare in momentul in care un element nu este gasit
@@ -42,17 +56,3 @@ Daca nu am avea acel implicit wait, ar returna eroare instant
 
 """
 
-chrome.implicitly_wait(6)
-
-# navigam catre un url
-chrome.get('https://formy-project.herokuapp.com/form')
-
-# elem gasit
-chrome.find_element(By.ID, 'first-names').send_keys('Gabriela')
-
-# id e invalid => NoSuchElementException
-chrome.find_element(By.ID, 'last-name').send_keys('Radulescu')
-
-sleep(3)
-# de citit
-# https://www.geeksforgeeks.org/implicit-waits-in-selenium-python/

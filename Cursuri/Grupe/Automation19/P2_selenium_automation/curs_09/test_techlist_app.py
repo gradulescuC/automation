@@ -1,9 +1,6 @@
 import unittest
-import unittest
 from time import sleep
-from unittest import TestCase
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
