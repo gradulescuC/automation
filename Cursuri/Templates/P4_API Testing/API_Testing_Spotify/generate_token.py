@@ -1,8 +1,5 @@
 import requests as requests
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 from browser import Browser
 
 
@@ -49,10 +46,9 @@ class Generate_token(Browser):
                 "code":self.get_code(),
                 "grant_type":self.GRANT_TYPE
                 }
-        response = requests.post(self.HOST+"/api/token", data=data, headers=header)
+        response = requests.post(self.HOST + "/api/token", data=data, headers=header)
         return response.json()["access_token"]
 
-    @staticmethod
     def authorization(self):
         self.create_authorize_endpoint()
         self.load_endpoint()
@@ -63,5 +59,4 @@ class Generate_token(Browser):
             self.get_code()
         return f"Bearer {self.get_token()}"
 
-token_object = Generate_token()
-token = token_object.authorization()
+
