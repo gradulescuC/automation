@@ -21,7 +21,7 @@ class ContextMenu(unittest.TestCase):
     def tearDown(self):
         self.chrome.quit()
 
-    # @unittest.skip
+    @unittest.skip
     def test_context(self):
         self.chrome.find_element(*self.CONTEXT).click()
         # action chains ne ajuta sa dam click dr

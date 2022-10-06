@@ -6,6 +6,15 @@ from selenium.webdriver.common.by import By
 from time import sleep
 
 
+"""
+Libraria unittest este o librarie care suporta crearea de teste rulabile direct in interiorul clasei
+Se implementeaza prin mostenirea clasei TestCase din libraria unittest
+Orice clasa de teste trebuie sa mosteneasca clasa TestCase si sa aibe urmatoarele particualaritati:
+1. metoda setup -> toate activitatile care trebuie sa fie executate inainte de ORICE TEST din clasa respectiva
+2. metoda teardown -> toate activitatile care trebuie sa fie executate dupa de ORICE TEST din clasa respectiva
+3. toate metodele de test trebuie sa aiba prefixul test_
+"""
+
 class Alerts(unittest.TestCase):
     ALERT = (By.XPATH, '//button[text()="Click for JS Alert"]')
     CONFIRM = (By.XPATH, '//button[text()="Click for JS Confirm"]')
@@ -21,9 +30,10 @@ class Alerts(unittest.TestCase):
     def tearDown(self) -> None:
         self.chrome.quit()
 
-    # @unittest.skip
+    @unittest.skip
     def test_alert(self):
         self.chrome.find_element(*self.ALERT).click()
+        # self.chrome.find_element(By.XPATH, '//button[text()="Click for JS Alert"]').click()
         sleep(2)
         obj = self.chrome.switch_to.alert  # Ne-am mutat de pe fereastra "https://the-internet.herokuapp.com/javascript_alerts" pe fereastrade alerta
                                                 #  si am salvat fereastra de alerta intr-o variabila obj
@@ -33,6 +43,10 @@ class Alerts(unittest.TestCase):
         obj.accept() # metoda accept reprezinta echivalentul clickului pe butonul "OK" din alerta
         print("Clicked on the OK Button in the Alert Window")
         sleep(2)
+        # perechile atribut - valoare sunt separate prin virgula si pot fi cautate in html prin paranteze patrate: [id="result"]
+        actual_result = self.chrome.find_element(By.ID,"result").text
+        expected_result = "You successfully clicked an alert"
+        assert actual_result == expected_result,"Error: The result text is incorrect"
 
     @unittest.skip
     def test_confirm_ok(self):
@@ -45,6 +59,9 @@ class Alerts(unittest.TestCase):
         obj.accept()
         print("Clicked on the OK Button in the Confirm Window")
         sleep(3)
+        actual_result = self.chrome.find_element(By.ID, "result").text
+        expected_result = "You clicked: Ok"
+        assert actual_result == expected_result, "Error: The result text is incorrect"
 
     @unittest.skip
     def test_confirm_cancel(self):
@@ -58,8 +75,13 @@ class Alerts(unittest.TestCase):
         obj.dismiss() # metoda dismiss este echivalentul butonului de "Cancel" din alerta
         print("Clicked on the Cancel Button in the Confirm Window")
         sleep(3)
+        actual_result = self.chrome.find_element(By.ID, "result").text
+        expected_result = "You clicked: Cancel"
+        assert actual_result == expected_result, "Error: The result text is incorrect"
 
-    @unittest.skip   # decorator care instruieste sistemul sa nu execute anumite teste
+
+    @unittest.skip
+   # decorator care instruieste sistemul sa nu execute anumite teste
     def test_prompt(self):
         self.chrome.find_element(*self.PROMPT).click()
         sleep(2)

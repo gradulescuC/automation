@@ -40,3 +40,19 @@ Read port: 50837
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
 1651078945753	geckodriver	INFO	Listening on 127.0.0.1:58964
+1665073844333	geckodriver	INFO	Listening on 127.0.0.1:57082
+1665073844679	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57083" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/dc/m29nnh9n3633l5mc2x3z0mkc0000gn/T/rust_mozprofileHxMGpx"
+1665073845816	Marionette	INFO	Marionette enabled
+2022-10-06 19:30:45.911 plugin-container[32143:1886077] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-06 19:30:45.914 plugin-container[32143:1886077] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1665073845970	Marionette	INFO	Listening on port 57102
+WebDriver BiDi listening on ws://localhost:57083
+Read port: 57102
+2022-10-06 19:30:46.191 plugin-container[32143:1886077] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-06 19:30:46.191 plugin-container[32143:1886077] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-06 19:30:46.192 plugin-container[32143:1886168] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-06 19:30:46.192 plugin-container[32143:1886168] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1665073846279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/dc/m29nnh9n3633l5mc2x3z0mkc0000gn/T/rust_mozprofileHxMGpx/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57083/devtools/browser/2f129c21-f6dc-4c3d-b6ec-04c66a780448
+1665073853663	Marionette	INFO	Stopped listening on port 57102

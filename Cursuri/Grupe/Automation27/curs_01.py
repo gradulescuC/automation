@@ -15,8 +15,6 @@ Exista doua tipuri de comentarii:
 
 Acum suntem in interiorul unui comentariu multi line
 
-
-
 """
 
 # Acum sunt in interiorul unui comentariu single line
@@ -104,8 +102,8 @@ variabila_float = 12.3 # ATENTIE! limitarea de zecimala se face cu caracterul ".
 variabila_bool_True, variabila_bool_false = True, False
 variabila_string = "Suntem la curs"
 
-
 """
+
 4. Funcția type() și type casting
 
 - Functia type este o functie care returneaza tipul de data al unei variabile. 

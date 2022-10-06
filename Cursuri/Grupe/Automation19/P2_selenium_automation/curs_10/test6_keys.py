@@ -1,12 +1,10 @@
 import unittest
 from selenium import webdriver
-from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from time import sleep
 from selenium.webdriver.common.keys import Keys
-from pynput.mouse import Button, Controller
 
 
 class Keyboard(unittest.TestCase):
@@ -18,6 +16,9 @@ class Keyboard(unittest.TestCase):
         self.chrome.maximize_window()
         self.chrome.implicitly_wait(5)
 
+    def tearDown(self):
+        self.chrome.quit()
+
     @unittest.skip
     def test_select_all(self):
         self.chrome.get("https://the-internet.herokuapp.com/login")
@@ -27,17 +28,13 @@ class Keyboard(unittest.TestCase):
         user.clear()  #  metoda clear este folosita pentru a sterge tot continutul unui textbox
         sleep(2)
         user.send_keys('tomsmit')
-        sleep(1)
+        sleep(3)
         user.send_keys(Keys.COMMAND, 'a')
         sleep(2)
         user.send_keys(Keys.ARROW_LEFT)
-        sleep(2)
         user.send_keys(Keys.BACKSPACE)
-        sleep(2)
+        sleep(5)
         user.send_keys('tomsmith')
-        sleep(2)
-
-    def tearDown(self):
-        self.chrome.quit()
+        sleep(5)
 
 # https://the-internet.herokuapp.com/key_presses

@@ -1,10 +1,11 @@
 import unittest  #  am importat toata libraria unittest
 import HtmlTestRunner
 
-from Python_Automation.P2_Introduction_to_Selenium.P2_selenium_automation.curs_10.test3_alerts import Alerts
-from Python_Automation.P2_Introduction_to_Selenium.P2_selenium_automation.curs_10.test4_auth import Authentication
-from Python_Automation.P2_Introduction_to_Selenium.P2_selenium_automation.curs_10.test5_context_menu import ContextMenu
-from Python_Automation.P2_Introduction_to_Selenium.P2_selenium_automation.curs_10.test6_keys import Keyboard
+from P2_selenium_automation.curs_10.test2_firefox import Firefox
+from P2_selenium_automation.curs_10.test3_alerts import Alerts
+from P2_selenium_automation.curs_10.test4_auth import Authentication
+from P2_selenium_automation.curs_10.test5_context_menu import ContextMenu
+from P2_selenium_automation.curs_10.test6_keys import Keyboard
 
 
 class TestSuite(unittest.TestCase): # pentru ca am importat toata libraria este nevoie sa specificam in fata clasei TestCase
@@ -25,7 +26,8 @@ class TestSuite(unittest.TestCase): # pentru ca am importat toata libraria este 
             unittest.defaultTestLoader.loadTestsFromTestCase(Alerts),
             unittest.defaultTestLoader.loadTestsFromTestCase(Keyboard),
             unittest.defaultTestLoader.loadTestsFromTestCase(ContextMenu),
-            unittest.defaultTestLoader.loadTestsFromTestCase(Authentication)
+            unittest.defaultTestLoader.loadTestsFromTestCase(Authentication),
+            unittest.defaultTestLoader.loadTestsFromTestCase(Firefox)
         ])
 
         runner = HtmlTestRunner.HTMLTestRunner\

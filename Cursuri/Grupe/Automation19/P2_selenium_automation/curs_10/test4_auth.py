@@ -18,7 +18,7 @@ class Authentication(unittest.TestCase):
     def tearDown(self):
         self.chrome.quit()
 
-    # @unittest.skip
+    @unittest.skip
     def test_auth(self):
         self.chrome.get('https://' + self.USERNAME + ':' + self.PASSWORD + '@the-internet.herokuapp.com/basic_auth')
         sleep(3)
