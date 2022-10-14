@@ -1,297 +1,281 @@
 """
-Atribuire = proces prin care salvam informatii la adresa de memorie identifica cu un nume al unei variabile,
-indiferent de tipul de date al acesteia
 
-Operatorii de asignare sunt: = , += , -= , *= , /=
-"""
+1. SLICING
 
-# A. ASSIGNMENT OPERATORS
+Slicing = Modalitate prin care putem sa extragem doar anumite parti dintr-un string
 
-x = 3
-print(x)
-print("-------------------------------------")
-x = x+3
-print(x)
-x += 3
-print(x)
-print("-------------------------------------")
-x = x - 3
-print(x)
-x -= 3
-print(x)
-print("-------------------------------------")
-x = x*3
-print(x)
-x *= 3
-print(x)
-print("-------------------------------------")
-x = x/3
-print(x)
-x /= 3
-print(x)
-print("-------------------------------------")
+Slicing-ul se poate face pe baza urmatoarelor elemente:
+- pozitie de inceput -> implicit va fi 0 - adica de la inceputul stringului
+- pozitie de final -> implicit va fi lungimea stringului - adica pana la final
+- pas (cate caractere sa se sara) -> implicit va fi 1 - adica se va printa fiecare caracter
 
-# B. ARITHMETICAL OPERATORS
+In general in range-ul pe baza caruia se extrage bucata din string nu se ia in considerare capatul de interval
 
-"""
-operatorii aritmetici sunt operatori care permit operatii matematice
-
-Exemple de operatori aritmetici: +, -, *, /, % (operatorul modulo), ** (operatorul putere), // (floor division)
-"""
-
-print(7//2)
-print(7/2)
-print(4+6)
-print(10%3) # operatorul modulo returneaza restul impartirii deimpartitului la impartitor -> 3 incape in 10 de 3 ori (3*3 = 9) -> ne ramane 1 unitate
-print(2**3) # operatorul putere, care ridica baza la putere -> 2 este ridicat la puterea a 3-a si rezultatul va fi 8
-
-
-# C. COMPARISON OPERATORS
-
-"""
-Operatori prin intermediul carora putem compara doua valori distincte (vor fi foarte utili in cadrul assert urilor)
-"""
-y = 3
-x = 2
-print(x==2)  # ATENTIE!! Nu confundati operatorul de atribuire (=) cu operatorul de comparatie (==)
-print(x==y)
-print(x!=2)  # != este un operator de comparatie care verifica faptul ca operatorul din stanga este diferit de cel din dreapta.
-                    # daca cele doua valori sunt diferite, rezultatul evaluarii va fi TRUE
-                    # putem sa spunem ca valideaza un fals
-print(x!=y)
-
-print(x>2) # > este un operator care evalueaza daca valoarea din stanga este mai mare decat valoarea din dreapta
-print(x>y)
-
-print(x<2) # < este un operator care evalueaza daca valoarea din stanga este mai mica decat valoarea din dreapta
-print(x<y)
-
-print(x>=2) # >= este un operator care evalueaza daca valoarea din stanga este mai mare sau egala cu valoarea din dreapta
-print(x>=y)
-
-print(x<=2) # <= este un operator care evalueaza daca valoarea din stanga este mai mica sau egala cu valoarea din dreapta
-print(x<=y)
-
-
-# # D. LOGICAL OPERATORS
-"""
-Operatorii logici sunt operatori care sunt folositi pentru a defini evaluari mai complexe
-formate din mai multe conditii de evaluare
-
-Operatorii logici sunt:  AND OR NOT
-
-X < Y AND Y>Z OR Z<X
-
-NOT X < Y AND Y>Z OR Z<X
-
-NOT > AND > OR
+Exemplu:
+Daca ii spun sistemul sa extraga toate caracterele de la pozitia 0 la pozitia 5, de fapt va extrage pana la pozitia 4
 
 """
 
-x = 3
-y = 5
-z = 8
-print(not x<y and y > z or z<x)
-print(not (x<y and y > z) or z<x)
+poezie = "Cobori in jos Luceafar bland"
 
-# print(x<2 and x<y) # x<2 and x<y este o conditie compusa care instruieste sistemul sa o evalueze
-#                         #ca fiind adevarata, doar daca ambele conditii simple pe care le contine
-#                             #sunt evaluate ca fiind adevarate
-#                                 # conditia compusa de mai sus va returna false
-# print(x==2 and x<y) # Conditia compusa va returna true pentru ca ambele conditii simple sunt evaluate ca si TRUE
-# print(x==2 and x==y) # Conditia compusa va returna FALSE pentru ca continutul variabilei x nu este identic cu continutul variabilei y
-#
-#
-# print(x==2 or x<y) # Conditia compusa x==2 or x<y instruieste sistemul sa o evalueze ca fiind adevarata
-#                         # atata timp cat oricare din conditiile simple sunt evaluate ca fiind adevarate
-#
-# print(not(x==2 or x<y)) # operatorul NOT este folosit pentru a NEGA rezultatul evaluarii unei expresii
-#
-# """
-# if(not(isDisplayed()))
-#         =
-# if(isDisplayed()==False)
-# """
-# # y = 3
-# # x = 2
-#
-# """
-#
-# In general operatorul NOT are prioritate in fata operatorilor OR si AND
-# Operatorul AND are prioritate in fata operatorului OR
-#
-#
-# Ordinea prioritatii: NOT > AND > OR
-#
-# Exemple de evaluari:
-#
-# FALSE or FALSE = FALSE
-# FALSE or TRUE = TRUE
-# TRUE or TRUE = TRUE
-#
-# FALSE and FALSE = FALSE
-# FALSE and TRUE = FALSE
-# TRUE anf TRUE = TRUE
-#
-# not FALSE = TRUE
-# not TRUE = FALSE
-#
-# Exemple de conditii evaluate:
-#
-# print(not x==2 or y>5 and x<y)
-#     - Ordinea evaluarii va fi:
-#             not x==2 (FALSE)
-#             y>5 and x<y (FALSE)
-#             FALSE OR FALSE
-#
-# print(not (x==2 or y>5 and x<y))
-#     - Ordinea evaluarii va fi:
-#             x==2 (TRUE)
-#             y>5 (doar daca x==2 va fi evaluata ca FALSE)
-#             x<y (TRUE)
-#             TRUE or TRUE => TRUE
-#             not TRUE => FALSE
-#
-# print(not ((x==2 or y>5) and x<y))
-#     - Ordinea evaluarii va fi:
-#             x==2 (TRUE)
-#             y>5 (doar daca x==2 va fi evaluata ca si FALSE)
-#             x<y (TRUE)
-#             TRUE and TRUE => TRUE
-#             not TRUE = >FALSE
-#
-# print(not x==2 or (y>5 and x<y))
-#     - Ordinea evaluarii va fi:
-#             not x==2 (FALSE)
-#             y>5 (FALSE1)
-#             x<y (doar daca y>5 va fi evaluata ca si TRUE) => TRUE
-#             FALSE1 and TRUE => FALSE3
-#             FALSE or FALSE3 => FALSE
-#
-# not x==2  = A (FALSE)
-# y>5 and x<y = B (FALSE)
-# A or B (FALSE or FALSE = FALSE)
-#
-#
-# """
-#
-# print(not(x==2 or x<y))
-# print(x<y and x>y and x == y)
-# print(x<y or x>y and x <= y)
-#
-#
-# # D. FLOW CONTROL
-#
-# """
-# Un flow control este o modalitate prin care putem sa instruim programul sa execute un set de instructiuni
-# sau un alt set de instructiuni in functie de rezultatul evaluarii unei conditii
-#
-# Daca conditia este adevarata, atunci se va executa un set de instructiuni
-# Daca conditia este falsa, atunci se va executa un alt set de instructiuni
-#
-# Componente ale unei decizii (flow control)
-# - inceputul deciziei = IF
-# - ramura din dreapta a deciziei, care se va executa doar atunci cand conditia este evaluata ca fiind adevarata (THEN)
-# - ramura din stanga a deciziei, care se va executa doar atunci cand conditia este evaluata ca fiind falsa (ELSE)
-#             ELSE - ul tine loc unui set de instructiuni implicite
-# - conditie aditionala separata, ca sa sa fie evaluata in cazul in care conditia principala este evaluata ca si falsa (ELIF)
-#
-#
-#
-# Nota: Noi putem sa adaugam o decizie in interiorul unei alte decizii, caz in care putem sa vorbim despre decizii IMBRICATE
-#         (Decizii imbricate = Embedded decisions)
-#
-# - Conditia decizionala este separata de prima instructiune de pe ramura de THEN prin semnul ":"
-# - Putem sa includem o instructiune in interiorul unei decizii prin indentarea sa fata de marginea din stanga programului
-# - Sfarsitul if-ului va fi considerat acolo unde este intalnita prima instructiune neindentata
-#         ATENTIE!!! exceptie va face keyword-ul ELSE
-#
-# - Ordinea keyword-urilor o sa fie: IF, ELIF, ELSE
-#
-# """
-#
-# """
-#
-# Constanta este o adresa de memorie care nu trebuie sa isi schimbe valoarea
-# In python conceptul de constanta NU exista din punct de vedere tehnic
-#         - eu nu pot sa implementez o modalitate de a restrictiona schimbarea unei valori la o adresa de memorie
-# In python, ca sa putem implementa conceptul de constanta, s-a decis prin conventie ca toate adresele de memorie care nu vrem
-#             sa isi schimbe continutul sa fie scrise in intregime cu majuscule
-#
-# """
+# Exercitiu 1: vrem sa extragem toate caracterele din string specificand explicit start-ul si end-ul si pasul implicit
+print(poezie[0:len(poezie)]) # len(poezie) = 28 -> adica cate caractere sunt in string
+                                # in programare toate elementele dintr-o structura ordonata incep de la indexul 0
+                                    # de aceea indexul ultimului element se va afla in pozitia cu 1 mai mica decat lungimea stringului
+                                      # avand in vedere ca ultimul caracter se afla in pozita cu 1 mai mica decat lungimea stringului,
+                                            # desi capatul de interval nu se ia in considerare nu pierdem ultimul element datorita diferentei intre index si lungime
 
-NOTA_DE_TRECERE = 5 # constant that we do not want to change it's value
-NOTA_DE_TRECERE_PURTARE = 7
+# Exercitiu 2: vrem sa extragem toate caracterele din string folosind start si end implicit
+print(poezie[:])
 
-nota_examen = int(input("Introduceti nota de la examen "))
-nota_purtare = int(input("Introduceti nota la purtare "))
-#
-if nota_examen >= NOTA_DE_TRECERE and nota_purtare >= NOTA_DE_TRECERE_PURTARE:
-    print("Am trecut")
-    if nota_examen==10 and nota_purtare==10:
-        print("felicitari,esti premiant")
-else: # Else does not have a condition because it means the instructions to be executed in case the previous condition is evaluated as false
-    print("Nu am trecut")
-    if(nota_purtare >= NOTA_DE_TRECERE_PURTARE):
-        print("Mai invata")
-    elif(nota_examen >= NOTA_DE_TRECERE):
-        print("Fii cuminte, ca altfel nu vine mosul!")
-    else:
-        print("Trebuie sa fii mai serios")
+# Exercitiu 3: vrem sa extragem toate caracterele din string folosind start si end implicit si pas explicit de 2 (adica printare din 2 in doua caractere)
+print(poezie[::2])
 
-# optiune = int(input("Alegeti limba, pentru romana apasati 1, pentru engleza apasati 2"))
-# if optiune == 1:
-#     print("Ati ales limba romana")
-#     optiune1 = input("pentru persoane fizice apasati 1, pentru persoane juridice apasati 2")
-#     if(optiune1 == 1):
-#         print("Ati ales persoana fizica")
-#     elif(optiune1 == 2):
-#         print("Ati ales persoana juridica")
-#     else:
-#         print("Optiune invalida, va rugam sa incercati din nou")
-#
-# elif optiune==2:
-#     print("You chose english")
-#     optiune1 = input("For individual persons press one, for companies press 2")
-#     if (optiune1 == 1):
-#         print("You chose individual person")
-#     elif (optiune1 == 2):
-#         print("You chose a company")
-#     else:
-#         print("Invalid option, please try again")
-# elif optiune == 3:
-#     print("return to main menu")
-#
-# else:
-#     print("Invalid option, please choose another option")
+# Exercitiu 4: vrem sa extragem toate caracterele din string folosind start si end implicit si pas implicit
+print(poezie[::])
+
+# Exercitiu 5: vrem sa extragem caracterele incepand de la pozitia 3 pana la pozitia 10 inclusiv
+print(poezie[3:11])
+
+# Exercitiu 6: vrem sa extragem ultimele trei caractere de la final
+print(poezie[-3:])
+print(poezie[-3:])
+
+# Exercitiu 7: vrem sa printam string-ul in sens invers
+print(poezie[::-1])
+
+"""
+Metode pe care putem sa le folosim cu string-urile
+Pentru a le putea accesa vom scrie numele srting-ului urmat de caracterul "."
+"""
+# poezie = "Cobori in jos Luceafar bland"
+print(poezie.find("a")) # va identifica indexul primului caracter a din string
+print(poezie.find("c"))  # va identifica indexul primului caracter c din string
+print(f"Caracterul x se afla in pozitia {poezie.find('X')}")
+
+# Referinta cod ASCII: https://www.ascii-code.com/
+
+print(poezie.index("C"))  # va identifica indexul primului caracter C din string
+                                # metoda index face exact acelasi lucru ca metoda find
+# print(f"Caracterul x se afla in pozitia {poezie.index('Y')}")
+
+# Diferenta intre find si index este ca "find" returneaza -1 in cazul in care caracterul nu e gasit si "index" da eroare
+
+print(poezie.split()) # functie care sparge string-ul in functie de cuvintele componente.
+                            # rezultatul este o lista
+                             # separatorul implicit este spatiu, dar se poate suprascrie
+print(poezie.split(sep="L")) # Am suprascris separatorul
+
+print(poezie.count("a")) # numara de cate ori apare un anumit substring in string-ul de la care plecam
+print(poezie.isdigit()) # verifica daca toate caracterele dintr-un string sunt cifre
+                            # atentie!!! sunt trei functii care fac asta: isDigit, isNumeric, isDecimal
+
+# Diferenta intre cele trei metode: https://stackoverflow.com/questions/44891070/whats-the-difference-between-str-isdigit-isnumeric-and-isdecimal-in-python
+
+print(poezie.replace("a","M"))
+
+"""
+2. Operatori
+
+Operatori sunt elemente prin intermediul carora putem efectua operatii asupra variabilelor
+Exista patru tipuri de operatori:
+- Operatori aritmetici -> prin intermediul carora putem efectua operatii matematice
+- Operatori de comparatie -> prin intermediul carora putem efectua comparatii intre continutul variabilelor
+- Operatori de atribuire -> prin intermediul carora putem sa alocam valori variabilelor
+- Operatori logici -> prin intermediul carora putem evalua conditii mai complexe
+
+alocare = salvare de informatii la adresa de memorie care este identificata de numele variabilei
+"""
+
+# 1. OPERATORI ARITMETICI: +, -, *, /, **, %, //
+# 1.1. Operatorul + este folosit pentru a aduna doua numere sau pentru a concatena doua string-uri
+# Exemple:
+nr_1 = 5
+nr_2 = 7
+print(f"Suma celor doua numere este: {nr_1 + nr_2}")
+str_1 = "ana "
+str_2 = "are mere"
+print(f"String-urile concatenate sunt: {str_1 + str_2}")
+print("String-urile concatenate sunt: " + str_1 + " " + str_2)
+
+# 1.2. Operatorul = este folosit pentru a efectua diferenta intre doua numere
+print(f"Diferenta intre cele doua numere este: {nr_1 - nr_2}")
+
+# 1.3. Operatorul * este folosit pentru a efectua inmultirea intre doua numere
+print(f"Inmultirea celor doua numere a rezultat in numarul: {nr_1*nr_2}")
+
+# 1.4. Operatorul / este folosit pentru a efectua impartirea a doua numere
+print(f"Impartirea celor doua numere a rezultat in numarul: {nr_1 / nr_2}")
+# ATENTIE!! rezultatul operatiei efectuate cu operatorul division este float
+
+# 1.5. Operatorul // (FLOOR DIVISION) este folosit pentru a efectua impartirea intreaga a doua numere (adica se taie zecimalele de la rezultat)
+print(f"Impartirea cu floor division celor doua numere a rezultat in numarul: {nr_1 // nr_2}")
+print(f"Impartirea cu celor doua numere a rezultat in urma rotunjirii in numarul: "  + str(round(nr_1 / nr_2)))
+
+# 1.6. Operatorul % (MODULO) este folosit pentru a obtine restul impartirii deimpartitului la impartitor
+print(f"Restul impartirii lui {nr_2} la {nr_1} este {nr_2%nr_1}")
+
+# 1.7. Operatorul ** (RIDICARE LA PUTERE) este folosit pentru a ridica un numar la puterea x
+print(f"Numarul {nr_2} ridicat la puterea {nr_1} este {nr_2**nr_1}")
 
 
+# 2. OPERATORI DE COMPARATIE: ==, <=, >=, <, >, !=
+# 2.1. OPERATORUL == este folosit pentru a compara valoarile dintre doua variabile
+                        # ATENTIE!!! Nu confundati operatorul de comparatie == cu operatorul de atribuire =
+                        # Rezultatul comparatiei o sa fie boolean
 
-# pasaport = input("Aveti pasaport? ")
-# varsta = input("va rugam sa introduceti varsta persoanei")
+print(f"Cele doua numere sunt egale? {nr_1==nr_2}")
 
-# if pasaport == 'Da':
-#     if varsta>=18:
-#         print("Puteti trece")
-#     else:
-#         ambiiParinti = input("Sunt ambii parinti prezenti? Da/NU ")
-#         if ambiiParinti == 'Da':
-#             print("Puteti trece")
-#         else:
-#             permisiuneParinteLipsa = input("exista permisiune de la parintele lipsa? Da/NU")
-#             if permisiuneParinteLipsa=='Da':
-#                 print("Puteti trece")
-#             else:
-#                 print("Nu puteti trece")
+# 2.2. OPERATORUL <= este folosit pentru a verifica comparatia intre doua numere, daca primul este mai mic sau egal cu al doilea
+print(f"Numarul 1 este mai mic sau egal cu numarul 2? {nr_1<=nr_2}")
+
+# 2.2. OPERATORUL >= este folosit pentru a verifica comparatia intre doua numere, daca primul este mai mare sau egal cu al doilea
+print(f"Numarul 1 este mai mare sau egal cu numarul 2? {nr_1>=nr_2}")
+
+# 2.3. OPERATORUL < este folosit pentru a verifica comparatia stricta intre doua numere, pentru a vedea daca primul este mai mic decat al doilea
+print(f"Numarul 1 este mai mic decat numarul 2? {nr_1<nr_2}")
+
+# 2.4. OPERATORUL > este folosit pentru a verifica comparatia stricta intre doua numere, pentru a vedea daca primul este mai mare decat al doilea
+print(f"Numarul 1 este mai mare decat numarul 2? {nr_1>nr_2}")
+
+# 2.5. OPERATORUL != (not egal) este folosit pentru a verifica comparatia stricta intre doua numere, pentru a vedea daca primul este diferit de al doilea
+print(f"Numarul 1 este diferit de numarul 2? {nr_1!=nr_2}")
+
+# 3. OPERATORI DE ATRIBUIRE: +=, -=, =, *=, /=
+
+# ATENTIE!!! OPERATORII ++, -- din java NU EXIST in Python
+
+# 3.1. Operatorul = -> Este folosit pentru a salva o informatie intr-o variabila
+                    # atribuirea unei valori intiale intr-o variabila se numeste initializare
+variabila_atribuire_initiala = 5 # am salvat valoarea 5 la adresa de memorie numita variabila_atribuire_initiala
+                                    # atribuire prin initializare
+    # Atentie!!! se poate face suprascriere. Adica daca la aceeasi adresa de memorie facem o noua atribuire,
+                # nu se va crea o noua variabila / adresa de memorie
+                    # ci se va inlocui valoarea la adresa de memorie curenta
+variabila_atribuire_initiala =  7 # atribuire prin suprascriere
+
+# 3.1. Operatorul += -> Este folosit pentru a mari valoarea variabilei din stanga operatorului cu valoarea din dreapta operatorului
+                            # rezultatul va suprascrie valoarea curenta din variabila
+variabila_atribuire_initiala += 12 # rezultatul operatiei va fi 19
+
+# 3.1. Operatorul -= -> Este folosit pentru a micsora valoarea variabilei din stanga operatorului cu valoarea din dreapta operatorului
+variabila_atribuire_initiala -= 12 # rezultatul va suprascrie valoarea curenta din variabila
+
+# 3.1. Operatorul *= -> Este folosit pentru a inmulti valoarea variabilei din stanga operatorului cu valoarea din dreapta operatorului
+variabila_atribuire_initiala *= 5 #rezultatul va suprascrie valoarea curenta din variabila
+
+# 3.1. Operatorul /= -> Este folosit pentru a imparti valoarea variabilei din stanga operatorului la valoarea din dreapta operatorului
+variabila_atribuire_initiala /= 5 #rezultatul va suprascrie valoarea curenta din variabila
 
 
-# pasaport = input("Aveti pasaport? ")
-# varsta = input("va rugam sa introduceti varsta persoanei")
-# ambiiParinti = input("Sunt ambii parinti prezent? Da/NU")
-# permisiuneParinteLipsa = input("exista permisiune de la parintele lipsa? Da/NU")
+# 3. OPERATORI LOGICI: AND, NOT, OR
+# OPERATORUL AND -> Este un operator strict care face ca rezultatul unei conditii compuse sa fie TRUE doar daca fiecare conditie din conditia compusa returneaza TRUE
+print(nr_1<nr_2 and nr_1 <=nr_2) # nr_1<nr_2 = TRUE, nr_1 <=nr_2 = TRUE, TRUE AND TRUE = TRUE
+print(nr_1<nr_2 and nr_1 >=nr_2) # nr_1<nr_2 = TRUE, nr_1 >=nr_2 = FALSE, TRUE AND FALSE = FALSE
 
+# OPERATORUL OR ->Este un operator mai putin strict care face ca rezultatul unei conditii compuse sa fie TRUE daca oricare din conditiile din conditia compusa returneaza TRUE
+print(nr_1<nr_2 and nr_1 <=nr_2) # nr_1<nr_2 = TRUE, nr_1 <=nr_2 = TRUE, TRUE AND TRUE = TRUE
+print(nr_1<nr_2 and nr_1 >=nr_2) # nr_1<nr_2 = TRUE, nr_1 >=nr_2 = FALSE, TRUE OR FALSE = TRUE
 
-# if pasaport == 'Da' and (ambiiParinti == 'Da' or permisiuneParinteLipsa == 'Da'):
-#     print("permite calatoria")
-# else:
-#     print("nu permite calatoria")
+# OPERATORUL NOT -> Este un operator ce returneaza opusul rezultatului conditiei
+print(not nr_1<nr_2)  # nr_1<nr_2 = TRUE, NOT TRUE = FALSE
+print(not nr_1<nr_2 and nr_1<=nr_2) # nr_1<nr_2 = TRUE, NOT TRUE = FALSE, nr_1<=nr_2 = TRUE, FALSE AND TRUE = FALSE
+print(not nr_1<nr_2 and nr_1<=nr_2 or nr_2 > nr_1) # nr_1<nr_2 = TRUE, NOT TRUE = FALSE, nr_1<=nr_2 = TRUE, FALSE AND TRUE = FALSE, nr_2 > nr_1= TRUE, FALSE OR TRUE = TRUE
+print(not nr_1<nr_2 or  nr_1<=nr_2 and nr_2 > nr_1) # nr_1<nr_2 = TRUE, NOT TRUE = FALSE, nr_1<=nr_2 = TRUE, nr_2 > nr_1= TRUE, TRUE AND TRUE = TRUE, FALSE OR TRUE = TRUE
+print((not nr_1<nr_2 or  nr_1<=nr_2) and nr_2 > nr_1) # nr_1<nr_2 = TRUE, NOT TRUE = FALSE, nr_1<=nr_2 = TRUE, FALSE OR TRUE = TRUE, nr_2 > nr_1= TRUE, TRUE AND TRUE = TRUE
+print(not ((nr_1<nr_2 or  nr_1<=nr_2) and nr_2 > nr_1)) # nr_1<nr_2 = TRUE, nr_1<=nr_2 = TRUE, TRUE OR TRUE = TRUE, nr_2 > nr_1= TRUE, TRUE AND TRUE = TRUE, NOT TRUE = FALSE
+# Ordinea prioritatii operatorilor logici: NOT > AND > OR
+
+"""
+Structura alternativa IF - este o modalitate prin care putem sa acoperim situatiile in care vrem sa
+                        executam un set de instructiuni sau un altul in functie de rezultatul evaluarii unei conditii
+
+Structura unei decizii (IF):
+- Inceputul deciziei (If) 
+- Ramura din dreapta (TRUE) a deciziei -> reprezentata de primul bloc de cod dupa if
+- Marcarea instructiunii alternative, cu conditie aditionala, atunci cand avem mai mult de doua situatii posibile (elif)
+- Marcarea isntructiunii alternative finale - ultimul set de instructiuni, in cazul in care niciuna dintre conditii nu este indeplinita
+
+Blocul de cod aferent fiecarei ramuri decizionale este marcat de indentare
+Ramura decizionala = blocul de cod care se executa in cazul in care conditia este evaluata ca fiind adevarata si respectiv falsa
+Indentare = spatiul lasat intre marginea fisierului si linia de cod                  
+"""
+
+"""
+
+In testare manuala exista doua categorii de tehnici de testare:
+- Testare blackbox -> testare fara acces la cod (frontend)
+- Testare whitebox -> testare cu acces la cod (backend)
+
+1. Tehnici de testare whitebox:
+- Statement coverage -> Reprezinta numarul de teste necesare pentru a executa CEL PUTIN O DATA fiecare instructiune din cod
+- Decision coverage -> Reprezinta numarul de teste necesare pentru a executa CEL PUTIN O DATA fiecare RAMURA DECIZIONALA din cod
+
+In general, decizion coverage este mai acoperitor decat statement coverage
+
+Pentru a calcula statement si decizion coverage  cu usurinta, se recomanda crearea unei scheme care sa contina urmatoarele elemente:
+- start / end (optionale) -> marcate printr-un semicerc
+- input -> marcat printr-un paralelogram
+- statement -> marcat printr-un dreptunghi
+- decizie(If) -> marcat printr-un romb 
+"""
+
+"""
+Exercitiu:
+
+If a client has over 65 years, then it will be offered to him a discount of 15%.
+Otherwise if the customer does not have over 65 years, if the person travels with at 
+least one child they will have a discount of 10%
+For both seniors and non seniors it will be applied an additional discount of 10% if they 
+will travel during winter.
+Also, for both seniors and non seniors it will be applied a 3% luxury fee if they will travel
+in the first class (in any season) or 1% handling fee otherwise.
+
+"""
+
+varsta = int(input("Va rugam sa introduceti varsta: "))
+sezon = input("Va rugam sa introduceti sezonul: ")
+clasa = int(input("Va rugam sa introduceti clasa la care calatoriti: "))
+pret = int(input("Va rugam sa introduceti pretul de baza al biletului: "))
+discount = 0
+if varsta>65:
+		discount = 0.15
+else:
+		nr_copii = int(input("Va rugam sa introduceti numarul de copii cu care calatoriti: "))
+		if nr_copii>0:
+				discount = 0.1
+if sezon == 'iarna':
+		discount += 0.1 # echivalentul instructiunii discount = discount + 0.1
+if clasa == 1:
+		tax = 0.03
+else:
+		tax = 0.01
+pret = pret - pret*discount + pret * tax
+print(pret)
+
+# 30 - 30*0.25 + 30*0.03 = 30-7.5 + 0.9 = 22.5 +  0.9 = 23.4
+
+"""
+Scenarii pentru statement coverage:
+- Persoana peste 65 de ani care calatoreste iarna la clasa 1
+- persoana sub 65 de ani cu un copil care calatoreste iarna la clasa a 2-a
+
+Scenarii pentru decizion coverage:
+- Persoana peste 65 de ani care calatoreste iarna la clasa 1
+- Persoana sub 65 de ani cu un copil care calatoreste vara la clasa 2
+- Persoana sub 65 de ani fara copil care calatoreste vara la clasa 2
+
+Test condition = Ce testam? (Functionalitate pe care vrem sa o verificam)
+Test case = Cum testam?
+
+Test case 1
+Summary: Verifica faptul ca persoana este 65 de ani care calatoreste iarna la clasa 1 va primi un discount de 25% si va plati taxa de 3%
+Pasi de reproducere:
+1. Intra in aplicatie
+2. Alege destinatia dorita
+3. Completeaza informatiile legate de varsta, sezon si clasa
+4. Verifica pretul calculat al biletului
+
+Rezultate asteptate: Seniorul va primi un discount de 25% si va plati o taxa de 3%
+
+"""

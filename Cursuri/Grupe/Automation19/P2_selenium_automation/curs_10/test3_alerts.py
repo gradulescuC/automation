@@ -33,7 +33,6 @@ class Alerts(unittest.TestCase):
     @unittest.skip
     def test_alert(self):
         self.chrome.find_element(*self.ALERT).click()
-        # self.chrome.find_element(By.XPATH, '//button[text()="Click for JS Alert"]').click()
         sleep(2)
         obj = self.chrome.switch_to.alert  # Ne-am mutat de pe fereastra "https://the-internet.herokuapp.com/javascript_alerts" pe fereastrade alerta
                                                 #  si am salvat fereastra de alerta intr-o variabila obj
