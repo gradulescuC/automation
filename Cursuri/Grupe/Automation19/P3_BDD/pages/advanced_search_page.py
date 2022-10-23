@@ -9,20 +9,19 @@ class Advanced_search_page(Base_page):
 		ALL_CATEGORIES = ()
 		SEARCH_BUTTON = ()
 
-		def enter_keywords_or_item_number(self):
-				self.driver.find_element(*self.ENTER_KEYWORDS_OR_ITEM_NUMBER).send_keys("")
+		def enter_keywords_or_item_number(self,product_name):
+				self.driver.find_element(*self.ENTER_KEYWORDS_OR_ITEM_NUMBER).send_keys(product_name)
 
-
-		def select_keywords_options(self):
+		def select_keywords_options(self,keyword_options_value):
 				keyword_options = Select(self.driver.find_element(*self.KEYWORDS_OPTIONS))
-				keyword_options.select_by_visible_text("")
+				keyword_options.select_by_visible_text(keyword_options_value)
 
 		def exclude_words_from_search(self):
 				self.driver.find_element(*self.EXCLUDE_WORDS_FROM_SEARCH).send_keys()
 
-		def select_category_from_dropdown(self):
+		def select_category_from_dropdown(self,category_name):
 				category_dropdown = Select(self.driver.find_element(*self.ALL_CATEGORIES))
-				category_dropdown.select_by_visible_text("")
+				category_dropdown.select_by_visible_text(category_name)
 
 		def click_search_button(self):
 				self.driver.find_element(*self.SEARCH_BUTTON).click()

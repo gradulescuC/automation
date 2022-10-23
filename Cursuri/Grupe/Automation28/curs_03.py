@@ -1,321 +1,269 @@
-#   # Liste
-nume = "Michael"
-len(nume)  #Va returna 7, pentru ca nume are 7 caractere
-print(nume[0:2])  #Va acoperi primele doua caractere din string, pentru ca la slicing capatul superior de interval nu se ia in considerare
-
-
 """
 
-1. Identificarea elementelor in liste si slicing pe liste
+Structuri de date = adrese de memorie care pot sa stocheze mai multe valori
+Exista patru tipuri de structuri de date:
+- liste
+- seturi
+- tupluri
+- dictionare
 
-"""
-nume_as_list=['M','i','c','h','a','e','l']  #in cazul asta ar avem o lista cu 7 elemente, fiecare element reprezentant o litera
-print(nume_as_list[0]) # va returna M, pentru ca la liste indicele incepe de la pozitia 0.
-                        # indexul pe care vreau sa il accesez va fi pus intre paranteze patrate
-print(len(nume_as_list))
-print(nume[0:2])  #  aici mi se vor afisa doua caractere independente pentru ca eu accesez un string
-print(nume_as_list[:2]) #  aici mi se vor afisa doua elemente intr-o lista, pentru ca eu accesez o lista
+Atentie!!! nu incurcati tipurile de date cu structurile de date
 
+tipuri de date = proprietati ale unui spatiu de memorie
+structuri de date = adrese de memorie
 
-"""
-
-2. Identificarea indexului la care se afla un element in lista
-
-Cerinta: vreau sa printez pe ecran: "Vreau sa accesez masina Trabant si o voi gasi la indexul 0"
-indexul se va extrage prin functie.
-"""
-
-masini = ["Trabant","Limuzina","BMW","Volkswagen","Opel","Skoda","Chevrolet","Cadillac"]
-
-
-print(f"Vreau sa accesez masina Trabant si o voi gasi la indexul {masini.index('Trabant')}")
-print(f"Vreau sa accesez masina Skoda si o voi gasi la indexul {masini.index('Skoda')}")
-
-print("----------------------")
-
-
-"""
-
-3. Cum scoatem un caracter dintr-o lista? Ne putem folosi de functia remove sau pop
-
-"""
-print(nume_as_list)
-literaRemove = nume_as_list.remove('c')  # Remove poate sa scoata un caracter din lista pe baza codului ASCII (pe baza caracterului in sine)
-literaPop = nume_as_list.pop(5) # Pop poate sa scoata un caracter din lista pe baza indexului
-print(literaRemove) # va printa None pentru ca functia remove al carei rezultat a fost salvat in variabila literaRemove nu are optiune de return
-print(literaPop)  # va printa litera pe care a eliminat-o
-print(nume_as_list) # Va printa pe ecran Mihal in urma scoaterii caracterelor e si c
-
-
-
-"""
-4.  Cum suprascriem?
-
-suprascrierea reprezinta inlocuirea unui caracter la o anumita pozitie cu un alt caracter
-suprascrierea se poate face prin intermediul identificarii elementului pe baza de index si prin intermediul operatorului de atribuire
-
-"""
-
-# lista cu care am ramas in urma schimbarilor de mai sus este ['M', 'i', 'h', 'a', 'e']
-
-nume_as_list[0] = 'a' # nume_as_list[0] este identificarea elementului pe baza de index, "=" reprezinta operatorul de atribuire
-                            # si 'a' reprezinta carecterul care va inlocuitor la indexul identificat
-print(nume_as_list) # ['a','i','h','a','e']
-
-nume_as_list[0] = 'r'
-print(nume_as_list)
-
-# nume_as_list['r'] = 'M' - Nu putem sa accesam elementul pe baza de ASCII
-# print(nume_as_list)
-
-
-"""
-
-5. Cum adaugam la index?
-
-# lista cu care am ramas in urma schimbarilor de mai sus este ['r', 'i', 'h', 'a', 'e']
-
-1. Cerinta: Vrem sa inseram o noua litera la inceputul listei astfel incat sa obtinem lista  ['m','r', 'i', 'h', 'a', 'e']
-2. Cerinta: Vrem sa inseram o noua litera in pozitia 1 a listei astfel incat sa obtinem lista  ['m','a','r', 'i', 'h', 'a', 'e']
-
-"""
-
-nume_as_list.insert(0,'m')
-print(f"Am indeplinit cerinta 1 si am obtinut urmatoarea lista: {nume_as_list} ")
-nume_as_list.insert(1,'a')
-print(f"Am indeplinit cerinta 2 si am obtinut urmatoarea lista: {nume_as_list} ")
-
-
-"""
-6. Cum adaugam la final?
-
-1. Cerinta: Vrem sa adaugam un nou caracter la finalul listei astfel incat sa obtinem lista ['m','a','r', 'i', 'h', 'a', 'e','n']
-2. Cerinta: Vrem sa adaugam un nou caracter la finalul listei astfel incat sa obtinem lista ['m','a','r', 'i', 'h', 'a', 'e','n','a']
-
-
-
-"""
-nume_as_list.append('n')
-# nume_as_list.insert(len(nume_as_list),'n')
-print(nume_as_list)
-nume_as_list.append('a')
-print(nume_as_list)
-
-
-"""
-
-7. Exercitiu: 
-
-Cum pot sa fac sa elimin din lista caracterul h si caracterul e? 
-Cum pot sa fac sa adaug dupa litera i elementele j si u?
-
-"""
-
-nume_as_list.remove('h')
-nume_as_list.pop(5)
-print(nume_as_list)
-nume_as_list.insert(nume_as_list.index('i')+1,'j')
-print(nume_as_list)
-
-"""
-['m', 'a', 'r', 'i', 'a', 'n', 'a'] => Asta a fost lista de la care am plecat
-['m', 'a', 'r',  'j', 'i', 'a', 'n', 'a'] => Asta ar fi rezultat daca am fi scris nume_as_list.insert(nume_as_list.index('i'),'j')
-['m', 'a', 'r', 'i', 'j','a', 'n', 'a'] => Asta a fost lista la care am ajuns
-  0    1    2    3    4   5    6   
 """
 
 
 """
+1. Listele 
 
-8. Putem pune o lista in alta lista?
-Da. Putem prin intermediul conceptului de matrice, sau lista bidimensionala (conceptul de matrice este putin impropriu spus)
+Listele reprezinta adrese de memorie neomogene (pot stoca valori avand diverse tipuri de date)
+care sunt ordonate pe baza de index si mutabile
 
-lista_in_lista = [
-     [1,2,3],
-     [4,"", 6],
-     [7,8,9],
-     [0]
-]
+mutabilitate = proprietatea unei structuri de date de a putea sa isi schimbe elementele
+(exemplu: vreau sa mut elevul popescu in banca langa elevul ionescu)
 
-"""
-lista_in_lista_v1 = [
-     [1,2,3],
-     [],
-     [7,8,9],
-     [0]
-]
+Actiuni care se pot face asupra unei liste:
+- adaugare elemente 
+- stergere elemente
+- modificare element la un anumit index
+- mutare element la un anumit index
 
-lista_in_lista_v2 = [
-     [1,2,3],
-     [4,"",6],
-     [7,8,9],
-     [0]
-]
-
-lista_in_lista_v3 = [
-     [1,2,3],
-     [4,5,6],
-     [7,8,9],
-     [0]
-]
-print(lista_in_lista_v1)
-print(lista_in_lista_v2)
-print(lista_in_lista_v3)
-
- # cum afisez 7?
-print(lista_in_lista_v3[2])
-print(lista_in_lista_v3[2][0])
-
-randul3 = lista_in_lista_v3[2]
-print(randul3[0])
-
-# luam la intamplare o valoare
-# lista2 = ["tel1","tel2","tel3"]
-# import random
-#    # definesc indexul
-# random_nr = random.randint(0, len(lista2))
-#    # aleg telefonul
-# print(lista2[random_nr])
-
-# print("----------------------------------------")
-#
-"""
-Set - avem valori unice
-Setul reprezinta un set de date in care nu sunt permise valori duplicate
-Setul se reprezinta, spre deosebire de liste, intre doua acolade
-Setul NU este o structura de date ordonata, deci nu va putea fi identificat prin index
-"""
-vocale = {'a','e','i','o','u'} # am definit un set care sa contina doar vocale
-print(vocale)
-# print(vocale[0]) # Imi va da eroare -  TypeError: 'set' object is not subscriptable
-                        # Eroarea apare pentru ca seturile nu reprezinta o structura de date ordonata
-                            # Asta inseamna ca elementele nu pot fi identificabile pe baza de index
-
-# print(vocale["a"])
-
-before = vocale # am stocat setul vocale inainte de modificare intr-o variabila numita before
-vocale.add('a')
-after = vocale
-print(before, after) # am stocat setul vocale dupa modificare intr-o variabila numita after
-
-# Am stocat setul complet inainte si dupa modificare pentru a arata ca setul nu este afectat de modificare
-                # daca variabila pe care incercam sa o inseram este un duplicat
-
-if before==after:   #  Am verificat daca valoarea setului inainte si dupa modificare este aceeasi
-     print("Ai adaugat un duplicat")
-
-     # ATENTIE! La adaugarea duplicatului NU NE DA EROARE
-
-litera = 'e'
-if litera in vocale:
- print("litera e vocala")
-else:
- print("litera e consoana")
-
-# putem adauga un nou caracter in set cu functia add
-print(f"Vocalele inainte de adaugare: {vocale}")
-vocale.add('A')  #  valoarea se va adauga pentru ca este scrisa cu litera mare
-                        # codul ASCII al literei 'A' este 65 si al literei 'a' este 97
-after = vocale
-lungime = len(vocale)
-print(f"Vocalele dupa adaugare: {after}. Setul are lungimea de {lungime}")
-
-print("----------------------------------------")
+Definirea listei se face pe baza unei perechi de paranteze patrate []
+Se poate initializa si o lista goala
 
 """
-tuplu - este o structura de date ordonata (adica o structura de date in care pot sa accesez elementele pe baza de index)
-               care are proprietatea de a fi imutabil (immutable), 
-               adica o data definit nu se mai poate schimba (adauga sau sterge valori) 
-- permite duplicate
 
-ex: un tuplu cu o echipa de campionat de sah pentru care au fost alesi trei elevi, 
-     si e posibil ca doi din ei sa aiba acelasi nume
-     
-Functii disponibile pentru tupluri: index, count
+# 1. Declararea si initializarea unei liste goale
+lista_studenti = []
 
-Tuplurile se pot defini prin intermediul parantezelor rotunde
+# 2. Declararea si intializarea unei liste populate
+lista_studenti_prezenti = ["Ramona","Vali","Laurentiu","George","Ionut","Dorin"]
+lista_studenti_absenti = ["Andreea","Rodica","Catalin"]
+# Observatie: pot sa initializez o lista plecand de la un string prin apelarea functiei string
+string_test = "Ana are mere si e fericita"
+lista_split = string_test.split()
+print(lista_split)
+
+#3.  Accesarea elementelor dintr-o lista
+# 3.a. Accesarea primului element din lista
+print(f"Primul element din lista este: {lista_studenti_prezenti[0]}")
+
+# 3.b Accesarea ultimului element din lista
+print(f"Ultimul element din lista este: {lista_studenti_prezenti[len(lista_studenti)-1]}")
+
+# 4. Functii care pot sa fie folosite cu listele
+# Functiile se pot apela prin intermediul numele listei urmat de punct
+
+# 4.a Functia append -> Adauga un element in lista la finalul listei
+lista_studenti_prezenti.append("Gabriela")
+print(f"Lista de studenti dupa append este: {lista_studenti_prezenti}")
+
+# 4.b Functia insert -> Adauga un element in lista intr-o anumita pozitie
+lista_studenti_prezenti.insert(3,"Andy")
+print(f"Lista de studenti dupa adaugarea lui Andy este: {lista_studenti_prezenti}")
+
+# 4.c Functia index -> Returneaza indexul unui anumit element
+print(f"Studenta Vali se afla in lista la indexul {lista_studenti_prezenti.index('Vali')}")
+
+# 4.d Functia remove -> Sterge un element pe baza numelui sau
+lista_studenti_prezenti.remove("Andy")
+print(f"Lista studenti prezenti dupa inlaturarea lui Andy este: {lista_studenti_prezenti}")
+
+# 4.e Functia pop -> Sterge un element pe baza de index
+lista_studenti_prezenti.pop(len(lista_studenti_prezenti)-1)
+print(f"Lista studenti dupa scoaterea ultimului element este: {lista_studenti_prezenti}")
+
+# 4.f Functia count numara de cate ori apare un element intr-o lista
+print(lista_studenti_prezenti.count("George"))
+
+# 4.g. Functia reverse -> inverseaza elementele listei
+lista_studenti_prezenti.reverse()
+print(f"Lista de studenti inversata este: {lista_studenti_prezenti}")
+
+#4.h Functia extent uneste listele prin comasare
+lista_studenti_prezenti.extend(lista_studenti_absenti)
+# lista_studenti_prezenti.append(lista_studenti_absenti)
+# varianta de la linisa 87 creaza o lista imbricata
+# lista imbricata (embedded list) = lista in lista
+print(f"Lista de studenti dupa functia extend este: {lista_studenti_prezenti}")
+
+# 4.j Functia clear -> sterge continutul listei
+# lista_studenti_prezenti.clear()
+# print(f"Lista studenti dupa apelarea metodei clear este: {lista_studenti_prezenti}")
+
+# 4.k Functia sort -> sorteaza lista in ordine alfabetica
+# lista_studenti_prezenti.sort()
+# print(f"Lista studenti dupa sortare este: {lista_studenti_prezenti}")
+lista_studenti_prezenti.append("andy")
+lista_studenti_prezenti.sort()
+print(f"Lista studenti dupa adaugarea lui andy este: {lista_studenti_prezenti}")
+# sortarea se va face in ordine alfabetica in functie de codul ASCII: https://infoas.ro/lectie/90/codul-ascii-tabel-complet
+
+# 5. Crearea unei liste neomogene:
+lista_neomogena = [12,"Maria",True,15.3]
+
 """
-camere_hotel = (1,2,3,4,5,6,7)
-print(camere_hotel[1])
-print(camere_hotel)
-print(camere_hotel.count(7))  # verifica de cate ori apare un numar intr-un tuplu
-print(camere_hotel.index(7))
-print(len(camere_hotel))
-camere_hotel = (5,7,1,6,8)
-print(camere_hotel)
+2. Seturi
+
+Seturile reprezinta structuri de date neordonate, immutabile (adica, nu putem modifica valorile dintr-o lista)
+Operatii care se pot face intr-un set:
+- accesare elemente
+- adaugare elemente
+- stergere elemente
+
+Definirea unui set se face cu o pereche de acolade
+"""
+
+#1. Definirea unui set gol
+set_gol = set()
+print(type(set_gol))
+
+#2. Definirea unui set populat
+set_pisici = {"tom","silvester","garfield","puss in boots","felix"}
+set_catei = {"spike","bethowen","lassy","pluto"}
+
+#3. Accesarea unui element din set
+# Avand in vedere ca setul nu este indexat, NU putem accesa direct elementele din set
+# Putem sa facem in schimb doua operatii similare:
+# - parcurgerea setului cu for (vom face la cursul urmator)
+# - putem sa verificam daca un element se afla in set cu operatorul IN
+print("tom" in set_pisici)
+assert "tom" in set_pisici,"Error: Tom nu exista in set_pisici"
+
+#4. Functii care pot fi folosite cu seturile
+# 4.a functia add care adauga un nou element in set
+set_pisici.add("Jinx")
+print(f"Set pisici dupa adaugarea lui Jinx: {set_pisici}")
+
+# 4.b Functia pop sterge un element la intamplare
+set_pisici.pop()
+print(f"Setul dupa stergerea elementului cu pop este: {set_pisici}")
+
+set_pisici.remove("tom")
+print(f"Setul dupa stergerea elementului cu remove este: {set_pisici}")
+
+# set_pisici.discard("bla bla")
+# print("am trecut pe aici")
+# set_pisici.remove("bla blab bla")
+
+# Diferenta intre remove si discard este ca remove da eroare daca elementul nu exista
+# 			si discard executa instructiunea dar nu da eroare daca elementul nu exista
+
+# 4.c Functia update si functia union concateneaza doua seturi
+# set_pisici.update(set_catei)
+# print(f"Set pisici dupa update: {set_pisici}")
+set_rezultat = set_pisici.union(set_catei)
+print(f"Set pisici dupa union: {set_rezultat}")
+
+# Diferenta intre update si union este ca update modifica lista de la care se pleaca direct,
+# 		in schimb ce union creaza o a treia lista care reprezinta concatenarea celor doua liste implicate
+
+# 4.c Functia clear sterge continutul setului
+# set_pisici.clear()
+# print(f"Set pisici dupa clear: {set_pisici}")
 
 
 """
-dictionar - este o structura de date definita sub formatul cheie-valoare
-In general cheile sunt definite in mod unic si nu se pot schimba sau duplica
-Incercarea schimbarii numelui unei chei va duce de fapt la adaugarea unei noi perechi cheie-valoare
-Se pot modifica in schimb valorile cheilor
-Dictionarele se pot defini prin intermediul acoladelor
+Tupluri (tuples)
+Tuplurile reprezinta structuri de date ordonate si identificabile pe baza de index care accepta duplicate
+			si este imutabil (immutable)
+"""
+# 1. Definirea unui tuplu gol:
+tuplu_gol = ()
+print(type(tuplu_gol))
+
+#2. Definirea unui tuplu populat:
+tuplu_populat = ("mere","pere","nuci","covrigi","si-o bucata de sorici","mere","si gutui amarui")
+greutate = 15,6 # Daca definim o variabila in felul asta, o va identifica automat ca si tuplu
+greutate_float= 15.6 # Daca vrem sa definim un float, separatorul trebuie sa fie "."
+
+#3. Functii care se pot folosi cu un tuplu
+# 3.a Functia index returneaza indexul primului element dat ca parametru
+print(f"Indexul fructului mere este: {tuplu_populat.index('mere')}")
+# for i in range(len(tuplu_populat)):
+# 		if tuplu_populat[i] == "mere":
+# 				print(f"Indexul curent al fructului mere este: {i}")
+
+# 3.b Functia count returneaza de cate ori apare un anumit element in tuplu
+print(f"Fructul mar apare de {tuplu_populat.count('mere')} ori")
+
+"""
+4. Dictionarele
+
+Un dictionar este o structura de date ordonata care contine mai multe perechi cheie: valoare
+Cheile trebuie sa fie unice. Ele servesc drept inlocuitor pentru indexul de la liste
+
+Operatii care se pot face intr-un dictionar:
+- adaugare perechi
+- stergere perechi
+- modificare valoare cheie
+- accesare elemente
 """
 
-# Mai jos am definit un dictionar in care am incercat sa mapam fiecare tara cu capitala proprie
-capitale = {
-     'Romania':'Bucuresti',
-     'Ungaria':'Budapesta',
-     'Italia':'Roma',
-     'Bulgaria':'Sofia'}
+# 1. Creare dictionar gol:
+dict_gol = {}
 
-# putem sa accesam date?
-# R: DA, se pot accesa datele prin intermediul cheilor sau prin intermediul functiei get
-print(capitale['Romania'])
-print(capitale.get('Romania'))
-
-# putem sa actualizam o informatie?
-# R: Da, se pot actualiza prin intermediul cheilor si al operatorului de atribuire
-               # sau prin intermediul functiei update
-capitale['Romania'] = 'Cluj'
-capitale.update({'Romania':'Alba'})
-print(capitale)
-
-# ATENTIE!! instructiunea de mai jos adauga o noua pereche cheie:valoare, NU va actualiza cheia existenta
-capitale['Elvetia'] = 'Alba'
-print(capitale)
-
-# putem sa adaugam o informatie?
-# R: Da, prin intermediul cheilor si al operatorului de atribuire
-capitale['Ucraina'] = 'Kiev'
-print(capitale)
-
-# putem sa stergem o informatie? # R: Da, prin intermediul functiei pop
-capitale.pop('Romania')
-print(capitale)
-
-# capitale.pop('Alba') -> Instructiunea asta va returna eroare:  KeyError: 'Alba'
-                         # Eroarea va fi returnata pentru ca nu exista cheia 'Alba' in dictionar
-# print(capitale)
-
-# Putem sa concatentam doua dictionare? Da, prin intermediul functiei update
-capitale2={'Liechtenstein':'Vaduz','Cehia':'Praga'}
-capitale.update(capitale2)
-print(capitale)
-
-capitale3 = {'Italia':'Milan'}
-capitale.update(capitale3)
-print(capitale)
-
-# Putem sa afisam doar CHEILE unui dictionar? R: Da, prin intermediul functiei 'keys'
-print(capitale2.keys())
-print(capitale.keys())
-
-# Putem sa afisam doar VALORILE unui dictionar? R: Da, prin intermediul functiei 'keys'
-print(capitale.values())
-
-
-# Putem sa afisam perechile CHEIE-VALOARE ale unui dictionar? R: Da, prin intermediul functiei 'keys'
-print(capitale.items())
-
-dictionar_orase = {
-     1:"Brasov",
-     2:"Bucuresti"
+#2. Creare dictionar populat:
+masini = {
+		"nume":"bmw",
+		"model":"x5",
+		"an_fabricatie":2010,
+		"tip_tractiune":"spate",
+		"norme_euro":"euro4",
+		"combustibil":"benzina"
 }
 
-print(dictionar_orase.keys())
-print(dictionar_orase.values())
-print(dictionar_orase.items())
-print(dictionar_orase)
+#3. Accesarea elementelor dintr-un dictionar
+print(f"Numele masinii este: {masini['nume']}")
+print(f"Modelul masinii este: {masini.get('model')}")
 
+#4. Adaugarea elementelor in dictionar
+masini["numar_locuri"]=5
+print(f"Masina are  {masini['numar_locuri']} locuri")
+
+#5.Actualizarea elementelor din dictionar
+masini.update({"norme_euro":"euro6"})
+print(f"Norma europeana curenta este: {masini['norme_euro']}")
+masini["an_fabricatie"]=2012
+print(f"Am corectat anul de fabricatie al masinii la valoarea {masini['an_fabricatie']}")
+
+#6.Stergerea elementelor din dictionar
+masini.pop("nume")
+print(f"Dictionarul curent este {masini}")
+
+#7. Accesarea cheilor din dictionar
+print(f"Proprietatile masinii mele sunt: {masini.keys()}")
+
+#8. Accesarea valorilor din dictionar:
+print(f"Valorile proprietatilor masinii mele sunt: {masini.values()}")
+
+#9. Accesarea perechilor cheie: valoare
+print(f"Dictionarul este format din urmatoarele elemente: {masini.items()}")
+
+#10. Dictionar imbricat
+apa_plata = {
+		"borsec":{
+				"nume":"borsec",
+							"producator": "borsec",
+							"cantitate_vanzare":"500ml",
+							"impachetare":"baxuri"
+						},
+		"aqua carpatica":{
+											"nume":"aqua carpatica",
+											"cantitate_vanzare":"2l",
+											"impachetare":"sticla"
+										 },
+		"dorna":
+				{
+						 "nume":"dorna",
+						 "producator":"dorna",
+						 "impachetare":"bax",
+						 "promovare":{"reclama":"Hai gata cu fotosinteza, la culcare toata lumea"},
+						 "televiziune promovare":["tvr1","tvr2","acasa tv","antena1"]
+				}
+}
+print(apa_plata["aqua carpatica"]["impachetare"])
+print(apa_plata["dorna"]["promovare"]["reclama"])
+print(apa_plata["dorna"]["televiziune promovare"][2])

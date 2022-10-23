@@ -52,7 +52,7 @@ sleep(1)
 # selector by Xpath - in f de textul partial + luam textul de pe el cu proprietatea text
 # full_text = chrome.find_element(By.XPATH, '//a[contains(text(), "Autocomplete")]').text
 
-# full_text = chrome.find_element(By.XPATH, '//a[contains(text(), "Submit")]').text
+full_text = chrome.find_element(By.XPATH, '//a[contains(text(), "Submit")]').text
 # assert full_text == 'Submit',"Error, text does not match" # verificam daca textul extras din buton este cel pe care il asteptam
 # print("The button was found and it contains the proper text")
 #

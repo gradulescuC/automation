@@ -234,8 +234,10 @@ fotbalisti["Cristian Chivu"]=6
 print(f"Noul numar de pe tricoul lui Chivu este {fotbalisti.get('Cristian Chivu')}")
 
 # Dictionare imbricate (dictionar in dictionar)
-fotbalisti_pe_echipe={
-		"Barcelona":{"Dica":
+fotbalisti_pe_echipe=\
+		{
+		"Barcelona":{
+								 "Dica":
 										 {"Nume complet":"Nicolae Dica",
 												 "Varsta":45,
 												 "Numar Tricou":10
@@ -249,7 +251,7 @@ fotbalisti_pe_echipe={
 														"Numar Tricou":7
 														}
 								 }
-}
+		}
 
 print(f"Numarul de tricou al lui Dica este: {fotbalisti_pe_echipe['Barcelona']['Dica']['Numar Tricou']}")
 
