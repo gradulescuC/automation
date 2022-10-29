@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: html-testrunner-1005D
+Version: 1.0
+Summary: A Test Runner in python, for Human Readable HTML Reports
+Home-page: https://github.com/moderouin/HtmlTestRunner-1005D
+Author: Ordanis Sanchez Suero
+Author-email: ordanisanchez@gmail.com
+License: MIT license
+Keywords: HtmlTestRunner TestRunner Html Reports
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Jinja2 (>=2.10.1)
+
+UNKNOWN
+
+

@@ -8,10 +8,11 @@ Cand vorbim despre abstractizare exista doua concepte:
 - Interfata - contine doar functii abstracte
 
 O metoda abstracta este o metoda care nu are corp
-
 '''
 
 from abc import ABC, abstractmethod # avem nevoie de importurile acestea pentru abstractizare in python
+from functools import wraps
+
 
 class Car(ABC): # Am definit clasa Car care mosteneste conceptul de abstractizare (fara mostenirea asta nu o putem face abstracta)
 
@@ -29,10 +30,23 @@ class Car(ABC): # Am definit clasa Car care mosteneste conceptul de abstractizar
 # Aici am definit o clasa noua numita Ferrari care mosteneste clasa abstracta Car, ceea ce inseamna ca noi vom fi
                         # fortati sa implementam metoda abstracta accelerate
 
+def upper_case(func):
+    @wraps(func)
+    def func_wrapper(text):
+        return func().upper()
+    return func_wrapper
+
+@upper_case
+def accelerate(text):
+    print(text)
+
+accelerate()
+
 class Ferrari(Car):
     culoare = None
+
     def accelerate(self):  # daca nu am avea metoda asta definita, am primi o exceptie de tip NotImplementedError
-        print("I'm accelerating from 0 to 100 in 5 seconds")  # puteti sa incercati sa o comentati sa vedeti ce se intampla
+        print("test")  # puteti sa incercati sa o comentati sa vedeti ce se intampla
 
     def stop(self): # poly
         print("I'm a F, I can't stop")
@@ -45,7 +59,7 @@ class Lastun(Car):
 
 
 f = Ferrari()
-f.accelerate()
+# f.accelerate()
 f.stop()
 
 l = Lastun()

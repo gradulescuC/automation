@@ -99,7 +99,8 @@ print(f"Lista de studenti dupa functia extend este: {lista_studenti_prezenti}")
 lista_studenti_prezenti.append("andy")
 lista_studenti_prezenti.sort()
 print(f"Lista studenti dupa adaugarea lui andy este: {lista_studenti_prezenti}")
-# sortarea se va face in ordine alfabetica in functie de codul ASCII: https://infoas.ro/lectie/90/codul-ascii-tabel-complet
+# sortarea se va face in ordine alfabetica in functie de codul ASCII:
+# https://infoas.ro/lectie/90/codul-ascii-tabel-complet
 
 # 5. Crearea unei liste neomogene:
 lista_neomogena = [12,"Maria",True,15.3]
@@ -107,8 +108,8 @@ lista_neomogena = [12,"Maria",True,15.3]
 """
 2. Seturi
 
-Seturile reprezinta structuri de date neordonate, immutabile (adica, nu putem modifica valorile dintr-o lista)
-Operatii care se pot face intr-un set:
+Seturile reprezinta structuri de date neordonate, immutabile 
+	Operatii care se pot face intr-un set:
 - accesare elemente
 - adaugare elemente
 - stergere elemente
@@ -158,7 +159,8 @@ set_rezultat = set_pisici.union(set_catei)
 print(f"Set pisici dupa union: {set_rezultat}")
 
 # Diferenta intre update si union este ca update modifica lista de la care se pleaca direct,
-# 		in schimb ce union creaza o a treia lista care reprezinta concatenarea celor doua liste implicate
+# 		in schimb ce union creaza o a treia lista
+# 		care reprezinta concatenarea celor doua liste implicate
 
 # 4.c Functia clear sterge continutul setului
 # set_pisici.clear()
@@ -167,7 +169,8 @@ print(f"Set pisici dupa union: {set_rezultat}")
 
 """
 Tupluri (tuples)
-Tuplurile reprezinta structuri de date ordonate si identificabile pe baza de index care accepta duplicate
+Tuplurile reprezinta structuri de date ordonate si identificabile 
+			pe baza de index care accepta duplicate
 			si este imutabil (immutable)
 """
 # 1. Definirea unui tuplu gol:
@@ -267,3 +270,30 @@ apa_plata = {
 print(apa_plata["aqua carpatica"]["impachetare"])
 print(apa_plata["dorna"]["promovare"]["reclama"])
 print(apa_plata["dorna"]["televiziune promovare"][2])
+
+"""
+Testare statica = tehnici de testare fara rulare de cod (analiza statica + review)
+Testare dinamica = tehnici de testare cu rulare de cod
+a) whitebox (backend - testare de cod)
+tehnici de testare
+- statement coverage
+- decision coverage
+b) blackbox (frontend - testare de interfata)
+tehnici de testare:
+- equivalence partitioning
+- boundary value analysis
+- state transition testing
+- use case testing
+- decision table
+
+pip install pylint
+cd <calea la care se afla fisierul pe care vreau sa il analizez>
+ls (list) -> pentru a vedea toate fisierele din folderul curent
+ pylint curs_03.py -> evaluare fisier
+ 
+principiu al testarii care ne avertizeaza sa facem testare cat mai devreme: 
+ 										Early testing -> testarea timpurie scuteste timp si bani
+ 										
+Verificare  = testare care acopera mai degraba procesul decat produsul
+Validare = testare care acopera mai degraba produsul decat procesul
+"""

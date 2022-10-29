@@ -178,7 +178,7 @@ print(suntLaCurs + imiPlace + raspuns)
 
 oraCurenta = 20
 # print(stringConcatenat + "Este ora" + oraCurenta)  -> va returna eroare: TypeError: can only concatenate str (not "int") to str
-# concatenarea se poate face doar intre string-uri
+# concatenarea se poate faceƒ doar intre string-uri
 #  concatenarea cu alt tip de data este incompatibila
 # in cazul asta specific nu va functiona pentru ca semnul "+" are o semnificatie diferita
             # pentru string (concatenare) vs int (adunare)
