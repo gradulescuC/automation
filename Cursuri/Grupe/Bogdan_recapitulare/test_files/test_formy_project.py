@@ -15,6 +15,7 @@ class Test_Formy(TestCase):
 		ERROR_MESSAGE = (By.ID,"flash")
 		ELEMENTAL_SELENIUM = (By.LINK_TEXT,"Elemental Selenium")
 		LOGIN_INFO = (By.XPATH,"//h4")
+		ERROR_CLOSED=(By.XPATH,'//a[@class="close"]')
 
 		def setUp(self):
 				s = Service(ChromeDriverManager().install())
@@ -44,6 +45,12 @@ class Test_Formy(TestCase):
 				operatori de atribuire:=, +=, -=, *=,/=
 				operatori de comparatie: ==,<=,>=,<,>,!=
 				"""
+
+		def test_close_error_message(self):
+				self.chrome.find_element(*self.LOGIN_BUTTON).click()
+				sleep(2)
+				self.chrome.find_element(*self.ERROR_CLOSED).click()
+				assert self.chrome.find_element(*self.ERROR_CLOSED).is_displayed()==False,f"Eroarea nu a disparut. Expected {self.chrome.find_element(*self.ERROR_CLOSED).is_displayed()}"
 
 		#test3
 		def test_check_heading(self):
@@ -76,6 +83,9 @@ class Test_Formy(TestCase):
 				assert expected_error in actual_error
 				# actual_error = self.chrome.find_element(*self.ERROR_MESSAGE).text.replace("\n","").replace("×","")
 				# assert expected_error==actual_error,f"Error message incorrect. Expected: {expected_error}, actual {actual_error}"
+
+
+
 
 		# indicatii test8:
 		# click login

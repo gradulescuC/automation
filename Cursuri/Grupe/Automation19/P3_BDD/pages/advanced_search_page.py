@@ -1,7 +1,8 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
-from pages.base_page import Base_page
+from P3_BDD.pages.base_page import Base_page
+
 
 class Advanced_search_page(Base_page):
 		ENTER_KEYWORDS_OR_ITEM_NUMBER = (By.ID,"_nkw")
