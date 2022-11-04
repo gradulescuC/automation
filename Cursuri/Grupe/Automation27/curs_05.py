@@ -125,3 +125,80 @@ b) whitebox testing - testare cu acces la cod (testare backend)
 - decision coverage
 
 """
+
+# functii cu args  - sunt folosite atunci cand vrem sa definim functii cu un numar indefinit de parametri
+
+
+def suma_liste_indef(*args):
+		suma = []
+		for numar in args:
+				suma = suma + numar
+		return suma
+
+
+def suma_numere_indef(*args):
+		suma = 0
+		for numar in args:
+				suma +=numar
+		return suma
+
+
+#
+
+#
+# print(suma_numere_indef(1,2))
+# print(suma_numere_indef(1))
+# print(suma_numere_indef(1,567,890,54678902,34594387263748596584))
+
+lista1 = [1,3,5,7,9]
+lista2 = [0,2,4,6,8]
+print(suma_numere_indef(*lista1))
+print(suma_numere_indef(*lista1,*lista2))
+print(suma_numere_indef(1,3,5,7,9,0,2,4,6,8))
+print(suma_liste_indef([1,3,5,7,9],[0,2,4,6,8]))
+# suma_numere_indef(1,3,5,7,9) # trebuie sa se intample
+# suma_numere_indef([1,3,5,7,9]) # nu trebuie sa se intample
+
+# lista_numere = [5,7,9]
+
+# functii cu kwargs - sunt folosite pentru a a parcurge dictionare
+
+fotbalisti_pe_echipe = {
+		"Barcelona":{
+								 "Dica":
+										 {"Nume complet":"Nicolae Dica",
+												 "Varsta":45,
+												 "Numar Tricou":10
+											},
+								 "Banel":{"Nume complet":"Banel Nicolita",
+													"Varsta":47,
+													"Numar Tricou":3
+													},
+								 "Dukadam":{"Nume complet":"Helmut Dukadam",
+														"Varsta":65,
+														"Numar Tricou":7
+														}
+								 }
+		}
+
+def afiseaza_fotbalisti(**kwargs):
+		for key, value in fotbalisti_pe_echipe.items():
+				for key_inner,value_inner in value.items():
+						print(f"La echipa {key} joaca jucatorul:")
+						for key_jucator,value_jucator in value_inner.items():
+								print("Detalii jucator", f"{key_jucator}:{value_jucator}",sep = " - ",end=",")
+						print("\n--------------------------------")
+
+afiseaza_fotbalisti(**fotbalisti_pe_echipe)
+# fotbalisti_pe_echipe["Barcelona"]["Dukadam"]
+
+def schimba_elemente(a,b):
+		# swap = a
+		# a = b
+		# b = swap
+		# print(a,b)
+		a,b = b,a
+		print(a,b)
+
+schimba_elemente(14,12)
+
