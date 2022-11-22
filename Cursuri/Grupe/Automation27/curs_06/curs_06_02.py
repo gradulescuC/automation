@@ -1,6 +1,5 @@
 import curs_06_01
 
-
 class Casa:
 		numar_etaje = None
 		numar_camere = None

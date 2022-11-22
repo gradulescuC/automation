@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ddee951-fe6a-4339-99ca-1a5677bfaab2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/requests_folder/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requests_folder/api_clients.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requests_folder/request_orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requests_folder/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../API_Testing_Spotify/test_uniy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/requests/api_clients.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/tests/test_api_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/tests/test_mini_calc_impartire.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/tests/test_mini_calc_inmultire.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P5_API_Testing/requests_folder/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P5_API_Testing/requests_folder/get_all_books.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P5_API_Testing/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P5_API_Testing/tests/test_get_books.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/TAU_Test/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Grupe/TAU_Test/tests/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/Automation10/Automation10_Projects/UnitTesting/.idea/UnitTesting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Grupe/Automation10/Automation10_Projects/UnitTesting/.idea/UnitTesting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/Automation10/Automation10_Projects/UnitTesting/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Grupe/Automation10/Automation10_Projects/UnitTesting/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/Automation10/Automation10_Projects/UnitTesting/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Grupe/Automation10/Automation10_Projects/UnitTesting/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/.idea/P4_Unit_Testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/.idea/P4_Unit_Testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/tests/test_mini_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Grupe/Automation19/P4_Unit_Testing/tests/test_mini_calc_adunare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/TAU_Test/.idea/TAU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Grupe/TAU_Test/.idea/TAU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/TAU_Test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Grupe/TAU_Test/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Grupe/TAU_Test/tests/test_search.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -21,6 +21,7 @@ Declararea unei liste = alocarea unui spatiu de memorie care sa poarte numele li
 
 Declararea unei liste se face prin numele listei si un set de paranteze patrate
 """
+
 #1. Declarare lista cu elemente de tip string
 lista_studenti_prezenti_astazi = ["max","vlad","andreea","andrei","cezar"]
 
@@ -29,7 +30,6 @@ lista_multitype = ["string",12,True,15.75]
 
 #3. Declarare lista goala
 lista_animalute = []
-
 print(f"Lungimea listei este: {len(lista_studenti_prezenti_astazi)}")
 
 """
@@ -46,6 +46,14 @@ Pentru a vedea care sunt toate functiile ce se pot folosi in legatura cu o lista
 #1. Functia index -> care returneaza pozitia exacta a elementului in lista
 print(f"Pozitia lui Max este: {lista_studenti_prezenti_astazi.index('max')}")
 # Pe baza indexului putem sa accesam elementele din lista.
+
+modifica_student_in_grupa = "max"
+intro_student_in_grupa = "anton"
+adauga_student_in_grupa = "marian"
+adauga_student_la_pozitie = "maria"
+lista_studenti_prezenti_astazi[lista_studenti_prezenti_astazi.index("max")] = intro_student_in_grupa
+lista_studenti_prezenti_astazi.append(adauga_student_in_grupa)
+lista_studenti_prezenti_astazi.insert(2,adauga_student_la_pozitie)
 
 #2. Functii pentru adaugare
 #2.a Functia append -> Este o functie care adauga elemente la final
@@ -70,7 +78,6 @@ print(f"Lista dupa stergere prin remove si pop este {lista_animalute}")
 
 #4. Functia count -> numara de cate ori apare un anumit element in lista
 print(f"Sinsila apare in lista de {lista_animalute.count('Sinsila')}")
-
 
 #5.Functia extent -> Adauga elementele din lista din paranteze la o a doua lista
 lista_animalute.extend(lista_studenti_prezenti_astazi)

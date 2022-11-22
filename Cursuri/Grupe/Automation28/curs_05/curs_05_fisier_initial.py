@@ -105,27 +105,7 @@ print(calcul_suma_numere(*lista_numere_pare)) # aici am facut DESPACHETAREA list
 # lista_numere_pare -> [0,2,4,6,8,10]
 # *lista_numere_pare -> 0,2,4,6,8,10
 
-apa_plata = {
-		"borsec":{
-				      "nume":"borsec",
-							"producator": "borsec",
-							"cantitate_vanzare":"500ml",
-							"impachetare":"baxuri"
-						},
-		"aqua carpatica":{
-											"nume":"aqua carpatica",
-											"cantitate_vanzare":"2l",
-											"impachetare":"sticla"
-										 },
-		"dorna":
-				{
-						 "nume":"dorna",
-						 "producator":"dorna",
-						 "impachetare":"bax",
-						 "promovare":{"reclama":"Hai gata cu fotosinteza, la culcare toata lumea"},
-						 "televiziune promovare":["tvr1","tvr2","acasa tv","antena1"]
-				}
-}
+
 
 def accesare_elemente_dictionar(**kwargs):
 		for key, value in kwargs.items():
@@ -141,7 +121,6 @@ def accesare_elemente_dictionar(**kwargs):
 								print(f"Apa {key} are {key_inner} : {kwargs[key][key_inner]}")
 
 
-accesare_elemente_dictionar(**apa_plata)
 # print(apa_plata["borsec"]["nume"])
 # print(apa_plata["dorna"]["promovare"]["reclama"])
 

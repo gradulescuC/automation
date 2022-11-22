@@ -157,7 +157,17 @@ Daca da, ne vom folosi de o variabila swap (bula, pahar) in care vom stoca tempo
 
 """
 # bubble sort cu variabila swap
-lista_numere = [6,5,4,8,9,3,-1,10]
+lista_numere = [6,5,4,8,9,3,-1,10]  #  [0][1], [1][2], [1][3], [1][4], [1][5],[1][6]
+																		# 6>5, -> [5,6,4,8,9,3,-1,10]
+																		# 5>4 -> [4,6,5,8,9,3,-1,10]
+																		# 4 > 8
+																		# 4 > 9
+																		# 4 > 3 -> [3,6,5,8,9,4,-1,10]
+																		# [1][2], [1][3], [1][4], [1][5],[1][6]
+																    # [2][3], [2][4], [2][5], [2][6]
+																	  # [3][4], [3][5], [3][6]
+																	  # [4][5], [4],[6]
+																	  # [5][6]
 for i in range(len(lista_numere)-1):
 		schimbare = False
 		for j in range(i+1,len(lista_numere)):

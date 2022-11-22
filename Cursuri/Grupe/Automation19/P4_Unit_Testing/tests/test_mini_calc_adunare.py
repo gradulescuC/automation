@@ -1,6 +1,6 @@
 from app.mini_calc import MiniCalc
 
-class TestMiniCalc(MiniCalc):
+class TestMiniCalcAdunare():
 		def setup_method(self):
 				print("Se executa la inceput")
 				self.calc = MiniCalc(6,7)
@@ -20,12 +20,5 @@ class TestMiniCalc(MiniCalc):
 		def test_adunare(self):
 				assert self.calc.adunare() == 13
 
-		def test_scadere(self):
-				assert self.calc.scadere() == -1
 
-		def test_inmultire(self):
-				assert self.calc.inmultire() == 42
-
-		def test_impartire(self):
-				assert self.calc.impartire()==0.857
 

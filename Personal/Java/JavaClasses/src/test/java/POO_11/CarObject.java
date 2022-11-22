@@ -22,6 +22,4 @@ public class CarObject {
         System.out.println(dacia.actualSpeed);
         System.out.println(dacia.isRunning);
     }
-
-
 }

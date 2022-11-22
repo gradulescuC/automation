@@ -22,7 +22,9 @@ def say_hello_world():
 		print("Hello world")
 		print("I am so excited to be here")
 		print("Este vineri si suntem plini de chef de curs")
-say_hello_world()
+
+if __name__ == "__main__":
+		say_hello_world()
 
 def hai_sa_ne_prezentam():
 		nume = input("Te rugam sa introduci numele ")
@@ -43,7 +45,8 @@ def calculeaza_suma_a_doua_numere(nr_1, nr_2):
 		suma = nr_1 + nr_2
 		print(f"Suma celor doua numere este: {suma}")
 
-calculeaza_suma_a_doua_numere(5,7)
+if __name__ == "__main__":
+		calculeaza_suma_a_doua_numere(5,7)
 """
 hardcodare (hardcoding) = scrierea valorilor efective in cod
 """
@@ -80,11 +83,12 @@ def calculeaza_pret_bilet(varsta,season,clasa,price,nr_child=0):
 # price = int(input("Va rugam sa introduceti pretul biletului "))
 # pret_bilet = 0
 
-pret_1 = calculeaza_pret_bilet(64,"iarna",1,30,2)
-pret_2 = calculeaza_pret_bilet(67,"vara",2,45)
+if __name__ == "__main__":
+		pret_1 = calculeaza_pret_bilet(64,"iarna",1,30,2)
+		pret_2 = calculeaza_pret_bilet(67,"vara",2,45)
+		suma_castigata_din_vanzari = pret_1 + pret_2
+		print(suma_castigata_din_vanzari)
 
-suma_castigata_din_vanzari = pret_1 + pret_2
-print(suma_castigata_din_vanzari)
 # nr_calatori_iulie = 10
 # suma_pret = 0
 # for i in range(0,11):
@@ -142,20 +146,17 @@ def suma_numere_indef(*args):
 				suma +=numar
 		return suma
 
-
-#
-
-#
 # print(suma_numere_indef(1,2))
 # print(suma_numere_indef(1))
 # print(suma_numere_indef(1,567,890,54678902,34594387263748596584))
 
-lista1 = [1,3,5,7,9]
-lista2 = [0,2,4,6,8]
-print(suma_numere_indef(*lista1))
-print(suma_numere_indef(*lista1,*lista2))
-print(suma_numere_indef(1,3,5,7,9,0,2,4,6,8))
-print(suma_liste_indef([1,3,5,7,9],[0,2,4,6,8]))
+if __name__ == "__main__":
+		lista1 = [1,3,5,7,9]
+		lista2 = [0,2,4,6,8]
+		print(suma_numere_indef(*lista1))
+		print(suma_numere_indef(*lista1,*lista2))
+		print(suma_numere_indef(1,3,5,7,9,0,2,4,6,8))
+		print(suma_liste_indef([1,3,5,7,9],[0,2,4,6,8]))
 # suma_numere_indef(1,3,5,7,9) # trebuie sa se intample
 # suma_numere_indef([1,3,5,7,9]) # nu trebuie sa se intample
 
@@ -182,14 +183,15 @@ fotbalisti_pe_echipe = {
 		}
 
 def afiseaza_fotbalisti(**kwargs):
-		for key, value in fotbalisti_pe_echipe.items():
+		for key, value in kwargs.items():
 				for key_inner,value_inner in value.items():
 						print(f"La echipa {key} joaca jucatorul:")
 						for key_jucator,value_jucator in value_inner.items():
 								print("Detalii jucator", f"{key_jucator}:{value_jucator}",sep = " - ",end=",")
 						print("\n--------------------------------")
 
-afiseaza_fotbalisti(**fotbalisti_pe_echipe)
+if __name__ == "__main__":
+		afiseaza_fotbalisti(**fotbalisti_pe_echipe)
 # fotbalisti_pe_echipe["Barcelona"]["Dukadam"]
 
 def schimba_elemente(a,b):
@@ -199,6 +201,6 @@ def schimba_elemente(a,b):
 		# print(a,b)
 		a,b = b,a
 		print(a,b)
-
-schimba_elemente(14,12)
+if __name__ == "__main__":
+		schimba_elemente(14,12)
 

@@ -2,14 +2,114 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af921f3-b0d2-4742-9e20-6de181e171b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/curs_5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/tests/test_mini_calc_impartire.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/tests/test_mini_calc_inmultire.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P5_API_Testing/requests_folder/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P5_API_Testing/requests_folder/get_all_books.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P5_API_Testing/requests_folder/get_api_token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P5_API_Testing/requests_folder/submit_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P5_API_Testing/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P5_API_Testing/tests/test_get_all_books.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation19/P5_API_Testing/tests/test_submit_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/POO_Piloni/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/POO_Piloni/abstractizare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/POO_Piloni/concepte_generale.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/POO_Piloni/encapsulare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/POO_Piloni/mostenire.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/POO_Piloni/polimorfism.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/curs_05/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/curs_05/helper_05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/curs_06/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/curs_06/helper_06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/exceptii.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_05/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_05/helper_05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_05/math_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_06/curs_06_fisier_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_06/helper_06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_07/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_07/abstractizare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_07/general_information.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_07/mostenire1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_07/mostenire2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs_07/polimorfism.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_chrome.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_tuplu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAU_Test/bubble_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAU_Test/file_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAU_Test/piramida.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAU_Test/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAU_Test/tests/search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/ArieCerc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Palindrom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/ReplaceChar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation10/Automation10_Projects/UnitTesting/.idea/UnitTesting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation10/Automation10_Projects/UnitTesting/.idea/UnitTesting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation10/Automation10_Projects/UnitTesting/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation10/Automation10_Projects/UnitTesting/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation10/Automation10_Projects/UnitTesting/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation10/Automation10_Projects/UnitTesting/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation19/P3_BDD/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation19/P3_BDD/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/.idea/P4_Unit_Testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/.idea/P4_Unit_Testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/tests/test_mini_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation19/P4_Unit_Testing/tests/test_mini_calc_adunare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_05.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_05/curs_05_functii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_06/curs_06_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_06/curs_06_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_06/curs_06_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_06/curs_06_02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bogdan_recapitulare/.idea/Bogdan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bogdan_recapitulare/.idea/Bogdan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bogdan_recapitulare/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bogdan_recapitulare/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bogdan_recapitulare/test_files/test_formy_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Bogdan_recapitulare/test_files/test_formy_project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/test_slicing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/test_custom_decorator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/test_uppercase.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/test_uppercase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/curs_04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/curs_05/curs_05_fisier_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/.idea/TAU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/.idea/TAU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/tests/test_search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Templates/P4_API Testing/API_Testing_Simple_Books/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Templates/P4_API Testing/API_Testing_Simple_Books/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/POO_11/CarObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/POO_11/CarObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/ArrayMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/ArrayMax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/ArrayMerge.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/ArrayMerge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/ArraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/ArraySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/Arrays_Examples.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/Arrays_Examples.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/BiDimensionalArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/BiDimensionalArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/Lists.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/Lists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/Operatori_test_Cristina.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/Operatori_test_Cristina.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/RemoveElemArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Arrays_08/RemoveElemArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/BlockScope_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/BlockScope_04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Method_exercises_10/ArieDreptunghi.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Method_exercises_10/ArieDreptunghi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Method_exercises_10/LeapYear.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Method_exercises_10/LeapYear.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Method_exercises_10/NumaraVocale.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Method_exercises_10/NumaraVocale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Method_exercises_10/max_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Method_exercises_10/max_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Methods_09/MethodScope.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Methods_09/MethodScope.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Methods_09/MethodsExercises.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Methods_09/MethodsExercises.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Methods_09/Metode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Methods_09/Metode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/POO_11/Angajat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/POO_11/Angajat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/POO_11/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/POO_11/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/POO_11/CarObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/POO_11/CarObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/POO_11/ProgramHr.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/POO_11/ProgramHr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/RezolvareaTemelor/GhicitoareCuSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/RezolvareaTemelor/GhicitoareCuSwitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/RezolvareaTemelor/GhicitoareCuWhile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/RezolvareaTemelor/GhicitoareCuWhile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/RezolvareaTemelor/PasswordChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/RezolvareaTemelor/PasswordChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/ScannerClass_03.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/ScannerClass_03.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/basic_java_operations_01/Intro_01_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/basic_java_operations_01/Intro_01_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/basic_java_operations_01/Operators_01_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/basic_java_operations_01/Operators_01_02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Array_vs_array_list_02_05.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Array_vs_array_list_02_05.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Non_primitive_data_types_arrays_02_03.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Non_primitive_data_types_arrays_02_03.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Non_primitive_data_types_lists_02_06$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Non_primitive_data_types_lists_02_06$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Non_primitive_data_types_lists_02_06.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Non_primitive_data_types_lists_02_06.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Non_primitive_data_types_string_02_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Non_primitive_data_types_string_02_02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Primitive_data_types_02_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Primitive_data_types_02_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Type_casting_02_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/data_types_02/Type_casting_02_04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/JumpStatements_06_07.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/JumpStatements_06_07.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/do_while_loop_06_05.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/do_while_loop_06_05.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/for_each_loop_06_03.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/for_each_loop_06_03.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/for_loop_06_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/for_loop_06_02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/if_statement_06_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/if_statement_06_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/switch_statement_06_06.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/switch_statement_06_06.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/while_loop_06_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_05/while_loop_06_04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_exercises_07/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_exercises_07/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_exercises_07/PachetCalatorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/flow_control_exercises_07/PachetCalatorie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/testArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/testArrays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/testDataTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/testDataTypes.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +143,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.curs_5">
-    <configuration name="curs_02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/curs_06" />
+      <recent name="$PROJECT_DIR$/curs_05" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.abstractizare">
+    <configuration name="abstractizare" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -52,11 +158,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/curs_07" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_07/abstractizare.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -65,7 +171,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="curs_03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="helper_06" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,11 +179,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/curs_06" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_06/helper_06.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +192,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="curs_04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mostenire1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +200,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/curs_07" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_04.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_07/mostenire1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="curs_5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mostenire2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,11 +221,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/curs_07" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_07/mostenire2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,7 +234,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="polimorfism" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,11 +242,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/curs_07" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/curs_07/polimorfism.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.curs_5" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.curs_04" />
-        <item itemvalue="Python.curs_03" />
-        <item itemvalue="Python.curs_02" />
+        <item itemvalue="Python.abstractizare" />
+        <item itemvalue="Python.polimorfism" />
+        <item itemvalue="Python.mostenire2" />
+        <item itemvalue="Python.mostenire1" />
+        <item itemvalue="Python.helper_06" />
       </list>
     </recent_temporary>
   </component>
