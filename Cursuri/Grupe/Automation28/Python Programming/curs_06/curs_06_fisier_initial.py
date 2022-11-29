@@ -45,22 +45,23 @@ class Masina:
 		consum = None
 		schimbator = "manual"
 		viteza_maxima = 150
-		faruri = "oprite"
 		viteza_curenta = 0
+		faruri = "test"
 
 
-		# def __init__(self,culoare,model,nivel_dotare,forma, propulsie,consum,numar_locuri,viteza_maxima):
-		# 		if culoare == "orange":
-		# 				self.culoare = 'portocaliu'
-		# 		else:
-		# 				self.culoare = culoare
-		# 		self.model = model
-		# 		self.nivel_dotare = nivel_dotare
-		# 		self.forma = forma
-		# 		self.propulsia = propulsie
-		# 		self.consum = consum
-		# 		self.numar_locuri = numar_locuri
-		# 		self.viteza_maxima = viteza_maxima
+		def __init__(self,culoare,model,nivel_dotare,forma, propulsie,consum,numar_locuri,viteza_maxima, faruri):
+				if culoare == "orange":
+						self.culoare = 'portocaliu'
+				else:
+						self.culoare = culoare
+				self.model = model
+				self.nivel_dotare = nivel_dotare
+				self.forma = forma
+				self.propulsia = propulsie
+				self.consum = consum
+				self.numar_locuri = numar_locuri
+				self.viteza_maxima = viteza_maxima
+				self.faruri = faruri
 
 		"""
 		Actiuni:
@@ -111,20 +112,23 @@ print("Instructiune in afara if-ului")
 if __name__ == "__main__":
 		print("Instructiune in interiorul if-ului")
 		# culoare,model,nivel_dotare,forma, propulsie,consum,numar_locuri,viteza_maxima
-		# bmw = Masina("rosu","X5","confort","suv","benzina","a1",4,150)
-		bmw = Masina()
+		bmw = Masina("rosu","X5","confort","suv","benzina","a1",4,150,"oprite")
+		# bmw = Masina()
 		print(f"Masina bmw are culoarea {bmw.culoare}")
 		bmw.tractiune = "fata"
 		print(f"Masina bmw are tractiunea {bmw.tractiune}")
 		print(f"Culoarea implicita din clasa Masina este {Masina.culoare}")
 		print(f"Tractiunea implicita din clasa Masina este {Masina.tractiune}")
+		print(bmw.faruri)
 
-		# skoda = Masina("albastru","fabia","premium","break","hybrid","a1",4,180)
-		skoda = Masina()
+		skoda = Masina("albastru","fabia","premium","break","hybrid","a1",4,180,"pornite")
+		# skoda = Masina()
 		skoda.an_fabricatie = 2021
 		print(f"Masina skoda a fost fabricata in anul {skoda.an_fabricatie}")
 		bmw.an_fabricatie = 2020
 		print(f"Masina bmw a fost fabricata in anul {bmw.an_fabricatie}")
+		print(skoda.faruri)
+
 
 		bmw.porneste_masina()
 		print(f"Momentan farurile masinii bmw sunt {bmw.faruri}")
@@ -135,7 +139,10 @@ if __name__ == "__main__":
 		bmw.accelereaza_masina(180)
 		print(f"Viteza curenta a masinii bmw este {bmw.viteza_curenta}")
 
-		volkswagen = Masina()
-		print(volkswagen.viteza_curenta, volkswagen.viteza_maxima, volkswagen.culoare, volkswagen.model)
+		print(f"Faruri accesate din clasa: {Masina.faruri}")
+
+		# volkswagen = Masina()
+		# print(volkswagen.faruri)
+		# print(volkswagen.viteza_curenta, volkswagen.viteza_maxima, volkswagen.culoare, volkswagen.model)
 
 print("Instructiune dupa if")
