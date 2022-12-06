@@ -2,40 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af921f3-b0d2-4742-9e20-6de181e171b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Automation/curs_08/class1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_08/id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_08/link_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_08/name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_08/partial_link_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_08/tag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_08/xpath1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_08/xpath2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_09/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Programming/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Programming/curs_05/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Programming/curs_06/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Programming/curs_06/helper_06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Programming/curs_07/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Programming/curs_07/encapsulare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/curs_09/explicit wait.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/curs_09/implicit_wait.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/curs_10/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/curs_10/alerts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/curs_10/context_menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/curs_10/firefox_plus_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/curs_10/keys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/curs_10/suites.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_03.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_05/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_08/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_05/curs_05_fisier_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_05/curs_05_fisier_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_05/helper_05.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_05/helper_05.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_05/math_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_05/math_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_06/curs_06_fisier_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_06/curs_06_fisier_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_06/helper_06.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_07/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_08/class2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_07/abstractizare.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_07/abstractizare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_07/general_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_07/general_information.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_07/mostenire1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_07/mostenire1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_07/mostenire2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_07/mostenire2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curs_07/polimorfism.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_07/polimorfism.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_chrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_08/css.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_tuplu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sel_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/sel_test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sel_test_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/sel_test_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,119 +55,94 @@
       <recent name="$PROJECT_DIR$/curs_05" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.xpath2">
-    <configuration name="class1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for alerts.Alerts">
+    <configuration name="pytest for alerts.Alerts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_08" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Automation/curs_08/class1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;alerts.Alerts&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="css (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for context_menu.Keyboard.test_context" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_08" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Automation/curs_08/css.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;context_menu.Keyboard.test_context&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="tag" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for firefox_plus_auth.Authentication_in_Firefox" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_08" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Automation/curs_08/tag.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;firefox_plus_auth.Authentication_in_Firefox&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="xpath1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for keys.Keyboard.test_select_all" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_08" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Automation/curs_08/xpath1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;keys.Keyboard.test_select_all&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="xpath2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for suites.TestSuite" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_08" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Automation/curs_08/xpath2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;suites.TestSuite&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.xpath2" />
-        <item itemvalue="Python.xpath1" />
-        <item itemvalue="Python.css (1)" />
-        <item itemvalue="Python.tag" />
-        <item itemvalue="Python.class1" />
+        <item itemvalue="Python tests.pytest for alerts.Alerts" />
+        <item itemvalue="Python tests.pytest for suites.TestSuite" />
+        <item itemvalue="Python tests.pytest for firefox_plus_auth.Authentication_in_Firefox" />
+        <item itemvalue="Python tests.pytest for context_menu.Keyboard.test_context" />
+        <item itemvalue="Python tests.pytest for keys.Keyboard.test_select_all" />
       </list>
     </recent_temporary>
   </component>
