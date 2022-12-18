@@ -11,6 +11,7 @@ import unittest
 
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 class Alerts(unittest.TestCase):
 
@@ -21,8 +22,8 @@ class Alerts(unittest.TestCase):
 		INSERTED_TEXT = "test"
 
 
-		def setUp(self) -> None:
-				self.chrome = webdriver.Chrome()
+		def setUp(self):
+				self.chrome = webdriver.Chrome(executable_path= ChromeDriverManager().install())
 				self.chrome.maximize_window()
 				self.chrome.get("https://the-internet.herokuapp.com/javascript_alerts")
 				self.chrome.implicitly_wait(2)

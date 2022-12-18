@@ -4,12 +4,14 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 class Context_menu(unittest.TestCase):
 
 		BOX = (By.ID,"hot-spot")
 		def setUp(self) -> None:
-				self.chrome = webdriver.Chrome()
+				self.chrome = webdriver.Chrome(executable_path= ChromeDriverManager().install())
 				self.chrome.maximize_window()
 				self.chrome.get("https://the-internet.herokuapp.com/context_menu")
 				self.chrome.implicitly_wait(2)

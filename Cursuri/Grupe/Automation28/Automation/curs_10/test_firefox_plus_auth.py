@@ -9,7 +9,6 @@ class Authentication_in_Firefox(unittest.TestCase):
 		def setUp(self) -> None:
 				self.firefox = webdriver.Firefox(executable_path= GeckoDriverManager().install())
 				self.firefox.maximize_window()
-				self.firefox.get("https://the-internet.herokuapp.com/context_menu")
 				self.firefox.implicitly_wait(2)
 
 		def tearDown(self) -> None:
