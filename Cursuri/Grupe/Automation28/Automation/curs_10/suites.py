@@ -1,10 +1,10 @@
 import unittest
 # from unittest import TestCase
 import HtmlTestRunner #(instalat din python packages: html-testRunner,html-testRunner1005D)
-from Automation.curs_10.alerts import Alerts
-from Automation.curs_10.context_menu import Context_menu
-from Automation.curs_10.firefox_plus_auth import Authentication_in_Firefox
-from Automation.curs_10.keys import Keyboard
+from Automation.curs_10.test_alerts import Alerts
+from Automation.curs_10.test_context_menu import Context_menu
+from Automation.curs_10.test_firefox_plus_auth import Authentication_in_Firefox
+from Automation.curs_10.test_keys import Keyboard
 
 
 class TestSuite(unittest.TestCase): # pentru ca am importat toata libraria, trebuie sa o specificam in fata clasei parinte
@@ -15,10 +15,12 @@ class TestSuite(unittest.TestCase): # pentru ca am importat toata libraria, treb
 									# metoda addTests primeste ca si parametru o lista de teste care se doreste a fi executate
 									# testele vor fi separate prin virgula
 									# teste_de_rular.addTest([]) -> apelare fara parametru
-				teste_de_rulat.addTests([unittest.defaultTestLoader.loadTestsFromTestCase(Alerts),
-																unittest.defaultTestLoader.loadTestsFromTestCase(Context_menu),
-																unittest.defaultTestLoader.loadTestsFromTestCase(Authentication_in_Firefox),
-																unittest.defaultTestLoader.loadTestsFromTestCase(Keyboard)])
+				teste_de_rulat.addTests([unittest.defaultTestLoader.loadTestsFromTestCase(Alerts)
+				# ,
+				# 												unittest.defaultTestLoader.loadTestsFromTestCase(Context_menu),
+				# 												unittest.defaultTestLoader.loadTestsFromTestCase(Authentication_in_Firefox),
+				# 												unittest.defaultTestLoader.loadTestsFromTestCase(Keyboard)
+																 						])
 
 				runner = HtmlTestRunner.HTMLTestRunner(
 						combine_reports=True, # vrem sa ne genereze un singur raport pentru toate clasele

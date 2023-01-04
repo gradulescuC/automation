@@ -2,17 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af921f3-b0d2-4742-9e20-6de181e171b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Automation/curs_09/explicit wait.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_09/implicit_wait.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_10/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_10/alerts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_10/context_menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_10/firefox_plus_auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_10/keys.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Automation/curs_10/suites.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/curs_10/brute_force_password_hacking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation27/stest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/Info_BDD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/info_metodologii" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/info_pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automation/info_testare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/.idea/BDD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/browser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/environment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/features/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/features/ebay_homepage_search.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/pages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/pages/base_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/pages/ebay_advanced_search_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/pages/ebay_homepage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/pages/ebay_sell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/pages/ebay_signin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/steps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/steps/ebay_advanced_search_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDD/steps/ebay_homepage_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/alerts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/context_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/context_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/firefox_plus_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/firefox_plus_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/suites.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/suites.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sel_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/sel_test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sel_test_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/sel_test_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation/curs_08/class1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_08/class1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation/curs_10/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_10/test_alerts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation/curs_10/context_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_10/test_context_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation/curs_10/firefox_plus_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_10/test_firefox_plus_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation/curs_10/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_10/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation/curs_10/keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_10/test_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation/curs_10/suites.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_10/suites.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Programming/curs_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Programming/curs_02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sel_test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sel_test_file.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" afterDir="false" />
     </list>
@@ -44,19 +68,21 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Automation" />
       <recent name="$PROJECT_DIR$/Python Programming" />
       <recent name="$PROJECT_DIR$/curs_06" />
       <recent name="$PROJECT_DIR$/curs_05" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for alerts.Alerts">
-    <configuration name="pytest for alerts.Alerts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for Automation.curs_10.test_alerts.Alerts.test_js_prompt_accept_alert_without_text">
+    <configuration name="pytest for Automation.curs_10.test_alerts.Alerts.test_js_prompt_accept_alert_without_text" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -68,11 +94,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;alerts.Alerts&quot;" />
+      <option name="_new_target" value="&quot;Automation.curs_10.test_alerts.Alerts.test_js_prompt_accept_alert_without_text&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for context_menu.Keyboard.test_context" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for Automation.curs_10.test_firefox_plus_auth.Authentication_in_Firefox" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Automation28" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,39 +110,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;context_menu.Keyboard.test_context&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for firefox_plus_auth.Authentication_in_Firefox" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Automation28" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;firefox_plus_auth.Authentication_in_Firefox&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for keys.Keyboard.test_select_all" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Automation28" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;keys.Keyboard.test_select_all&quot;" />
+      <option name="_new_target" value="&quot;Automation.curs_10.test_firefox_plus_auth.Authentication_in_Firefox&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -136,13 +130,45 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for suites.TestSuite.test_suite" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Automation28" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;suites.TestSuite.test_suite&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_firefox_plus_auth.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Automation28" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Automation/curs_10" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Automation/curs_10/test_firefox_plus_auth.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for alerts.Alerts" />
+        <item itemvalue="Python tests.pytest for Automation.curs_10.test_alerts.Alerts.test_js_prompt_accept_alert_without_text" />
         <item itemvalue="Python tests.pytest for suites.TestSuite" />
-        <item itemvalue="Python tests.pytest for firefox_plus_auth.Authentication_in_Firefox" />
-        <item itemvalue="Python tests.pytest for context_menu.Keyboard.test_context" />
-        <item itemvalue="Python tests.pytest for keys.Keyboard.test_select_all" />
+        <item itemvalue="Python tests.pytest for Automation.curs_10.test_firefox_plus_auth.Authentication_in_Firefox" />
+        <item itemvalue="Python tests.pytest in test_firefox_plus_auth.py" />
+        <item itemvalue="Python tests.pytest for suites.TestSuite.test_suite" />
       </list>
     </recent_temporary>
   </component>

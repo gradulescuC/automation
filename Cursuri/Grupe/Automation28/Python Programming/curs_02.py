@@ -239,18 +239,18 @@ clasa = int(input("Va rugam sa introduceti clasa la care calatoriti: "))
 pret = int(input("Va rugam sa introduceti pretul de baza al biletului: "))
 discount = 0
 if varsta>65:
-		discount = 0.15
+		discount = 0.15 # instructiune
 else:
 		nr_copii = int(input("Va rugam sa introduceti numarul de copii cu care calatoriti: "))
 		if nr_copii>0:
-				discount = 0.1
+				discount = 0.1 # instructiune
 if sezon == 'iarna':
-		discount += 0.1 # echivalentul instructiunii discount = discount + 0.1
+		discount += 0.1 # echivalentul instructiunii discount = discount + 0.1 # instructiune
 if clasa == 1:
-		tax = 0.03
+		tax = 0.03  # instructiune
 else:
-		tax = 0.01
-pret = pret - pret*discount + pret * tax
+		tax = 0.01 # instructiune
+pret = pret - pret*discount + pret * tax # instructiune
 print(pret)
 
 # 30 - 30*0.25 + 30*0.03 = 30-7.5 + 0.9 = 22.5 +  0.9 = 23.4
@@ -259,6 +259,21 @@ print(pret)
 Scenarii pentru statement coverage:
 - Persoana peste 65 de ani care calatoreste iarna la clasa 1
 - persoana sub 65 de ani cu un copil care calatoreste iarna la clasa a 2-a
+
+Test condition: Verifica faptul ca o persoana peste 65 de ani care calatoreste iarna la clasa 1 primeste un discount de 25% si achita o taxa de 3%
+Test condition: Verifica faptul ca o persoana sub 65 de ani cu un copil care calatoreste iarna la clasa a 2a primeste un discount de 20% si achita o taxa de 1%
+
+Test case:
+Summary: Verifica faptul ca o persoana peste 65 de ani care calatoreste iarna la clasa 1 primeste un discount de 25% si achita o taxa de 3%
+Preconditii: N/A
+Pasi de reproducere:
+1. Intra in aplicatie
+2. Apasa pe "cumpara bilet"
+3. Introdu datele pentru o persoana peste 65 de ani
+4. Selecteaza sezonul "iarna" si clasa '1'
+5. Apasa pe "calculeaza pret"
+Rezultate asteptate: Pretul biletului a fost redus cu 25% si taxa aplicata la pretul initial a fost de 3%
+
 
 Scenarii pentru decizion coverage:
 - Persoana peste 65 de ani care calatoreste iarna la clasa 1

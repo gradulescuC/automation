@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Execution Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Execution Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-12-13 18:26:50</p>
+                <p class='attribute'><strong>Duration: </strong>21.49 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 7, Pass: 0, Error: 3, Skip: 4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Automation.curs_10.alerts.Alerts</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_alert_acccept</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_confirm_accept_alert</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_confirm_cancel_alert</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_prompt_accept_alert_with_text</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_accept_alert_without_text</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'bool' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10/alerts.py", line 94, in test_js_prompt_accept_alert_without_text
+    self.soft_assert(js_prompt_text == expected_text), f"Error: expected: {expected_text}, actual: {js_prompt_text}"
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'bool' object is not callable
+[WDM] - Downloading:   0%|          | 0.00/8.61M [00:00<?, ?B/s][WDM] - Downloading:   3%|2         | 240k/8.61M [00:00<00:03, 2.45MB/s][WDM] - Downloading:   8%|7         | 664k/8.61M [00:00<00:02, 3.55MB/s][WDM] - Downloading:  14%|#3        | 1.16M/8.61M [00:00<00:01, 4.37MB/s][WDM] - Downloading:  18%|#8        | 1.59M/8.61M [00:00<00:01, 4.20MB/s][WDM] - Downloading:  23%|##3       | 2.02M/8.61M [00:00<00:01, 4.27MB/s][WDM] - Downloading:  29%|##8       | 2.48M/8.61M [00:00<00:01, 4.42MB/s][WDM] - Downloading:  37%|###6      | 3.15M/8.61M [00:00<00:01, 5.25MB/s][WDM] - Downloading:  42%|####2     | 3.66M/8.61M [00:00<00:01, 4.87MB/s][WDM] - Downloading:  49%|####8     | 4.21M/8.61M [00:00<00:00, 5.00MB/s][WDM] - Downloading:  55%|#####4    | 4.70M/8.61M [00:01<00:00, 4.99MB/s][WDM] - Downloading:  60%|######    | 5.18M/8.61M [00:01<00:00, 4.92MB/s][WDM] - Downloading:  66%|######6   | 5.73M/8.61M [00:01<00:00, 5.14MB/s][WDM] - Downloading:  73%|#######3  | 6.29M/8.61M [00:01<00:00, 5.34MB/s][WDM] - Downloading:  80%|#######9  | 6.87M/8.61M [00:01<00:00, 5.53MB/s][WDM] - Downloading:  86%|########5 | 7.40M/8.61M [00:01<00:00, 5.43MB/s][WDM] - Downloading:  92%|#########1| 7.92M/8.61M [00:01<00:00, 5.09MB/s][WDM] - Downloading:  98%|#########7| 8.41M/8.61M [00:01<00:00, 4.99MB/s][WDM] - Downloading: 100%|##########| 8.61M/8.61M [00:01<00:00, 4.90MB/s]
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_cancel_alert_with_text</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'bool' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10/alerts.py", line 85, in test_js_prompt_cancel_alert_with_text
+    self.soft_assert(js_prompt_text == expected_text), f"Error: expected: {expected_text}, actual: {js_prompt_text}"
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'bool' object is not callable
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_cancel_alert_without_text</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'bool' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10/alerts.py", line 103, in test_js_prompt_cancel_alert_without_text
+    self.soft_assert(js_prompt_text == expected_text), f"Error: expected: {expected_text}, actual: {js_prompt_text}"
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'bool' object is not callable
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 7, Pass: 0, Error: 3, Skip: 4 -- Duration: 21.49 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

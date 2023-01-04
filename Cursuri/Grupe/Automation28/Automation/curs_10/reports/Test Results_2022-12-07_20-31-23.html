@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Execution Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Execution Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-12-07 20:31:23</p>
+                <p class='attribute'><strong>Duration: </strong>53.31 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 10, Pass: 1, Error: 5, Skip: 4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Automation.curs_10.firefox_plus_auth.Authentication_in_Firefox</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_auth</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 23.45 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Automation.curs_10.alerts.Alerts</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_alert_acccept</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_confirm_accept_alert</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_confirm_cancel_alert</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_prompt_accept_alert_with_text</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_accept_alert_without_text</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x00000001101c4598 chromedriver + 4404632
+1   chromedriver                        0x000000011014bfa3 chromedriver + 3911587
+2   chromedriver                        0x000000010fdf8e6a chromedriver + 425578
+3   chromedriver                        0x000000010fe21916 chromedriver + 592150
+4   chromedriver                        0x000000010fe1d328 chromedriver + 574248
+5   chromedriver                        0x000000010fe193be chromedriver + 558014
+6   chromedriver                        0x000000010fe568fa chromedriver + 809210
+7   chromedriver                        0x000000010fe562bf chromedriver + 807615
+8   chromedriver                        0x000000010fe4ebd3 chromedriver + 777171
+9   chromedriver                        0x000000010fe23ced chromedriver + 601325
+10  chromedriver                        0x000000010fe24e51 chromedriver + 605777
+11  chromedriver                        0x00000001101940ce chromedriver + 4206798
+12  chromedriver                        0x0000000110198797 chromedriver + 4224919
+13  chromedriver                        0x000000011019fa4f chromedriver + 4254287
+14  chromedriver                        0x00000001101994da chromedriver + 4228314
+15  chromedriver                        0x000000011017223f chromedriver + 4067903
+16  chromedriver                        0x00000001101b66a8 chromedriver + 4347560
+17  chromedriver                        0x00000001101b6816 chromedriver + 4347926
+18  chromedriver                        0x00000001101cb8fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10/alerts.py", line 25, in setUp
+    self.chrome = webdriver.Chrome()
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 69, in __init__
+    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 92, in __init__
+    super().__init__(
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 272, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 364, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x00000001101c4598 chromedriver + 4404632
+1   chromedriver                        0x000000011014bfa3 chromedriver + 3911587
+2   chromedriver                        0x000000010fdf8e6a chromedriver + 425578
+3   chromedriver                        0x000000010fe21916 chromedriver + 592150
+4   chromedriver                        0x000000010fe1d328 chromedriver + 574248
+5   chromedriver                        0x000000010fe193be chromedriver + 558014
+6   chromedriver                        0x000000010fe568fa chromedriver + 809210
+7   chromedriver                        0x000000010fe562bf chromedriver + 807615
+8   chromedriver                        0x000000010fe4ebd3 chromedriver + 777171
+9   chromedriver                        0x000000010fe23ced chromedriver + 601325
+10  chromedriver                        0x000000010fe24e51 chromedriver + 605777
+11  chromedriver                        0x00000001101940ce chromedriver + 4206798
+12  chromedriver                        0x0000000110198797 chromedriver + 4224919
+13  chromedriver                        0x000000011019fa4f chromedriver + 4254287
+14  chromedriver                        0x00000001101994da chromedriver + 4228314
+15  chromedriver                        0x000000011017223f chromedriver + 4067903
+16  chromedriver                        0x00000001101b66a8 chromedriver + 4347560
+17  chromedriver                        0x00000001101b6816 chromedriver + 4347926
+18  chromedriver                        0x00000001101cb8fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_cancel_alert_with_text</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x0000000108955598 chromedriver + 4404632
+1   chromedriver                        0x00000001088dcfa3 chromedriver + 3911587
+2   chromedriver                        0x0000000108589e6a chromedriver + 425578
+3   chromedriver                        0x00000001085b2916 chromedriver + 592150
+4   chromedriver                        0x00000001085ae328 chromedriver + 574248
+5   chromedriver                        0x00000001085aa3be chromedriver + 558014
+6   chromedriver                        0x00000001085e78fa chromedriver + 809210
+7   chromedriver                        0x00000001085e72bf chromedriver + 807615
+8   chromedriver                        0x00000001085dfbd3 chromedriver + 777171
+9   chromedriver                        0x00000001085b4ced chromedriver + 601325
+10  chromedriver                        0x00000001085b5e51 chromedriver + 605777
+11  chromedriver                        0x00000001089250ce chromedriver + 4206798
+12  chromedriver                        0x0000000108929797 chromedriver + 4224919
+13  chromedriver                        0x0000000108930a4f chromedriver + 4254287
+14  chromedriver                        0x000000010892a4da chromedriver + 4228314
+15  chromedriver                        0x000000010890323f chromedriver + 4067903
+16  chromedriver                        0x00000001089476a8 chromedriver + 4347560
+17  chromedriver                        0x0000000108947816 chromedriver + 4347926
+18  chromedriver                        0x000000010895c8fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10/alerts.py", line 25, in setUp
+    self.chrome = webdriver.Chrome()
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 69, in __init__
+    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 92, in __init__
+    super().__init__(
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 272, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 364, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x0000000108955598 chromedriver + 4404632
+1   chromedriver                        0x00000001088dcfa3 chromedriver + 3911587
+2   chromedriver                        0x0000000108589e6a chromedriver + 425578
+3   chromedriver                        0x00000001085b2916 chromedriver + 592150
+4   chromedriver                        0x00000001085ae328 chromedriver + 574248
+5   chromedriver                        0x00000001085aa3be chromedriver + 558014
+6   chromedriver                        0x00000001085e78fa chromedriver + 809210
+7   chromedriver                        0x00000001085e72bf chromedriver + 807615
+8   chromedriver                        0x00000001085dfbd3 chromedriver + 777171
+9   chromedriver                        0x00000001085b4ced chromedriver + 601325
+10  chromedriver                        0x00000001085b5e51 chromedriver + 605777
+11  chromedriver                        0x00000001089250ce chromedriver + 4206798
+12  chromedriver                        0x0000000108929797 chromedriver + 4224919
+13  chromedriver                        0x0000000108930a4f chromedriver + 4254287
+14  chromedriver                        0x000000010892a4da chromedriver + 4228314
+15  chromedriver                        0x000000010890323f chromedriver + 4067903
+16  chromedriver                        0x00000001089476a8 chromedriver + 4347560
+17  chromedriver                        0x0000000108947816 chromedriver + 4347926
+18  chromedriver                        0x000000010895c8fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_cancel_alert_without_text</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010e848598 chromedriver + 4404632
+1   chromedriver                        0x000000010e7cffa3 chromedriver + 3911587
+2   chromedriver                        0x000000010e47ce6a chromedriver + 425578
+3   chromedriver                        0x000000010e4a5916 chromedriver + 592150
+4   chromedriver                        0x000000010e4a1328 chromedriver + 574248
+5   chromedriver                        0x000000010e49d3be chromedriver + 558014
+6   chromedriver                        0x000000010e4da8fa chromedriver + 809210
+7   chromedriver                        0x000000010e4da2bf chromedriver + 807615
+8   chromedriver                        0x000000010e4d2bd3 chromedriver + 777171
+9   chromedriver                        0x000000010e4a7ced chromedriver + 601325
+10  chromedriver                        0x000000010e4a8e51 chromedriver + 605777
+11  chromedriver                        0x000000010e8180ce chromedriver + 4206798
+12  chromedriver                        0x000000010e81c797 chromedriver + 4224919
+13  chromedriver                        0x000000010e823a4f chromedriver + 4254287
+14  chromedriver                        0x000000010e81d4da chromedriver + 4228314
+15  chromedriver                        0x000000010e7f623f chromedriver + 4067903
+16  chromedriver                        0x000000010e83a6a8 chromedriver + 4347560
+17  chromedriver                        0x000000010e83a816 chromedriver + 4347926
+18  chromedriver                        0x000000010e84f8fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10/alerts.py", line 25, in setUp
+    self.chrome = webdriver.Chrome()
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 69, in __init__
+    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 92, in __init__
+    super().__init__(
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 272, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 364, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010e848598 chromedriver + 4404632
+1   chromedriver                        0x000000010e7cffa3 chromedriver + 3911587
+2   chromedriver                        0x000000010e47ce6a chromedriver + 425578
+3   chromedriver                        0x000000010e4a5916 chromedriver + 592150
+4   chromedriver                        0x000000010e4a1328 chromedriver + 574248
+5   chromedriver                        0x000000010e49d3be chromedriver + 558014
+6   chromedriver                        0x000000010e4da8fa chromedriver + 809210
+7   chromedriver                        0x000000010e4da2bf chromedriver + 807615
+8   chromedriver                        0x000000010e4d2bd3 chromedriver + 777171
+9   chromedriver                        0x000000010e4a7ced chromedriver + 601325
+10  chromedriver                        0x000000010e4a8e51 chromedriver + 605777
+11  chromedriver                        0x000000010e8180ce chromedriver + 4206798
+12  chromedriver                        0x000000010e81c797 chromedriver + 4224919
+13  chromedriver                        0x000000010e823a4f chromedriver + 4254287
+14  chromedriver                        0x000000010e81d4da chromedriver + 4228314
+15  chromedriver                        0x000000010e7f623f chromedriver + 4067903
+16  chromedriver                        0x000000010e83a6a8 chromedriver + 4347560
+17  chromedriver                        0x000000010e83a816 chromedriver + 4347926
+18  chromedriver                        0x000000010e84f8fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 7, Pass: 0, Error: 3, Skip: 4 -- Duration: 16.24 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Automation.curs_10.context_menu.Context_menu</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_context</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x0000000105a89598 chromedriver + 4404632
+1   chromedriver                        0x0000000105a10fa3 chromedriver + 3911587
+2   chromedriver                        0x00000001056bde6a chromedriver + 425578
+3   chromedriver                        0x00000001056e6916 chromedriver + 592150
+4   chromedriver                        0x00000001056e2328 chromedriver + 574248
+5   chromedriver                        0x00000001056de3be chromedriver + 558014
+6   chromedriver                        0x000000010571b8fa chromedriver + 809210
+7   chromedriver                        0x000000010571b2bf chromedriver + 807615
+8   chromedriver                        0x0000000105713bd3 chromedriver + 777171
+9   chromedriver                        0x00000001056e8ced chromedriver + 601325
+10  chromedriver                        0x00000001056e9e51 chromedriver + 605777
+11  chromedriver                        0x0000000105a590ce chromedriver + 4206798
+12  chromedriver                        0x0000000105a5d797 chromedriver + 4224919
+13  chromedriver                        0x0000000105a64a4f chromedriver + 4254287
+14  chromedriver                        0x0000000105a5e4da chromedriver + 4228314
+15  chromedriver                        0x0000000105a3723f chromedriver + 4067903
+16  chromedriver                        0x0000000105a7b6a8 chromedriver + 4347560
+17  chromedriver                        0x0000000105a7b816 chromedriver + 4347926
+18  chromedriver                        0x0000000105a908fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10/context_menu.py", line 12, in setUp
+    self.chrome = webdriver.Chrome()
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 69, in __init__
+    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 92, in __init__
+    super().__init__(
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 272, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 364, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x0000000105a89598 chromedriver + 4404632
+1   chromedriver                        0x0000000105a10fa3 chromedriver + 3911587
+2   chromedriver                        0x00000001056bde6a chromedriver + 425578
+3   chromedriver                        0x00000001056e6916 chromedriver + 592150
+4   chromedriver                        0x00000001056e2328 chromedriver + 574248
+5   chromedriver                        0x00000001056de3be chromedriver + 558014
+6   chromedriver                        0x000000010571b8fa chromedriver + 809210
+7   chromedriver                        0x000000010571b2bf chromedriver + 807615
+8   chromedriver                        0x0000000105713bd3 chromedriver + 777171
+9   chromedriver                        0x00000001056e8ced chromedriver + 601325
+10  chromedriver                        0x00000001056e9e51 chromedriver + 605777
+11  chromedriver                        0x0000000105a590ce chromedriver + 4206798
+12  chromedriver                        0x0000000105a5d797 chromedriver + 4224919
+13  chromedriver                        0x0000000105a64a4f chromedriver + 4254287
+14  chromedriver                        0x0000000105a5e4da chromedriver + 4228314
+15  chromedriver                        0x0000000105a3723f chromedriver + 4067903
+16  chromedriver                        0x0000000105a7b6a8 chromedriver + 4347560
+17  chromedriver                        0x0000000105a7b816 chromedriver + 4347926
+18  chromedriver                        0x0000000105a908fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 5.38 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Automation.curs_10.keys.Keyboard</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_select_all</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010ae72598 chromedriver + 4404632
+1   chromedriver                        0x000000010adf9fa3 chromedriver + 3911587
+2   chromedriver                        0x000000010aaa6e6a chromedriver + 425578
+3   chromedriver                        0x000000010aacf916 chromedriver + 592150
+4   chromedriver                        0x000000010aacb328 chromedriver + 574248
+5   chromedriver                        0x000000010aac73be chromedriver + 558014
+6   chromedriver                        0x000000010ab048fa chromedriver + 809210
+7   chromedriver                        0x000000010ab042bf chromedriver + 807615
+8   chromedriver                        0x000000010aafcbd3 chromedriver + 777171
+9   chromedriver                        0x000000010aad1ced chromedriver + 601325
+10  chromedriver                        0x000000010aad2e51 chromedriver + 605777
+11  chromedriver                        0x000000010ae420ce chromedriver + 4206798
+12  chromedriver                        0x000000010ae46797 chromedriver + 4224919
+13  chromedriver                        0x000000010ae4da4f chromedriver + 4254287
+14  chromedriver                        0x000000010ae474da chromedriver + 4228314
+15  chromedriver                        0x000000010ae2023f chromedriver + 4067903
+16  chromedriver                        0x000000010ae646a8 chromedriver + 4347560
+17  chromedriver                        0x000000010ae64816 chromedriver + 4347926
+18  chromedriver                        0x000000010ae798fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10/keys.py", line 12, in setUp
+    self.chrome = webdriver.Chrome()
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 69, in __init__
+    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 92, in __init__
+    super().__init__(
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 272, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 364, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 108.0.5359.94 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010ae72598 chromedriver + 4404632
+1   chromedriver                        0x000000010adf9fa3 chromedriver + 3911587
+2   chromedriver                        0x000000010aaa6e6a chromedriver + 425578
+3   chromedriver                        0x000000010aacf916 chromedriver + 592150
+4   chromedriver                        0x000000010aacb328 chromedriver + 574248
+5   chromedriver                        0x000000010aac73be chromedriver + 558014
+6   chromedriver                        0x000000010ab048fa chromedriver + 809210
+7   chromedriver                        0x000000010ab042bf chromedriver + 807615
+8   chromedriver                        0x000000010aafcbd3 chromedriver + 777171
+9   chromedriver                        0x000000010aad1ced chromedriver + 601325
+10  chromedriver                        0x000000010aad2e51 chromedriver + 605777
+11  chromedriver                        0x000000010ae420ce chromedriver + 4206798
+12  chromedriver                        0x000000010ae46797 chromedriver + 4224919
+13  chromedriver                        0x000000010ae4da4f chromedriver + 4254287
+14  chromedriver                        0x000000010ae474da chromedriver + 4228314
+15  chromedriver                        0x000000010ae2023f chromedriver + 4067903
+16  chromedriver                        0x000000010ae646a8 chromedriver + 4347560
+17  chromedriver                        0x000000010ae64816 chromedriver + 4347926
+18  chromedriver                        0x000000010ae798fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff8180df4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8180daf6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 8.24 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
