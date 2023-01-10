@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ab97e204-68ad-418e-9470-28029b5ae073" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../curs_11_BDD/behave.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curs_11_BDD/info_testare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stest_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_10/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/alerts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_10/brute_force_password_hacking.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/brute_force_password_hacking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_10/context_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/context_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_10/firefox_plus_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/firefox_plus_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_10/suites.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/suites.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/.idea/curs_11_BDD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/.idea/curs_11_BDD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/browser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/generic_page_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/generic_page_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/steps/login_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/steps/login_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/Info_BDD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automation28/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation28/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Personal/Java/JavaClasses/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Personal/Java/JavaClasses/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Personal/Java/JavaClasses/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Personal/Java/JavaClasses/target/test-classes/Test.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JxbkEirXMcFOSzeNvRL3hd23Ra" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/BDD",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="behave" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="curs_11_BDD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../curs_11_BDD/features" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="behave" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab97e204-68ad-418e-9470-28029b5ae073" name="Changes" comment="" />
+      <created>1673022822489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673022822489</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

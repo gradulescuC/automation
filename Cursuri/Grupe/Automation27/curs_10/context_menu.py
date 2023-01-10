@@ -1,12 +1,13 @@
 import time
 from unittest import TestCase
 
+import softest
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
-class Context_menu(TestCase):
+class Context_menu(softest.TestCase):
 
 		BOX = (By.ID,"hot-spot")
 
@@ -29,7 +30,7 @@ class Context_menu(TestCase):
 				time.sleep(2)
 				alert = self.chrome.switch_to.alert
 				text = alert.text
-				assert  text == "You selected a context menu"
+				self.soft_assert(self.assertEqual(text, "You selected a context menu","Error, text is incorrect"))
 				alert.accept()
 				time.sleep(2)
 

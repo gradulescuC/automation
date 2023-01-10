@@ -19,11 +19,12 @@ instalare pytest: pip install pytest
 
 import unittest
 # from unittest import TestCase
+import softest
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
-class Alerts(unittest.TestCase):
+class Alerts(softest.TestCase):
 
 		JS_ALERT_BUTTON = (By.XPATH,'//*[text()="Click for JS Alert"]')
 		JS_CONFIRM_BUTTON = (By.XPATH,"//*[text()='Click for JS Confirm']")
@@ -39,7 +40,6 @@ class Alerts(unittest.TestCase):
 		def tearDown(self) -> None:
 				self.chrome.quit()
 
-		@unittest.skip
 		def test_js_alert_accept(self):
 				self.chrome.find_element(*self.JS_ALERT_BUTTON).click()
 																												# steluta are functie de DESPACHETARE A TUPLULUI
@@ -49,26 +49,24 @@ class Alerts(unittest.TestCase):
 				js_alert = self.chrome.switch_to.alert
 				js_alert.accept()
 				js_alert_text = self.chrome.find_element(*self.ALERT_ACTION_MESSAGE).text
-				expected_text = 'You successfully clicked an alert'
-				assert js_alert_text == expected_text,f"ERROR: Expected: {expected_text}, Actual: {js_alert_text}"
+				expected_text = 'You successfully clicked an'
+				self.soft_assert(self.assertEqual(expected_text,js_alert_text,f"ERROR: Expected: {expected_text}, Actual: {js_alert_text}"))
 
-		@unittest.skip
 		def test_js_confirm_accept(self):
 				self.chrome.find_element(*self.JS_CONFIRM_BUTTON).click()
 				js_confirm = self.chrome.switch_to.alert
 				js_confirm.accept()
 				js_confirm_text = self.chrome.find_element(*self.ALERT_ACTION_MESSAGE).text
 				expected_text = 'You clicked: Ok'
-				assert js_confirm_text == expected_text, f"ERROR: Expected: {expected_text}, Actual: {js_confirm_text}"
+				self.soft_assert(self.assertEqual(expected_text,js_confirm_text, f"ERROR: Expected: {expected_text}, Actual: {js_confirm_text}"))
 
-		@unittest.skip
 		def test_js_confirm_cancel(self):
 				self.chrome.find_element(*self.JS_CONFIRM_BUTTON).click()
 				js_confirm = self.chrome.switch_to.alert
 				js_confirm.dismiss()
 				js_confirm_text = self.chrome.find_element(*self.ALERT_ACTION_MESSAGE).text
 				expected_text = 'You clicked: Cancel'
-				assert js_confirm_text == expected_text, f"ERROR: Expected: {expected_text}, Actual: {js_confirm_text}"
+				self.soft_assert(self.assertEqual(expected_text,js_confirm_text, f"ERROR: Expected: {expected_text}, Actual: {js_confirm_text}"))
 
 		def test_js_prompt_accept_no_text_insert(self):
 				self.chrome.find_element(*self.JS_PROMPT_BUTTON).click()
@@ -76,7 +74,7 @@ class Alerts(unittest.TestCase):
 				js_prompt.accept()
 				js_prompt_text = self.chrome.find_element(*self.ALERT_ACTION_MESSAGE).text
 				expected_text = 'You entered:'
-				assert js_prompt_text == expected_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"
+				self.soft_assert(self.assertEqual(expected_text,js_prompt_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"))
 
 		def test_js_prompt_cancel_no_text_inserted(self):
 				self.chrome.find_element(*self.JS_PROMPT_BUTTON).click()
@@ -84,7 +82,7 @@ class Alerts(unittest.TestCase):
 				js_prompt.dismiss()
 				js_prompt_text = self.chrome.find_element(*self.ALERT_ACTION_MESSAGE).text
 				expected_text = 'You entered: null'
-				assert js_prompt_text == expected_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"
+				self.soft_assert(self.assertEqual(expected_text,js_prompt_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"))
 
 		def test_js_prompt_accept_text_insert(self):
 				self.chrome.find_element(*self.JS_PROMPT_BUTTON).click()
@@ -93,7 +91,7 @@ class Alerts(unittest.TestCase):
 				js_prompt.accept()
 				js_prompt_text = self.chrome.find_element(*self.ALERT_ACTION_MESSAGE).text
 				expected_text = 'You entered: test'
-				assert js_prompt_text == expected_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"
+				self.soft_assert(self.assertEqual(expected_text,js_prompt_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"))
 
 		def test_js_prompt_cancel_text_inserted(self):
 				self.chrome.find_element(*self.JS_PROMPT_BUTTON).click()
@@ -102,15 +100,11 @@ class Alerts(unittest.TestCase):
 				js_prompt.dismiss()
 				js_prompt_text = self.chrome.find_element(*self.ALERT_ACTION_MESSAGE).text
 				expected_text = 'You entered: null'
-				assert js_prompt_text == expected_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"
-
-
-
+				self.soft_assert(self.assertEqual(expected_text,js_prompt_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"))
 
 """
 self.chrome.find_element(*self.JS_ALERT_BUTTON) => self.chrome.find_element(By.XPATH,'//*[text()="Click for JS Alert"]')
 self.chrome.find_element(self.JS_ALERT_BUTTON) => self.chrome.find_element((By.XPATH,'//*[text()="Click for JS Alert"]'))
-
 """
 
 

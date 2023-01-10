@@ -19,5 +19,12 @@ def step_impl(context):
 
 @then('Login Page: I cannot login into the application and I receive error message "{error_message}"')
 def step_impl(context,error_message):
-		context.login_page_object.check_error_message(error_message)
+		context.login_page_object.check_login_error_message(error_message)
 
+@when("I close the error message")
+def step_impl(context):
+		context.login_page_object.close_error_message()
+
+@then("The error message is no longer visible on the website")
+def step_impl(context):
+		context.login_page_object.check_error_no_longer_visible()

@@ -21,7 +21,8 @@ class TestSuite(unittest.TestCase):
 																unittest.defaultTestLoader.loadTestsFromTestCase(Authentication_in_firefox),
 																unittest.defaultTestLoader.loadTestsFromTestCase(Keyboard)])
 
-				runner = HtmlTestRunner.HTMLTestRunner(
+				runner = HtmlTestRunner.HTMLTestRunner\
+								(
 						combine_reports=True, # vrem sa ne genereze un singur raport pentru toate clasele
 						report_title = "Test Execution Report",
 						report_name = "Test Results"
