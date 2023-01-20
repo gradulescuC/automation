@@ -3,6 +3,8 @@ from behave import *
 @given("Home page: I am on Ebay homepage")
 def step_impl(context):
 		context.home_page_object.navigate_to_homepage()
+		context.home_page_object.accept_cookies()
+
 
 @when('Home page: I search for "{product_name}" from category "{category_name}"')
 def step_impl(context,product_name,category_name):

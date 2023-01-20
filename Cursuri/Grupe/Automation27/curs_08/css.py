@@ -10,7 +10,7 @@ Referinta studiu suplimentar: https://www.w3schools.com/cssref/css_selectors.php
 Cum sa gandim un selector?
 1. # -> cautare dupa id
 2. . -> cautare dupa clasa
-3. daca predem # sau . de numele unui tag, atunci sistemul va cauta elementele cu tag-ul respectiv si id-ul /clasa respectiva
+3. daca precedem # sau . de numele unui tag, atunci sistemul va cauta elementele cu tag-ul respectiv si id-ul /clasa respectiva
 4. Putem sa cautam elemente cu un anumit tag cu filtrare de tipul atribut = valoare
 5. Putem sa cautam primul copil al unui element cu caracterul >
 6. Putem sa cautam orice copil al unui element daca separam tag-ul elementul de copilul sau prin spatiu

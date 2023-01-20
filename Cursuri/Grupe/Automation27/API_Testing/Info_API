@@ -1,0 +1,93 @@
+API = Prescurtarea de la Application Programming Interface
+Este o serie de functionalitati si sisteme care contribuie la asigurarea comunicarii intre sisteme
+API-ul in general se foloseste atunci cand vrem sa transmitem o cantitate mare de date de la un client web
+            la un server
+
+Transmiterea informatiilor prin API foloseste un protocol, de regula HTTP(S) care asigura
+            corectitudinea si protectia datelor in retea
+
+Atunci cand trimitem un request catre server, putem folosi diverse metode HTTP
+Metodele HTTP sunt instructiuni prin care sistemul stie ce sa faca cu informatia pe care a primit-o
+Metodele HTTP cele mai folosite in testarea de API sunt:
+- GET => cere citirea si returnarea resurselor din baza de date
+- POST => cere scrierea resurselor noi in baza de date
+- PUT => cere actualizarea in intregime a unei resurse (ex: daca vrem sa actualizam cnp-ul unui client,
+            se sterge clientul in intregime si se rescrie cu cnp-ul nou)
+- PATCH => cere actualizarea partiala a unei resurse (ex: daca vrem sa actualizam cnp-ul unui client,
+            se inlocuieste doar cnp-ul fara stergerea si rescrierea clientului)
+- DELETE => cere stergerea resurselor din baza de date
+
+Atunci cand un request de scriere, citire sau stergere de informatii este facut, se returneaza un cod de raspuns:
+
+1. coduri informationale (1XX)
+2. coduri de succes (2XX)
+- 200 -> citirea resursei a fost efectuata cu succes
+- 201 -> scrierea resursei a fost efectuata cu succes
+- 204 -> stergerea resursei a fost efectuata cu succes
+3. coduri de redirectionare (3XX) = inseamna ca pagina sau resursa pe care am accesat-o a fost mutata
+4. coduri de eroare client (4XX) = inseamna ca am trimis valori invalide de pe aplicatia web folosita
+- 401 -> nu ne-am logat in aplicatie si sistemul nu poate evalua daca avem acces la o resursa sau nu
+- 403 -> ne-am logat in aplicatie, dar nu avem permisiunea sa accesam o anumita resursa
+- 404 -> pagina pe care am cautat-o nu exista
+5. coduri de eroare server (5XX) = inseamna ca informatia pe care am trimis-o este corecta,
+                    dar nu a putut fi procesata de catre server
+- 500 -> Internal Server Error = sistemul a returnat o eroare necunoscuta, de regula pentru ca nu a putut sa proceseze o informatie
+- 502 -> Bad Gateway = o potentiala problema de conexiune
+- 503 Service Unavailable = de regula atunci cand sistemul este in proces de intretinere
+
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+Pentru instalare postman:
+1. Intrati pe site-ul https://www.postman.com/
+2. Dati click pe iconita pentru sistemul de operare
+3. Descarcati aplicatia
+4. (Daca este cazul) instalati
+5. Creati cont in aplicatie
+
+Postman  = tool de testare de API (de regula folosit pentru testarea manuala)
+Componente postman
+- Colectie = o serie de requesturi de API pe care le putem folosi
+
+Request = o solicitare de transfer de date pentru scriere, citire, modificare sau stergere (CRUD)
+
+
+Componentele unui request:
+- host -> linkul de baza al oricarui request
+- endpoint -> linkul complet al unui request (host + extensie)
+
+API de testat: https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md
+
+
+Tehnici de testare:
+Tipuri de testare: Testare Functionala, Testare Non-Functionala, Testare Pozitiva, Testare Negativa, Testare de regresie, Retestare
+Tehnici de testare:
+Statica:
+- Review
+- Static Analysis
+
+Dynamica
+a) Blackbox = Testare fara acces la cod
+- Equivalence Partitioning = Tehnica de testare blackbox care este facuta cu scopul de a limita numarul de teste efectuate astfel incat sa eficientizam cat mai mult testarea. Se face prin impartirea imputurilor in grupe (clase de echivalenta) in care orice valoare din acea clasa am alege ca si input vom obtine acelasi output. Este important sa testam atat clasele de echivalenta pozitive cat si pe cele negative
+- Boundary Value Analysis = Tehnica de testare blackbox care este complementara tehnicii equivalence partitioning si care testeaza valorile de la granita dintre intervale
+- Decision Table = Tehnica de testare blackbox care este facuta cu scopul de a identifica scenarii de testare care au la baza mai multe conditii de indeplinit
+- State Transition Testing = Tehnica de testare blackbox  care este facuta pentru a verifica comportamentul sistemului la trecerea dintr-o stare in alta pe baza unui eveniment specific
+- Use Case Testing = Tehnica de testare blackbox care este facuta pentru a verifica scenarii specifice de business plecand de la comportamentul asteptat de catre utilizator
+
+b) Whitebox = Testare cu acces
+- Statement Coverage
+- Decision Coverage
+- Path Coverage
+- Condition Coverage
+
+c) Experience-Based = Testare pe baza experientei anterioare a testerului
+- Ad-Hoc Testing
+- Exploratory Testing
+- Error Guessing
+- Fault Injection
+
+
+
+
+
+
+

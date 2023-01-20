@@ -12,4 +12,4 @@ def before_all(context):
 
 # after all este o metoda care contine instructiuni ce trebuie executate dupa TOATE testele
 def after_all(context):
-		context.browser.quit()
+		context.browser.close()

@@ -2,24 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab97e204-68ad-418e-9470-28029b5ae073" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../curs_11_BDD/behave.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../curs_11_BDD/info_testare" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stest_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_10/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/alerts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_10/brute_force_password_hacking.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/brute_force_password_hacking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_10/context_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/context_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_10/firefox_plus_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/firefox_plus_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API_Testing/.idea/API_Testing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API_Testing/Info_API" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/.idea/Curs_14__P1_UnitTesting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/app/mini_calc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/info_unit_testing" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/tests/test_mini_calc_adunare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/tests/test_mini_calc_impartire.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/tests/test_mini_calc_inmultire.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Curs_14__P1_UnitTesting/tests/test_mini_calc_scadere.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POO_Piloni/.idea/POO_Piloni.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curs_10/.idea/curs_10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Automation28/BDD/pages/search_results_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Automation28/BDD/steps/ebay_search_results_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Automation28/BDD/steps/ebay_shopping_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Automation28/BDD_Opensky/.idea/BDD_Opensky.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automation10/BDD_Project_Final_Ebay/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation10/BDD_Project_Final_Ebay/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_Piloni/encapsulare/encapsulare.py" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_Piloni/encapsulare/encapsulare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO_Piloni/helper_encapsulare.py" beforeDir="false" afterPath="$PROJECT_DIR$/../POO_Piloni/helper_encapsulare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_08/css.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_08/css.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../curs_10/suites.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_10/suites.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/.idea/curs_11_BDD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/.idea/curs_11_BDD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/browser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/features/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/generic_page_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/generic_page_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/steps/login_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/steps/login_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/Info_BDD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/behave-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/behave-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../curs_11_BDD/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/../curs_11_BDD/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Automation28/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation28/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automation28/BDD/behave-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation28/BDD/behave-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automation28/BDD/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation28/BDD/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automation28/BDD/features/ebay_homepage_search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation28/BDD/features/ebay_homepage_search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automation28/BDD/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation28/BDD/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automation28/BDD/pages/ebay_homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation28/BDD/pages/ebay_homepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Automation28/BDD/steps/ebay_homepage_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Automation28/BDD/steps/ebay_homepage_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TAU_Test/file_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../TAU_Test/file_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Personal/Java/JavaClasses/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Personal/Java/JavaClasses/src/test/java/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Personal/Java/JavaClasses/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Personal/Java/JavaClasses/target/test-classes/Test.class" afterDir="false" />
     </list>
@@ -40,14 +56,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/BDD",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/BDD&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="behave" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="curs_11_BDD" />

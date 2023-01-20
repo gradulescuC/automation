@@ -1,5 +1,4 @@
 """
-
 Encapsularea este o modalitate prin care putem sa ascundem anumite atribute sau metode utilizatorului
 Motivul pentru care vrem sa facem asta este fie din motive de securitate fie pentru a controla
 				modificarea anumitor atribute de catre utilizator]

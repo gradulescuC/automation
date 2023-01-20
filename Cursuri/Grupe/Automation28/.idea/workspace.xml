@@ -2,33 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af921f3-b0d2-4742-9e20-6de181e171b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/behave.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/info_testare" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Automation27/stest_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BDD/behave.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BDD/comenzi_utile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/alerts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/brute_force_password_hacking.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/brute_force_password_hacking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/context_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/context_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/firefox_plus_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/firefox_plus_auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_10/suites.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_10/suites.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_11_BDD/.idea/curs_11_BDD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/.idea/curs_11_BDD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_11_BDD/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/browser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_11_BDD/cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_11_BDD/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/features/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_11_BDD/generic_page_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/generic_page_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_11_BDD/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_11_BDD/steps/login_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/steps/login_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/curs_11_BDD/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_11_BDD/Info_BDD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Automation27/stest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/stest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automation/curs_08/class1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automation/curs_08/class1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDD/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/browser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDD/features/ebay_homepage_search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/features/ebay_homepage_search.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDD/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDD/pages/ebay_advanced_search_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/pages/ebay_advanced_search_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDD/pages/ebay_homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/pages/ebay_homepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDD/steps/ebay_homepage_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/steps/ebay_homepage_steps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" afterDir="false" />
     </list>

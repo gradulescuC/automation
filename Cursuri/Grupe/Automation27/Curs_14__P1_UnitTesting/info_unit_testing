@@ -1,0 +1,35 @@
+In testare se pot defini mai multe niveluri de testare in functie de procentajul de finalizare
+   a aplicatiei
+
+1. Unit testing (a nu se confunda cu libraria unit testing)
+        -> cel mai detaliat nivel de testare care presupune testarea celor mai mici bucati functionale
+            dintr-o aplicatie software. De regula functii care testeaza alte functii
+            De regula testarea unitara este facuta de catre echipa de dezvoltare
+            In testarea unitara din python, toate fisierele de test trebuie sa inceapa cu test_
+            Pentru a rula fisiere de test unitare se foloseste libraria pytest
+            (pip install pytest)
+            Pentru rulare:
+            1. Rularea intregului pachet de teste: <pytest nume_pachet>
+            2. Rularea unui fisier specific prin scrierea adresei la care se afla: <pytest adresa_fisier/nume_fisier.py>
+            3. Mutarea in folderul in care se afla fisierul: <cd adresa_fisier> si rulare <pytest nume_fisier>
+
+2. Component testing
+        -> testarea modulelor individuale din aplicatie (ex: modulul de checkout)
+        -> daca modulele pe care le testam au nevoie de informatii din alte module care nu sunt inca
+            implementate, atunci se pot folosi simulatori de functionalitate (stubs / drivers)
+3. Integration testing
+- component integration testing -> legarea componentelor intre ele si definirea comunicarii intre componente
+                                    (ex: legarea paginii de cautare produs cu pagina de checkout,
+                                        legarea functionalitatii de utilizare arma
+                                               de functionalitatea de MyAccount Enhancements - in jocuri)
+- system integration testing   -> legarea sistemelor intre ele si definirea comunicarii intre sisteme
+                                    (ex: daca vrem sa oferim clinentilor posibilitatea sa plateasca
+                                        prin paypall,
+                                         legarea paginii de login din website cu baza de date)
+4. System testing -> testarea functionalitatilor end to end (e2e) - adica a unei functionalitati de la cap la coada
+            NOTA: System integration testing se face de regula dupa ce se face system testing
+5. Acceptance testing -> nivel de testare care presupune verificarea functionalitatii aplicatiei din perspectiva clientului
+- alpha testing = testare facuta de catre testeri la sediul dezvoltatorului pentru a face o ultima verificare a produsului
+- beta testing = testare facuta la sediul clientului pe un mediul real sau similar cu cel real
+
+

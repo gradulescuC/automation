@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+
+
 from pages.base_page import Base_page
 
 class Home_page(Base_page):
@@ -25,6 +27,8 @@ class Home_page(Base_page):
 		def check_search_results(self,no_of_results):
 				baseResult = self.chrome.find_element(*self.SEARCH_RESULTS).text
 				result = baseResult.replace(",","")
-				assert int(result) >=int(no_of_results), f"Error: Results are incorrect. Expected: >{no_of_results}, Actual: {result}"
+				assert int(result)>=int(no_of_results), f"Error: Results are incorrect. Expected: >{no_of_results}, Actual: {result}"
+
 		def click_advanced_search_link(self):
-				self.chrome.find_element(*self.ADVANCED_SEARCH_LINK).click()
+				self.wait_and_click_element_by_selector(*self.ADVANCED_SEARCH_LINK)
+
