@@ -49,7 +49,10 @@ Componente postman
 - Colectie = o serie de requesturi de API pe care le putem folosi
 
 Request = o solicitare de transfer de date pentru scriere, citire, modificare sau stergere (CRUD)
-
+CRUD = Create, Read, Update, Delete
+Raspunsul unui request este returnat in format JSON
+JSON = JavaScript Object Notation
+        Un format simplu de transmitere de date mai ales de tip API
 
 Componentele unui request:
 - host -> linkul de baza al oricarui request
