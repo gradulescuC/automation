@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ded09bb0-d73e-43e9-b46f-2592dc265149" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Automation39/Recap_Sesiune1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_05/curs_05_functii.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_05/curs_05_functii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_06/curs_06_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_06/curs_06_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_09/explicit_wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_09/explicit_wait.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/tst_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/tst_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/delete_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/delete_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/generate_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/generate_token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/get_all_books.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/get_all_books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/get_single_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/get_single_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/patch_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/patch_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/submit_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/API_Testing/requests_folder/submit_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/API_Testing/tests/test_get_all_books.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/API_Testing/tests/test_get_all_books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/API_Testing/tests/test_submit_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/API_Testing/tests/test_submit_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/BDD/behave-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/BDD/behave-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/BDD/features/ebay_homepage_search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/BDD/features/ebay_homepage_search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/BDD/pages/search_results_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/BDD/pages/search_results_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/BDD/steps/ebay_search_results_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/BDD/steps/ebay_search_results_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation28/BDD/steps/ebay_shopping_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation28/BDD/steps/ebay_shopping_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RecapitulareTA38.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css_selector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/link_text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partial_link_text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tag_name_and_class_name.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/API/delete_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/API/delete_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/file_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/file_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/grocery_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/grocery_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Webinar/tst.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Webinar/tst.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MjsEoYD7WZy2mdYB3jAYLHX7Zu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.tag_name_and_class_name">
+    <configuration name="id" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RecapitulareTA38" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/id.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="link_text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RecapitulareTA38" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/link_text.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="partial_link_text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RecapitulareTA38" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/partial_link_text.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tag_name_and_class_name" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RecapitulareTA38" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tag_name_and_class_name.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tag_name_and_class_name" />
+        <item itemvalue="Python.partial_link_text" />
+        <item itemvalue="Python.link_text" />
+        <item itemvalue="Python.id" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ded09bb0-d73e-43e9-b46f-2592dc265149" name="Changes" comment="" />
+      <created>1678292216401</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678292216401</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,159 @@
+BDD = Behaviour Driven Development
+		Este o abordare de software development care presupune maparea testelor automate cu o serie de fisiere descriptive scrise intr-un limbaj natural
+		Avantajele de a folosi BDD sunt:
+		1. O intelegere mai usoara a codului
+		2. O atentie mai mare acordata scenariilor de business si nevoilor clientului
+		3. O acoperire mai mare a scenariilor de business
+		4. O claritate mai mare asupra testarii
+
+BDD este o abordare derivata din TDD
+
+TDD = Test Driven Development
+		Este o abordare de software development care presupune crearea testelor automate inainte de scrierea efectiva a codului
+		Avantajele de a folosi TDD
+		1. O intelegere mai usoara a codului
+		2. O atentie mai mare acordata testelor
+		3. O acoperire mai mare a scenariilor de business
+		4. O claritate mai mare asupra testarii
+
+Diferenta intre TDD si BDD este data de fisierele descriptive incluse in BDD
+
+Succesiunea etapelor de dezvoltare in TDD:
+- crearea testelor automate pe baza cerintelor de business
+- rularea testelor automate (expectativa fiind ca acestea sa crape avand in vedere ca nu am scris codul)
+- crearea codului pe baza testelor automate scrise mai sus
+- refactorizarea testelor si rerularea lor (expectativa fiind ca acestea sa fie passed pentru ca de data asta avem codul scris)
+- refactorizarea codului in urma defectelor gasite in timpul testarii
+- rerularea testelor cu fixurile aplicate
+
+refactorizare: modificare a codului prin eliminarea elementelor neutilizate sau adaugarea elementelor lipsa
+				in cazul testelor automate, in contextul de mai sus, reprezinta maparea elementelor cu selectorii identificati in browser
+				in cazul dezvoltarii, in contextul de mai sus, reprezinta fixarea bug-urilor in urma rezultatelor testarii
+
+Succesiunea etapelor de dezvoltare in BDD:
+- crearea fisierelor descriptive (feature files) pe baza cerintelor de business
+- crearea testelor automate pe baza fisierelor descriptive
+- rularea testelor automate (expectativa fiind ca acestea sa crape avand in vedere ca nu am scris codul)
+- crearea codului pe baza testelor automate scrise mai sus
+- refactorizarea testelor si rerularea lor (expectativa fiind ca acestea sa fie passed pentru ca de data asta avem codul scris)
+- refactorizarea codului in urma defectelor gasite in timpul testarii
+- rerularea testelor cu fixurile aplicate
+
+In general intr-un feature de BDD putem sa gasim urmatoarele elemente:
+1. Feature = o functionalitate mai mare care se doreste a fi testata (ex: checkout)
+2. Scenario = o descriere a unei situatii specifice care poate fi intalnita de un utilizator in viata reala (ex: verifica aplicarea unui voucher la o comanda mai mare decat valoarea voucherului)
+3. Scenario steps = instructiuni care trebuie urmarite pas cu pas pentru verificarea unui scenariu
+- GIVEN
+- WHEN
+- THEN
+4. Background = un context general valabil pentru majoritatea scenariilor de testare
+
+Limbajul in care este scris un feature file se numeste Gherkin, care este un limbaj de descriere intr-un format natural a scenariilor de testare, inainte de a fi acoperite de codul de testare automata
+
+Scenariile sunt scrise in limbajul gherkin pe baza unor user stories = descrieri ale unor situatii specifice din viata utilizatorului, pe baza urmatoarelor componente:
+1. Cine face actiunea
+2. Care este sistemul asupra caruia se actioneaza
+3. Care este rezultatul / beneficiul pe care vreau sa il obtin
+
+In Jira exista o oarecare mapare a elementelor de mai sus:
+1. Epic = O functionalitate mai mare care se doreste a fi testata (ex: checkout)
+2. Story = O componenta a unei functionalitati descrise intr-un epic (ex: aplicarea voucherului in checkout)
+3. Task = O functionalitate specifica ce trebuie sa existe intr-o aplicatie (ex: aplicarea voucherlui la o comanda mai mare decat valoarea acestuia, aplicarea voucherului la o comanda mai mica decat valoarea acestuia, aplicarea voucherului la o comanda de aceeasi valoare cu cea a voucherului, adaugara mai multor produse in cos, eliminarea produselor din cos, aplicarea taxei de shipping, validarea cardului de credit, plata in rate)
+Epic > Story > Task
+
+Principiile testarii:
+1. Testarea arata prezenta defectelor si nu absenta lor
+2. Testarea timpurie economiseste tip si bani (TDD / BDD)
+3. Testarea exhaustiva este imposibila
+4. Defectele tind sa se adune in acelasi loc
+5. Paradoxul pesticidelor (daca rulez acelasi test de foarte multe ori, nu o sa mai gaseasca bug-uri)
+6. Testarea este dependenta de context
+7. Absenta erorilor nu inseamna ca produsul este corect
+
+
+BDD este folosit mai ales in context Agile
+
+O metodologie reprezinta o serie de reguli si proceduri lucru care sunt urmate de catre echipa pentru o buna organizare a proiectului
+Exista mai multe metodologii de software development, cele mai cunoscute fiind Agile si Waterfall
+
+Agile = O metodologie de software development (SDLC) care este mai permisiva si care functioneaza prin impartirea proiectului de software development in perioade de timp in care vom dezvolta si livra o mica parte dintr-un produs
+Avantajele metodologiei agile:
+- ne ofera flexibilitate in deadline-uri, bugete si rezultat final (adica putem sa modificam produsul pe parcurs)
+- ofera feedback timpuriu din partea clientului astfel incat putem sa actionam din timp
+- permite efectuarea modificarilor in timpul procesului de dezvoltare atunci cand apare nevoia unor functionalitati neprevazute
+
+Dezavantaje metodologie agile:
+- nu stim niciodata care este timeline-ul exact al proiectului
+- putem foarte usor sa depasim bugetul
+- este posibil sa intarziem foarte mult cu livrarea
+- este necesara o comunicare foarte clara in interiorul echipei. Daca sunt probleme de comunicare riscurile ca proiectul sa esueze cresc exponential
+
+Desfasurarea proiectelor Agile:
+- backlog = o serie de functionalitati care se doresc a fi implementate la un moment dat, la care nu se lucreaza in momentul curent
+- backlog refinement = un proces de selectie a elementelor absolut necesare care trebuie implementate si respectiv de eliminare a celor mai putin importante de care nu avem timp sau a celor a caror implementare ne costa prea mult din punct de vedere efort,timp si bani versus beneficiile aduse
+- sprint planning = un proces de alegere a functionalitatilor care se doreste a fi incluse in sprint-ul curent
+- sprint refinement = se extrag informatiile despre taskurile pe care le avem de indeplinit si se detaliaza functionalitatile pe care vrem sa le dezvoltam
+- daily standup meeting = echipa se intalneste cu scopul de a discuta ce s-a realizat in ziua anterioara, la ce se lucreaza astazi si care sunt lucrurile care ne blocheaza sa mergem mai departe
+- sprint review = o etapa in care analizam ceea ce a fost implementat in sprintul curent, si daca este ceva ce nu a putut fi implementat in sprintul curent pentru a putea fi mutat intr-un sprint viitor
+- sprint retrospective = o sesiune de lessons learned, in care analizam atat ce a fost bine si trebuie pastrat cat si ce ar mai putea fi imbunatatit
+
+sprint = o perioada de timp (de regula doua saptamani sau o luna) in care se implementeaza o serie de functionalitati care fac parte dintr-un produs. Rezultatul unui sprint este o parte din produsul software care se numeste sprint increment (o incrementare a numarului de functionalitati create pentru produsul nostru)
+
+
+Waterfall = O metodologie de software development (SDLC) care este mai putin permisiva si care functioneaza prin crearea in intregime a produsului inainte ca acesta sa fie trimis la testat. Numele metodologiei vine de la desfasurarea etapelor de SDLC in cascada (adica nu incepem o etapa pana cand cea anterioara nu este complet finalizata)
+Avantajele metodologiei waterfall:
+- cunoastem de la inceput cum o sa arate produsul
+- avem informatii clare cu privire la buget si deadline
+- avem transparenta cu privire la desfasurarea proiectului prin documentatie extensiva
+- proiectul este previzibil, sansele reproducerii riscurilor sunt mici
+
+Dezavantajele metodologiei waterfall:
+- este o metodologie foarte rigida care nu permite modificari in timpul procesului de dezvoltare
+- daca apare nevoia unor modificari, atunci trebuie creat proiect separat cu buget separat si timeline separat
+- este o metodologie consumatoare de timp pentru ca trebuie scrisa foarte multa documentatie (cum arata proiectul, cum este construit proiectul din punct de vedere tehnic, care este bugetul exact, cand trebuie sa fie gata, cati oameni trebuie sa lucreze)
+- este o metodologie foarte previzivila care necesita organizare foarte buna
+- primim feedback pe produsul creat abia la finalul procesului de dezvoltare din partea testarii, iar din partea clientului abia la livrare, iar efectuarea ajustarilor necesare pot ajunge sa fie facute pe ultima suta de metri, cu riscurile de rigoare
+
+
+
+
+Design pattern = o solutie gasita pentru o problema general intalnita in software
+Page Object Model (POM) = Un design pattern care presupune gruparea codului de testare automata astfel incat fiecare pagina web sa aiba un corespondent intr-un fisier python de mapare a elementelor si actiunilor de pe acea pagina
+
+Structura unui proiect BDD:
+
+- un folder features = cel care o sa contina toate fisierele de tip feature-file
+- un folder steps = cel care contine implementarea tehnica a fisierelor de tip feature
+- un folder pages (cel care defineste structura BDD) = cel care contine paginile de mapare a paginilor web
+- un fisier browser = cel care contine implementarea browserului
+- un fisier environment = cel care contine instantierea tuturor obiectelor din clasele de tip page
+- un fisier basepage = care contine metode ce sunt folosite in mai multe fisiere, pentru a fi importate si reutilizate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

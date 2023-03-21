@@ -2,6 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af921f3-b0d2-4742-9e20-6de181e171b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Webinar/tst.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_05/curs_05_functii.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_05/curs_05_functii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_06/curs_06_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_06/curs_06_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/curs_09/explicit_wait.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/curs_09/explicit_wait.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automation27/tst_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automation27/tst_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Testing/requests_folder/delete_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Testing/requests_folder/delete_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Testing/requests_folder/generate_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Testing/requests_folder/generate_token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Testing/requests_folder/get_all_books.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Testing/requests_folder/get_all_books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Testing/requests_folder/get_single_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Testing/requests_folder/get_single_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Testing/requests_folder/patch_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Testing/requests_folder/patch_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Testing/requests_folder/submit_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Testing/requests_folder/submit_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Testing/tests/test_get_all_books.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Testing/tests/test_get_all_books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Testing/tests/test_submit_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Testing/tests/test_submit_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BDD/behave-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/behave-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BDD/features/ebay_homepage_search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/features/ebay_homepage_search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BDD/pages/search_results_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/pages/search_results_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BDD/steps/ebay_search_results_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/steps/ebay_search_results_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BDD/steps/ebay_shopping_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/BDD/steps/ebay_shopping_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/API/delete_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/API/delete_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/file_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/file_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAU_Test/grocery_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TAU_Test/grocery_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/src/test/java/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Personal/Java/JavaClasses/target/test-classes/Test.class" afterDir="false" />
     </list>
