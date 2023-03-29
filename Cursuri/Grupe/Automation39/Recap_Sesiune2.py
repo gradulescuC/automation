@@ -106,7 +106,7 @@ Corpul if-ului(adica instructiunile care trebuie executate) sunt separate de con
 Corpul este marcat prin indentare fata de marginea fisierului
 In momentul in care se strica indentarea se considera ca s-a iesit din if
 
-Un if in interiorul altui if se numeste if imbricat (embedded if)
+Un if in interiorul altui if se numeste if imbricat (embedded if - nested if)
 """
 """
 # Exercitiu if:
