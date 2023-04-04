@@ -1,9 +1,9 @@
 import unittest
 
-from curs_10.alerts import Alerts
-from curs_10.context_menu import Context_menu
-from curs_10.firefox_plus_auth import Authentication_in_firefox
-from curs_10.keys import Keyboard
+from alerts import Alerts
+from context_menu import Context_menu
+from firefox_plus_auth import Authentication_in_firefox
+from keys import Keyboard
 
 """
 1. pip install html-testRunner

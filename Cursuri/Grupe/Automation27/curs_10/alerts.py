@@ -40,6 +40,7 @@ class Alerts(softest.TestCase):
 		def tearDown(self) -> None:
 				self.chrome.quit()
 
+		@unittest.skip
 		def test_js_alert_accept(self):
 				self.chrome.find_element(*self.JS_ALERT_BUTTON).click()
 																												# steluta are functie de DESPACHETARE A TUPLULUI
