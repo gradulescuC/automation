@@ -16,10 +16,7 @@ class TestSuite(unittest.TestCase):
 
 		def test_suite(self):
 				test_de_rulat = unittest.TestSuite()
-				test_de_rulat.addTests([unittest.defaultTestLoader.loadTestsFromTestCase(Alerts),
-																unittest.defaultTestLoader.loadTestsFromTestCase(Context_menu),
-																unittest.defaultTestLoader.loadTestsFromTestCase(Authentication_in_firefox),
-																unittest.defaultTestLoader.loadTestsFromTestCase(Keyboard)])
+				test_de_rulat.addTests([unittest.defaultTestLoader.loadTestsFromTestCase(Alerts)])
 
 				runner = HtmlTestRunner.HTMLTestRunner\
 				(

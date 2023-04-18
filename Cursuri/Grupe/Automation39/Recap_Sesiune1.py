@@ -91,3 +91,8 @@ Input statement = Este o functie prin intermediul careia putem sa cerem informat
 									In mod implicit, informatiile transmise de la tastatura au tipul de date string
 """
 
+
+variabila_test = "Andrada"
+print(variabila_test)
+del variabila_test
+# print(variabila_test) # del sterge adresa de memorie rezervata pentru acea variabila

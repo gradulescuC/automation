@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Execution Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Execution Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-04-06 11:58:37</p>
+                <p class='attribute'><strong>Duration: </strong>78.11 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 7, Pass: 0, Error: 6, Skip: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>alerts.Alerts</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_js_alert_accept</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_confirm_accept</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'NoneType' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/curs_10/alerts.py", line 62, in test_js_confirm_accept
+    self.soft_assert(self.assertEqual(expected_text,js_confirm_text, f"ERROR: Expected: {expected_text}, Actual: {js_confirm_text}"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'NoneType' object is not callable
+[WDM] - Downloading:   0%|          | 0.00/8.79M [00:00<?, ?B/s][WDM] - Downloading:   8%|8         | 744k/8.79M [00:00<00:01, 7.59MB/s][WDM] - Downloading:  41%|####1     | 3.65M/8.79M [00:00<00:00, 16.6MB/s][WDM] - Downloading:  99%|#########9| 8.73M/8.79M [00:00<00:00, 30.7MB/s][WDM] - Downloading: 100%|##########| 8.79M/8.79M [00:00<00:00, 26.2MB/s]
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_confirm_cancel</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'NoneType' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/curs_10/alerts.py", line 70, in test_js_confirm_cancel
+    self.soft_assert(self.assertEqual(expected_text,js_confirm_text, f"ERROR: Expected: {expected_text}, Actual: {js_confirm_text}"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'NoneType' object is not callable
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_accept_no_text_insert</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'NoneType' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/curs_10/alerts.py", line 78, in test_js_prompt_accept_no_text_insert
+    self.soft_assert(self.assertEqual(expected_text,js_prompt_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'NoneType' object is not callable
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_accept_text_insert</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'NoneType' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/curs_10/alerts.py", line 95, in test_js_prompt_accept_text_insert
+    self.soft_assert(self.assertEqual(expected_text,js_prompt_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'NoneType' object is not callable
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_cancel_no_text_inserted</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'NoneType' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/curs_10/alerts.py", line 86, in test_js_prompt_cancel_no_text_inserted
+    self.soft_assert(self.assertEqual(expected_text,js_prompt_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'NoneType' object is not callable
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_js_prompt_cancel_text_inserted</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: 'NoneType' object is not callable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation27/curs_10/alerts.py", line 104, in test_js_prompt_cancel_text_inserted
+    self.soft_assert(self.assertEqual(expected_text,js_prompt_text, f"ERROR: Expected: {expected_text}, Actual: {js_prompt_text}"))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/softest/case.py", line 62, in soft_assert
+    assert_method(*arguments, **keywords)
+TypeError: 'NoneType' object is not callable
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 7, Pass: 0, Error: 6, Skip: 1 -- Duration: 78.11 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

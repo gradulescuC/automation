@@ -199,4 +199,60 @@ def functie_parcurgere_lista_cu_foreach():
 
 functie_parcurgere_lista_cu_foreach()
 
+"""
+Exista posibilitatea sa definim functii cu un numar nedefinit de parametri
+Asta inseamna ca ramane ca sistemul sa decida la apelarea functiei cati parametri 
+trebuie sa defineasca pentru functia respectiva
+
+numarul indefinit de parametri se defineste cu *args
+
+args  = prescurtarea de la arguments. Putem da si alt nume, dar de regula asta este 
+				folosit ca si conventie
+"""
+
+def suma_numere(*args):
+		suma = 0
+		for numar in args:
+				suma += numar
+		return suma
+
+print(suma_numere(1,3))
+print(suma_numere(123456,456,123456,23456789,23,1234567,234567))
+print(suma_numere())
+
+# Am definit un nested dictionary (nested dictionary = embedeed dictionary = dictionar imbricat = dictionar in dictionar = dictionar 2D)
+fotbalisti_pe_echipe = {
+		"Barcelona":{
+								 "Dica":
+										 {"Nume complet":"Nicolae Dica",
+												 "Varsta":45,
+												 "Numar Tricou":10
+											},
+								 "Banel":{"Nume complet":"Banel Nicolita",
+													"Varsta":47,
+													"Numar Tricou":3
+													},
+								 "Dukadam":{"Nume complet":"Helmut Dukadam",
+														"Varsta":65,
+														"Numar Tricou":7
+														}
+								 }
+		}
+
+def afiseaza_fotbalisti(**kwargs):
+		for key_echipa, value_echipa in kwargs.items():
+				for key_jucator, value_jucator in value_echipa.items():
+						print(f"La echipa {key_echipa} joaca jucatorul:")
+						for key_detalii_jucator, value_detalii_jucator in value_jucator.items():
+								print("Detalii jucator", f"{key_detalii_jucator}:{value_detalii_jucator}", sep=" - ", end=",")
+						print("\n--------------------------------")
+
+# Atunci cand apelam o functie cu keyargs ca primeste ca argument un dictionar, a
+# 	acel dictionar trebuie sa fie precedate de doua caractere "*"
+afiseaza_fotbalisti(**fotbalisti_pe_echipe)
+
+# suprascrierea parametrilor functiei print functioneaza doar pana la urmatorul print
+print("test test1", end = ",")
+print("test2")
+print("test3")
 
