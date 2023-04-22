@@ -25,6 +25,9 @@ class Cinema:
 
     # am folosit un decorator pentru a defini o proprietate custom.
     # prin intermediul careia vom avea acces la atributele getter, setter si deleter
+
+    # un decorator este o modalitate prin care putem sa modificam comportamentul unei metode fara sa ii modificam logica
+
     @property
     def total_incasari(self):
         pass
