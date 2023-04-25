@@ -18,7 +18,7 @@ sleep(3)
 """ 
     ------------- Ne logam in aplicatie (liniile 21 (insert username), 22 (insert password), 23 (click login button))----------------
     ------------- Dam click pe optiunea Time din meniul din stanga (linia 28) --------------------
-    --- a se comenta liniile 22-29 dupa ce ati analizat codul si rezultatele) ----------------
+    --- a se comenta liniile 24-31 dupa ce ati analizat codul si rezultatele) ----------------
 
 """
 # chrome.find_element(By.CLASS_NAME, "oxd-input").send_keys("Admin")
