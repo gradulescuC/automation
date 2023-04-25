@@ -1,0 +1,51 @@
+Tema Sesiunea 8:
+
+Intrati pe site-ul https://www.elefant.ro/ si efectuati urmatoarele teste:
+
+- Test 1: Identificati butonul "accept cookies" si dai click pe el
+- Test 2: cautati un produs la alegere (iphone 14) si verificati ca s-au returnat cel putin 10 rezultate ([class="product-title"])
+- Test 3: Extrageti din lista produsul cu pretul cel mai mic [class="current-price "] -> //img[@class="product-image"]
+- Test 4: Extrageti titlul paginii si verificati ca este corect
+- Test 5: Intrati pe site, accesati butonul cont si click pe conectare.Identificati elementele de tip user si parola si inserati valori incorecte (valori incorecte inseamna oricare valori care nu sunt recunscute drept cont valid)
+- Dati click pe butonul "conectare" si verificati urmatoarele:
+            1. Faptul ca nu s-a facut logarea in cont
+            2. Faptul ca se returneaza eroarea corecta
+- Test 6: Stergeti valoarea de pe campul email si introduceti o valoare invalida (adica fara caracterul "@"), fara sa introduceti si parola si verificati faptul ca butonul "
+" este dezactivat
+
+---------------------
+
+Tema Sesiunea 9
+
+Creati urmatoarele clase de test pe baza librariei unittest care sa implementeze testele de la sesiunea 8 in felul urmator:
+1. Clasa Login -> va contine urmatoarele teste:
+- Intrati pe site, accesati butonul cont si click pe conectare. Identificati elementele de tip user si parola si inserati valori incorecte (valori incorecte inseamna oricare valori care nu sunt recunscute drept cont valid)
+- Dati click pe butonul "conectare" si verificati urmatoarele:
+            1. Faptul ca nu s-a facut logarea in cont
+            2. Faptul ca se returneaza eroarea corecta
+-  Stergeti valoarea de pe campul email si introduceti o valoare invalida (adica fara caracterul "@"), fara sa introduceti si parola si verificati faptul ca butonul "
+" este dezactivat
+- Apasati pe butonul conectare si verifica faptul ca poti sa te loghezi atunci cand userul si parola sunt corecte
+
+
+2. Clasa Search -> Va contine urmatoarele teste:
+- cautati un produs la alegere (iphone 14) si verificati ca s-au returnat cel putin 10 rezultate ([class="product-title"])
+- faceti filtrare dupa pret si verificati faptul ca toate produsele returnate au pretul in intervalul de filtrare
+- Cautati un produs care nu exista si verifica faptul ca mesajul returnat este: "NE PARE RĂU, NU EXISTĂ PRODUSE ÎN ACEASTĂ CATEGORIE."
+Cautati un produs, sorteaza lista de rezultate in ordine crescatoare dupa pret si verifica faptul ca produsele au fost intr-adevar sortate
+Cautati un produs, sorteaza lista de rezultate in ordine descrescatoare dupa pret si verifica faptul ca produsele au fost intr-adevar sortate
+
+3. Clasa Contact -> Va contine urmatoarele teste:
+- Intrati pe elefant.ro, dati click pe linkul Contact, si verificati faptul ca nu puteti sa dati submit la formular daca nu sunt completate campurile obligatorii (verificati ca ramaneti pe aceeasi pagina)
+- pe aceeasi pagina de contact verificati ca mesajul de eroare de pe fiecare camp este corect
+
+Dintre toate clasele de test de mai sus, una trebuie sa fie implementata cu Chrome, una cu Firefox si una cu Edge / Safari (pentru Edge / Safari e studiu individual. Hint: trebuie sa cautati modalitatea de instantiere a driverului)
+
+---------------------
+Tema Sesiunea 10
+
+Adaugati toate clasele de test create la sesiunea 9 intr-o suita de teste
+Definiti in acea suita raportul html
+Rulati suita de teste si analizati rezultatele
+
+Tema optionala: Gasiti un alt site la alegere si definiti cateva clase de teste pe care ulterior sa le adaugati intr-o suita, asa cum ati facut la cursurile 9-10

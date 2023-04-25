@@ -29,7 +29,7 @@ except:
 
 # metoda send_keys scrie text intr-un textbox
 # metoda click da click pe un element(link, buton etc)
-# metoda find_element returneaza un singur element. Daca nu il gaseste returneaza eroare
+# metoda find_element returneaza un singur element. Daca nu il gaseste returneaza eroare: unable to locate element
 chrome.find_element(By.CLASS_NAME,"form-control").send_keys("de veghe in lanul de secara")
 sleep(4)
 chrome.find_element(By.CLASS_NAME,"search-result").click()
