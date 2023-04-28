@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test execution report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test execution report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-04-28 20:49:46</p>
+                <p class='attribute'><strong>Duration: </strong>151.15 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 2, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Recap_Sesiune9_plus_10.elefant_ro_login.Elefant_Login</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login_to_site_invalid_credentials</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 36.86 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Recap_Sesiune9_plus_10.elefant_ro_search.Elefant_Search</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_filter_products_by_seller</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@id="VendorName_id"]/preceding-sibling::ul//span[@class="icon-notselected"]"}
+  (Session info: chrome=112.0.5615.137)
+Stacktrace:
+0   chromedriver                        0x0000000100b9bae8 chromedriver + 4958952
+1   chromedriver                        0x0000000100b937b3 chromedriver + 4925363
+2   chromedriver                        0x00000001007551d6 chromedriver + 475606
+3   chromedriver                        0x0000000100798a20 chromedriver + 752160
+4   chromedriver                        0x0000000100798c81 chromedriver + 752769
+5   chromedriver                        0x00000001007dcf64 chromedriver + 1032036
+6   chromedriver                        0x00000001007bec3d chromedriver + 908349
+7   chromedriver                        0x00000001007da25b chromedriver + 1020507
+8   chromedriver                        0x00000001007be9e3 chromedriver + 907747
+9   chromedriver                        0x0000000100788aef chromedriver + 686831
+10  chromedriver                        0x000000010078a00e chromedriver + 692238
+11  chromedriver                        0x0000000100b579ad chromedriver + 4680109
+12  chromedriver                        0x0000000100b5cc12 chromedriver + 4701202
+13  chromedriver                        0x0000000100b6379f chromedriver + 4728735
+14  chromedriver                        0x0000000100b5db7a chromedriver + 4705146
+15  chromedriver                        0x0000000100b3027e chromedriver + 4518526
+16  chromedriver                        0x0000000100b7d908 chromedriver + 4835592
+17  chromedriver                        0x0000000100b7da87 chromedriver + 4835975
+18  chromedriver                        0x0000000100b8d00f chromedriver + 4898831
+19  libsystem_pthread.dylib             0x00007ff8158a94e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8158a4f6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation39/Recap_Sesiune9_plus_10/elefant_ro_search.py", line 49, in test_filter_products_by_seller
+    self.chrome.find_element(*self.FILTER_BY_SELLER_CHECKBOX).click()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@id="VendorName_id"]/preceding-sibling::ul//span[@class="icon-notselected"]"}
+  (Session info: chrome=112.0.5615.137)
+Stacktrace:
+0   chromedriver                        0x0000000100b9bae8 chromedriver + 4958952
+1   chromedriver                        0x0000000100b937b3 chromedriver + 4925363
+2   chromedriver                        0x00000001007551d6 chromedriver + 475606
+3   chromedriver                        0x0000000100798a20 chromedriver + 752160
+4   chromedriver                        0x0000000100798c81 chromedriver + 752769
+5   chromedriver                        0x00000001007dcf64 chromedriver + 1032036
+6   chromedriver                        0x00000001007bec3d chromedriver + 908349
+7   chromedriver                        0x00000001007da25b chromedriver + 1020507
+8   chromedriver                        0x00000001007be9e3 chromedriver + 907747
+9   chromedriver                        0x0000000100788aef chromedriver + 686831
+10  chromedriver                        0x000000010078a00e chromedriver + 692238
+11  chromedriver                        0x0000000100b579ad chromedriver + 4680109
+12  chromedriver                        0x0000000100b5cc12 chromedriver + 4701202
+13  chromedriver                        0x0000000100b6379f chromedriver + 4728735
+14  chromedriver                        0x0000000100b5db7a chromedriver + 4705146
+15  chromedriver                        0x0000000100b3027e chromedriver + 4518526
+16  chromedriver                        0x0000000100b7d908 chromedriver + 4835592
+17  chromedriver                        0x0000000100b7da87 chromedriver + 4835975
+18  chromedriver                        0x0000000100b8d00f chromedriver + 4898831
+19  libsystem_pthread.dylib             0x00007ff8158a94e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff8158a4f6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_search_number_of_results</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_sort_elements_by_price_asc</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: '>' not supported between instances of 'WebElement' and 'WebElement'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation39/Recap_Sesiune9_plus_10/elefant_ro_search.py", line 73, in test_sort_elements_by_price_asc
+    if price_list[i]>price_list[j]:
+TypeError: '>' not supported between instances of 'WebElement' and 'WebElement'
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 1, Error: 2 -- Duration: 114.29 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

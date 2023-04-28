@@ -11,6 +11,21 @@ Cu exceptia catorva elemente (care se numesc blank elements) elementele sunt del
 <tag_name> -> tagul de inceput
 </tag_name> -> tag-ul de final
 
+Exemple de tag-uri:
+div
+<p>
+<ul> = unordered list
+<ol> = ordered list
+<li> = list item
+<table>
+<tr> = table row
+<td> = table data
+<br> = break (new line)
+<i> = italic
+<b> = bold
+<input> => date de la utilizator
+<a> = ancora => link catre alta pagina
+
 In general in interiorul majoritatii tag-urilor vom putea observa diverse componente
 care descriu felul in care ar trebui sa arate sau sa se comporte acel element
 
@@ -20,6 +35,8 @@ placeholder = "Please insert your username"
 id = "£$%RGFD"
 class = "tgHEE$"
 type = "text"
+
+
 
 In HTML o clasa este o modalitate prin care putem sa grupam mai multe elemente
 care trebuie sa fie stilizate in acelasi mod prin intermediul codului CSS

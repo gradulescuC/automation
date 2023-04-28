@@ -51,10 +51,10 @@ prin intermediul metodei window_handles vom putea accesa toate tab-urile deschis
 
 """
 
-print(chrome.title)  # am printat titlul paginii curente - va printa pe ecran "OrangeHRM", care e titlul paginii https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+# print(chrome.title)  # am printat titlul paginii curente - va printa pe ecran "OrangeHRM", care e titlul paginii https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 chrome.find_element(By.PARTIAL_LINK_TEXT, "OrangeHRM").click() # - dam click pe linkul "OrangeHRM, Inc" din partea de jos a ecranului
 chrome.switch_to.window(chrome.window_handles[1])  # mutam focusul pe tab-ul care s-a deschis
-print(chrome.title) # printam din nou titlul paginii curente.
+# print(chrome.title) # printam din nou titlul paginii curente.
                             # De data asta va printa pe ecram "OrangeHRM HR Software | Free & Open Source HR Software | HRMS | HRIS | OrangeHRM"
                             # care este linkul paginii pe care ne-am mutat
                             # titlul paginii se poate gasi in HTML cu XPATH-ul: //title
