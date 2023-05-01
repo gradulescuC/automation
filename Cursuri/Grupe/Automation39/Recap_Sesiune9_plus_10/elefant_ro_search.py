@@ -2,6 +2,7 @@ import unittest
 from time import sleep
 
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from webdriver_manager.chrome import ChromeDriverManager
@@ -12,9 +13,9 @@ class Elefant_Search(unittest.TestCase):
 		SEARCH_TEXTBOX = (By.XPATH,'//div[@class="row"]//input[@name="SearchTerm"]')
 		SEARCH_BUTTON = (By.XPATH,'//div[@id="HeaderRow"]//div[@class="row"]//button')
 		SEARCH_RESULTS = (By.XPATH,'//a[@class="product-title"]')
-		FILTER_BY_SELLER_CHECKBOX = (By.XPATH,'//ul[@id="VendorName_id"]/preceding-sibling::ul//span[@class="icon-notselected"]')
+		FILTER_BY_SELLER_CHECKBOX = (By.XPATH,'//a[contains(text(),"Elefant")]/span')
 		VENDOR_NAME = (By.XPATH,'//span[@class="js-vendor-offer-name"]/b')
-		CLOSE_OFFER_POPUP = (By.XPATH, '//div[@id="CybotCookiebotDialog"]/preceding-sibling::div')
+		CLOSE_OFFER_POPUP = (By.XPATH, '//button[@class="close"]')
 		DROPDOWN_OPTIONS = (By.ID,"SortingAttribute")
 		PRICE_LIST = (By.XPATH,'//div[@data-testing-id="current-price"]')
 
@@ -40,23 +41,20 @@ class Elefant_Search(unittest.TestCase):
 				result_list = self.chrome.find_elements(*self.SEARCH_RESULTS)
 				assert len(result_list)>=10, "Error, the search did not return enough results"
 
-		@unittest.skip
 		def test_filter_products_by_seller(self):
 				try:
-						self.chrome.find_element(*self.CLOSE_OFFER_POPUP).click()
+						self.chrome.execute_script('return document.querySelector("body > div:nth-child(1)").shadowRoot.querySelector("div > button").click()')
 				except:
 						pass
 				self.chrome.find_element(*self.SEARCH_TEXTBOX).send_keys("iphone 14")
 				self.chrome.find_element(*self.SEARCH_BUTTON).click()
-				self.chrome.find_element(*self.FILTER_BY_SELLER_CHECKBOX).click()
+				action = ActionChains(self.chrome)
+				seller_checkbox = self.chrome.find_element(*self.FILTER_BY_SELLER_CHECKBOX)
+				action.move_to_element(seller_checkbox).click().perform()
 				result_list = self.chrome.find_elements(*self.SEARCH_RESULTS)
 				filter_functional = True
 				for i in range(len(result_list)):
 						result_list[i].click()
-						try:
-								self.chrome.find_element(*self.CLOSE_OFFER_POPUP).click()
-						except:
-								pass
 						vendor_name = self.chrome.find_element(*self.VENDOR_NAME).text
 						if vendor_name !="Elefant":
 								filter_functional = False

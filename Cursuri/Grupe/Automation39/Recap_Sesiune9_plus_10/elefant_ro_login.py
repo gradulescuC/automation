@@ -36,7 +36,6 @@ class Elefant_Login(unittest.TestCase):
 		def tearDown(self) -> None:
 				self.chrome.quit()
 
-
 		def test_login_to_site_invalid_credentials(self):
 				self.chrome.find_element(*self.CONNECT_BUTTON).click()
 				sleep(3)
