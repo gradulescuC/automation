@@ -1,0 +1,56 @@
+css selector este o modalitate prin care putem sa identificam elemente
+        in interfata pe baza legaturii parinte-copil la fel ca la XPATH
+
+Diferenta intre CSS si XPATH este aceea ca la CSS selector putem sa navigam
+        doar in jos (din parinte in copil sau catre fratele ulterior)
+        iar la XPATH putem sa navigam atat catre parinte(/parent::tag),
+        cat si catre fratele anterior(/preceding-sibling::tag)
+
+Avantajul CSS-ului in fata XPATH-ului este acela ca CSS-ul este in general considerat mai rapid
+
+Cum se formeaza css selector?
+
+1. # = cautare dupa id
+2. . = cautare dupa clasa
+3. Daca preceda, caracterul "#" sau caracterul "." de numele unui tag, atunci sistemul
+            va returna toate elementele cu tag-ul respectiv care sunt identificate
+            de perechea atribut = valoare (id="valoare" sau class="valoare")
+4. Putem sa cautam primul copil al unul element cu caracterul ">". Exemplu: div > a
+5. Putem de asemenea sa cautam primul copil cu urmatoarea sintaxa: first-of-type
+6. Daca vrem sa cautam ultimul copil al unui element putem sa o facem cu sintaxa: last-of-typr
+7. Daca ne intereseaza sa cautam orice copil al acelui element putem sa separam tag-ul parinte de tag-ul copil prin caracterul " " (space)
+8. Daca vrem sa gasim un frate ulterior ne putem folosi de caracterul "+"
+
+Exemple de utilizare CSS:
+#first-name -> elementele cu id-ul first-name
+.first-name -> elementele cu clasa first-name
+.form-control[placeholder="Password"] -> ne intereseaza elementele cu clasa form-control
+            care au perechea atribut-valoare
+            unde atributul este "placeholder" si valoarea este "Password"
+
+button[type="submit"] -> ne intereseaza elementele de tip button care au perechea atribut = valoare
+            unde atributul este "type" si valoarea este "submit"
+
+div > button -> ne intereseaza elementele de tip div care au ca si urmas direct un element de tip button
+div input -> ne intereseaza elementele de tip div care au orice urmas de tip input (copil sau nepot sau stranepot sau straurmas)
+div.input-group>a:first-of-type -> ne intereseaza toate elementele de tip div care au clasa input
+             si care au ca si urmas direct un element de tip ancora (a). Daca sunt mai multe
+             il va lua pe primul pe care il gaseste
+div.input-group>a:last-of-type -> ne intereseaza toate elementele de tip div care au clasa input
+             si care au ca si urmas direct un element de tip ancora (a). Daca sunt mai multe
+             il va lua pe ultimul pe care il gaseste
+div.input-group>a:nth-of-type(nr) -> ne intereseaza toate elementele de tip div care au clasa input
+             si care au ca si urmas direct un element de tip ancora (a).
+             Din setul de rezultate il ia pe cel din pozitia nr (div.input-group>a:nth-of-type(3))
+div#form-control > a + button -> ne intereseaza toate elementele de tip div cu id-ul form control
+             care au un copil de tip ancora, care ancora are un frate ulterior de tip button
+
+Daca avem mai multe clase la CSS se va folosi una singura
+
+CSS vs XPATH
+div#form-control > a + button > input  -> //div[@id="form-control"]/a/following-sibling::button/input
+div#form-control > a + button input    -> //div[@id="form-control"]/a/following-sibling::button//input
+div#form-control > a + button[#submit] -> //div[@id="form-control"]/a/following-sibling::button[@id="submit"]
+div#form-control > a + button[.submit] -> //div[@id="form-control"]/a/following-sibling::button[@class="submit"]
+div#form-control a > input[@placeholder="insert your name"] ->  //div[@id="form-control"]//a/input[@placeholder="insert your name"]
+

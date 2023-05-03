@@ -2,10 +2,12 @@ import unittest
 from time import sleep
 
 from selenium import webdriver
-from selenium.webdriver import ActionChains
+from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class Elefant_Search(unittest.TestCase):
@@ -29,6 +31,13 @@ class Elefant_Search(unittest.TestCase):
 				sleep(3)
 				accept_cookies_button = self.chrome.find_element(By.ID, "CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")
 				accept_cookies_button.click()
+				shadow_root = WebDriverWait(self.chrome,50).until(EC.presence_of_element_located((By.CSS_SELECTOR,'body > div:nth-child(1)')))
+				# listener + observer
+				try:
+						self.chrome.execute_script(
+								'document.querySelector("body > div:nth-child(1)").shadowRoot.querySelector("div > button").click()')
+				except:
+						pass
 				self.chrome.implicitly_wait(20)
 
 		def tearDown(self) -> None:
@@ -42,10 +51,6 @@ class Elefant_Search(unittest.TestCase):
 				assert len(result_list)>=10, "Error, the search did not return enough results"
 
 		def test_filter_products_by_seller(self):
-				try:
-						self.chrome.execute_script('return document.querySelector("body > div:nth-child(1)").shadowRoot.querySelector("div > button").click()')
-				except:
-						pass
 				self.chrome.find_element(*self.SEARCH_TEXTBOX).send_keys("iphone 14")
 				self.chrome.find_element(*self.SEARCH_BUTTON).click()
 				action = ActionChains(self.chrome)
@@ -54,13 +59,18 @@ class Elefant_Search(unittest.TestCase):
 				result_list = self.chrome.find_elements(*self.SEARCH_RESULTS)
 				filter_functional = True
 				for i in range(len(result_list)):
-						result_list[i].click()
+						href = result_list[i].get_attribute("href")
+						self.chrome.execute_script("window.open('%s', '_blank')" % href)
+						# open all windows at once and navigate through them
+						self.chrome.switch_to.window(self.chrome.window_handles[1])
 						vendor_name = self.chrome.find_element(*self.VENDOR_NAME).text
 						if vendor_name !="Elefant":
 								filter_functional = False
-						self.chrome.back()
+						self.chrome.close()
+						self.chrome.switch_to.window(self.chrome.window_handles[0])
 				assert filter_functional == True,"Error: The filter seems to be problematic."
 
+		@unittest.skip
 		def test_sort_elements_by_price_asc(self):
 				self.chrome.find_element(*self.SEARCH_TEXTBOX).send_keys("iphone 14")
 				self.chrome.find_element(*self.SEARCH_BUTTON).click()

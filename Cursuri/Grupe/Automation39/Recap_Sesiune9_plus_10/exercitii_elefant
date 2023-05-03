@@ -10,8 +10,7 @@ Intrati pe site-ul https://www.elefant.ro/ si efectuati urmatoarele teste:
 - Dati click pe butonul "conectare" si verificati urmatoarele:
             1. Faptul ca nu s-a facut logarea in cont
             2. Faptul ca se returneaza eroarea corecta
-- Test 6: Stergeti valoarea de pe campul email si introduceti o valoare invalida (adica fara caracterul "@"), fara sa introduceti si parola si verificati faptul ca butonul "
-" este dezactivat
+- Test 6: Stergeti valoarea de pe campul email si introduceti o valoare invalida (adica fara caracterul "@"), fara sa introduceti si parola si verificati faptul ca butonul este dezactivat
 
 ---------------------
 

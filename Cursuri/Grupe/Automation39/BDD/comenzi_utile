@@ -1,0 +1,2 @@
+Rulare teste: behave
+Rulare teste specifice:  behave --tags=valoare_tag (behave --tags=T6)

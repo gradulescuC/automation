@@ -5,13 +5,13 @@ Atunci cand vrem sa implementam framework-ul BDD avem nevoie de urmatoarele elem
     cuvinte cheie: GIVEN, WHEN, THEN (https://www.tutorialspoint.com/behave/behave_quick_guide.htm)
 
 2. Aceste feature files trebuie sa aiba la randul lor o implementare tehnica
-   Aceasta implementare tehnica se face in fisierel de tip steps
+   Aceasta implementare tehnica se face in fisierele de tip steps
    Legatura intre ele se face in felul urmator:
    - La rulare se citeste mai intai pasul din feature file
    - Pe baza textului din acel pas de feature file se cauta corespondentul in fisierul de steps
    - Atunci cand este identificat este executata metoda care este apelata in acel step pe baza unui element context implementat in environment
 
-3. Metodele care sunt apelate in fisierele de steps vor fi apelate in fisierele de tip pages
+3. Metodele care sunt apelate in fisierele de steps vor fi apelate din fisierele de tip pages
     Fisierele de tip pages sunt implementate pe baza unui design pattern numit POM (page object model) - https://springframework.guru/gang-of-four-design-patterns/
     What is a design pattern? https://refactoring.guru/design-patterns/what-is-pattern
 
