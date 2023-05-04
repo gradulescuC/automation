@@ -1,2 +1,10 @@
 Rulare teste: behave
 Rulare teste specifice:  behave --tags=valoare_tag (behave --tags=T6)
+Rulare teste cu raport de executie: behave -f html -o behave-report.html vs behave -f behave_html_formatter:HTMLFormatter -o behave-report.html
+Rulare teste specifice cu raport de executie: behave -f html -o behave-report.html --tags=T6
+
+ca sa va recunoasca optiunea "behave_html_formatter:HTMLFormatter" trebuie sa instalati libraria
+        behave-html-formatter
+
+
+

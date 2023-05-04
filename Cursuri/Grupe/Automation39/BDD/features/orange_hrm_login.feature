@@ -11,7 +11,7 @@ Feature: Check that the login functionality of the Orange HRM website is working
   @T1  @positiveTesting
   Scenario: Check that the user can login into the application when inserting valid username and valid password
     # in python keyword-ul and nu este recunoscut
-     The user inserts valid information on the username and password fields
+    When The user inserts valid information on the username and password fields
 #    When The user inserts valid username "Admin" and valid password "admin123"
     When The user clicks on the login button
     Then The user is logged into the application

@@ -31,6 +31,10 @@ def step_impl(context,error_message):
 # cand avem parametri de introdus este important ca textul sa fie intre apostroafe si parametrii intre ghilimele
 @when('The user inserts username "{username}" and password "{password}"')
 def step_impl(context,username,password):
+		try:
+				context.home_page.logout_of_the_application()
+		except:
+				pass
 		context.login_page.insert_username(username)
 		context.login_page.insert_password(password)
 

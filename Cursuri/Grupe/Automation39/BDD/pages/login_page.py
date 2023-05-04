@@ -1,4 +1,8 @@
+import time
+
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 from pages.base_page import Base_page
 
@@ -17,11 +21,13 @@ class Login_page(Base_page):
 							# parametrii functiei
 				self.chrome.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
-		def insert_username(self,username="Admin"):
-				self.chrome.find_element(*self.USERNAME).send_keys(username)
+		def insert_username(self,user_name="Admin"):
+				username = WebDriverWait(self.chrome,20).until(EC.presence_of_element_located(self.USERNAME))
+				username.send_keys(user_name)
 
-		def insert_password(self,password="admin123"):
-				self.chrome.find_element(*self.PASSWORD).send_keys(password)
+		def insert_password(self,user_password="admin123"):
+				password = WebDriverWait(self.chrome, 20).until(EC.presence_of_element_located(self.PASSWORD))
+				password.send_keys(user_password)
 
 		def click_login_button(self):
 				self.chrome.find_element(*self.LOGIN_BUTTON).click()
@@ -31,8 +37,16 @@ class Login_page(Base_page):
 				expected_url = 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index'
 				assert expected_url == actual_url, "The url is incorrect. Please check the login functionality"
 
-		def check_error_message(self,expected_error_message):
-				actual_error_message = self.chrome.find_element(*self.LOGIN_ERROR_MESSAGE).text
-				# Ce e la linia de mai jos se va extrage daca nu folosim metoda "text"
-				# < p< pclass ="oxd-text oxd-text--p oxd-alert-content-text" data-v-7588b244="" data-v-0b423d90="" > Invalid credentials < / p >
-				assert expected_error_message == actual_error_message, f"Error, the login message is incorrect. Expected: {expected_error_message}, actual: {actual_error_message}"
+		def check_login_error_message(self, expected_error_message):
+				self.check_error_message(*self.LOGIN_ERROR_MESSAGE,expected_error_message)
+		# 	self.check_error_message(By.CSS_SELECTOR,'div.orangehrm-login-error i + p',expected_error_message)
+
+		# def check_error_message(self, by,selector, expected_error_message):
+		# 		# metoda presence_of_element_located primeste doi parametrii: tipul selectorului si valoarea selectorului
+		# 		error_message_web_element = WebDriverWait(self.chrome, 20).until(EC.presence_of_element_located(self.LOGIN_ERROR_MESSAGE))
+		# 		actual_error_message_text = error_message_web_element.text
+		# 		# Ce e la linia de mai jos se va extrage daca nu folosim metoda "text"
+		# 		# < p< pclass ="oxd-text oxd-text--p oxd-alert-content-text" data-v-7588b244="" data-v-0b423d90="" > Invalid credentials < / p >
+		# 		assert expected_error_message == actual_error_message_text, f"Error, the message is incorrect. Expected: {expected_error_message}, actual: {actual_error_message_text}"
+
+		# presence_of_element_located((By.CSS_SELECTOR,'div.orangehrm-login-error i + p'))
