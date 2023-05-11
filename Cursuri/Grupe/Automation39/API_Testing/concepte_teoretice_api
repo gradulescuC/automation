@@ -1,0 +1,84 @@
+API = Application Programming Interface
+        O colectie de functii, proceduri, protocoale si alte elemente care asigura comunicarea intre doua sisteme
+
+API-ul asigura transportarea datelor de la un client la un server prin intermediul protocolului HTTP(s)
+
+client = orice dispozitiv (aplicatie web care ruleaza pe un dispozitiv) conectat la internet
+            care solicita citirea sau scrierea informatiilor intr-o baza de date
+
+HTTP(s) = Hyper Text Transfer Protocol (Secure) -> un set de reguli care asigura transportul
+            corect al datelor intre doua sisteme conectate la internet
+            Din 2010 s-a introdus si conceptul de secure care asigura transportul criptat
+            al datelor in retea pentru a garanta siguranta si protectia datelor de utilizator
+HTML = Hyper Text Markup Language -> limbajul care se foloseste pentru definirea structurii unui site web
+
+Protocolul HTTP asigura transmiterea datelor prin intermediul anumitor metode care definesc
+            ce fel de activitate vrem sa facem
+
+Metodele HTTP cele mai utilizate sunt:
+- GET = anunta sistemul ca se doreste citirea informatiilor din baza de date
+- POST = anunta sistemul ca se doreste scrierea unei informatii noi in baza de date
+- PUT = anunta sistemul ca se doreste stergerea unei resurse din baza de date si inlocuirea ei cu aceeasi resursa actualizata
+- PATCH = anunta sistemul ca se doreste actualizarea anumitor atribute ale elementelor din baza de date
+- DELETE = anunta sistemul ca se doreste stergerea unei informatii din baza de date
+
+Atunci cand se doreste transmiterea informatiilor de la un sistem la altul se folosesc anumite requesturi
+Componentele unui request pot fi urmatoarele:
+1. metoda http folosita
+2. hostul
+3. extensia care defineste functionalitatea requestului (host + extensie = endpoint)
+4. token de autentificare (daca este necesar)
+5. request body (daca este necesar)
+6. parametri de filtrare (daca sunt necesari)
+
+Dupa trimiterea si executarea unui request se primeste un raspuns care va putea fi interpretat in functie de corpul raspunsului
+si de codul de raspuns.
+
+Codurile de raspuns pot fi grupate in functie de obiectivul lor in felul urmator:
+1xx -> coduri informationale (nu prea le veti folosi)
+2xx -> coduri de succes
+- 200 = s-a citit cu succes informatia din baza de date
+- 201 = s-a creat sau actualizat cu succes o resursa din baza de date
+- 204 = s-a sters cu succes o resursa din baza de date
+
+3xx -> coduri de redirectare
+- 302 = am fost redirectionati catre o alta pagina
+    Exemple de situatii in care se poate returna codul 302
+    a) Am facut rebranding la un site, si vrem ca atunci cand clientii inca acceseaza site-ul vechi sa fie trimisi pe versiunea noua
+    b) Vrem sa facem o plata cu un sistem extern (paypall). Vom initia plata de pe site-ul de pe care plecam si vom fi redirectionati catre sistemul in care facem plata
+    c) Vrem sa ne logam intr-o aplicatie cu google sau facebook, si atunci cand initiem logarea suntem temporar redirectionati catre aplicatia gazda
+
+4xx -> coduri de eroare din partea clientului
+400 = Bad request (utilizatorul a trimis o informatie eronata)
+401 = Unauthorised (utilizatorul nu este logat si nu se poate decide daca acesta are acces la resursa sau nu)
+403 = Forbidden (utilizatorul este logat dar nu are dreptul sa acceseze resursa in cauza)
+404 = Page not found (in general pagina web pe care o cautam nu exista)
+
+5xx -> coduri de eroare din partea serverului
+500 = Internal Server Error (serverul nu a stiu cum sa proceseze solicitarea primita
+            si nici nu a avut vreun mesaj mai relevant pe care sa il returneze
+            De regula acest cod de eroare inseamna un bug si reflecta o situatie care nu a fost acoperita prin codare)
+
+503 = Service Unavailable (Pagina a fost identificata, dar dintr-un motiv sau altul ea nu poate sa fie
+                        incarcata in aplicatia web din cauza ca nu este disponibila momentan
+                        - pagina este supraincarcata -> prea multi utilizatori pe site
+                        - pagina se afla in proces de mentenanta)
+
+
+
+def calculeaza_limita(a):
+    return a
+
+UNIT TEST
+calculeaza_limita(a)
+
+TESTARE AUTOMATA:
+apelez endpoint care preia request de la client, il trimite catre server
+care server trimite acel request catre cod care cod apeleaza metoda
+calculeaza_limita si care metoda returneaza un rezultat
+ce va ajunge inapoi la client
+
+
+
+
+
