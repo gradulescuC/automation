@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Behave Test Report</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <style type="text/css">
+      <!--
+body{font-size:0;color:#fff;margin:0;
+padding:0}.behave,td,th{font:400 11px "Lucida Grande",Helvetica,sans-serif;
+background:#fff;color:#000}.behave #behave-header,td #behave-header,
+th #behave-header{background:#65c400;color:#fff;height:8em}.behave
+#behave-header #expand-collapse p,td #behave-header #expand-collapse
+p,th #behave-header #expand-collapse p{float:right;margin:0 0 0 10px}
+.background h3,.behave .scenario h3,td .scenario h3,th .scenario h3{
+font-size:11px;padding:3px;margin:0;background:#65c400;color:#fff;
+font-weight:700}.background h3{font-size:1.2em;background:#666}.behave
+h1,td h1,th h1{margin:0 10px;padding:10px;font-family:'Lucida Grande',
+Helvetica,sans-serif;font-size:2em;position:absolute}.behave h4,td h4,
+th h4{margin-bottom:2px}.behave div.feature,td div.feature,th div.feature
+{padding:2px;margin:0 10px 5px}.behave div.examples,td div.examples,th
+div.examples{padding:0 0 0 1em}.behave .stats,td .stats,th .stats{margin:2em}
+.behave .summary ul.features li,td .summary ul.features li,th .summary
+ul.features li{display:inline}.behave .step_name,td .step_name,th .step_name
+{float:left}.behave .step_file,td .step_file,th .step_file{text-align:right;
+color:#999}.behave .step_file a,td .step_file a,th .step_file a{color:#999}.behave
+.scenario_file,td .scenario_file,th .scenario_file{float:right;color:#999}.behave
+.tag,td .tag,th .tag{font-weight:700;color:#246ac1}.behave .backtrace,td
+.backtrace,th .backtrace{margin-top:0;margin-bottom:0;margin-left:1em;color:#000}
+.behave a,td a,th a{text-decoration:underline;color:#be5c00;margin-right:0.5em}
+.behave a:hover,td a:hover,th a:hover{text-decoration:none}.behave a:visited,td
+a:visited,th a:visited{font-weight:400}.behave a div.examples,td a div.examples,
+th a div.examples{margin:5px 0 5px 15px;color:#000}.behave .outline table,
+td .outline table,th .outline table{margin:0 0 5px 10px}.behave table,
+td table,th table{border-collapse:collapse}.behave table td,td table td,
+th table td{padding:3px 3px 3px 5px}.behave table td.failed,td table td.failed,
+th table td.failed{border-left:5px solid #c20000;border-bottom:1px solid
+#c20000;background:#fffbd3;color:#c20000}.behave table td.passed,td table
+td.passed,th table td.passed{border-left:5px solid #65c400;border-bottom:1px
+solid #65c400;background:#dbffb4;color:#3d7700}.behave table td.skipped,td
+table td.skipped,th table td.skipped{border-left:5px solid #0ff;border-bottom:1px
+solid #0ff;background:#e0ffff;color:#011}.behave table td.pending,.behave table
+td.undefined,td table td.pending,td table td.undefined,th table td.pending,th table
+td.undefined{border-left:5px solid #faf834;border-bottom:1px solid #faf834;
+background:#fcfb98;color:#131313}.behave table td.message,td table td.message,th
+table td.message{border-left:5px solid #0ff;border-bottom:1px solid #0ff;
+background:#e0ffff;color:#011}.behave ol,td ol,th ol{list-style:none;
+margin:0;padding:0}.behave ol li.step,td ol li.step,th ol li.step{
+padding:3px 3px 3px 18px;margin:5px 0 5px 5px}.behave ol li,td ol li,th
+ol li{margin:0 0 0 1em;padding:0 0 0 .2em}.behave ol li span.param,td
+ol li span.param,th ol li span.param{font-weight:700}.behave ol li.failed,td
+ol li.failed,th ol li.failed{border-left:5px solid #c20000;border-bottom:1px
+solid #c20000;background:#fffbd3;color:#c20000}.behave ol li.passed,td ol
+li.passed,th ol li.passed{border-left:5px solid #65c400;border-bottom:1px
+solid #65c400;background:#dbffb4;color:#3d7700}.behave ol li.skipped,td ol
+li.skipped,th ol li.skipped{border-left:5px solid #0ff;border-bottom:1px
+solid #0ff;background:#e0ffff;color:#011}.behave ol li.pending,.behave ol
+li.undefined,td ol li.pending,td ol li.undefined,th ol li.pending,th ol
+li.undefined{border-left:5px solid #faf834;border-bottom:1px solid
+#faf834;background:#fcfb98;color:#131313}.behave ol li.message,td ol
+li.message,th ol li.message{border-left:5px solid #0ff;border-bottom:1px
+solid #0ff;background:#e0ffff;color:#011;margin-left:10px}.behave #summary,td
+#summary,th #summary{margin:0;padding:5px 10px;text-align:right;top:0;
+right:0;float:right}.behave #summary p,td #summary p,th #summary
+p{margin:0 0 0 2px}.behave #summary #totals,td #summary #totals,th
+#summary #totals{font-size:1.2em} h3.failed,#behave-header.failed{background:
+#c40d0d !important} h3.undefined,#behave-header.undefined{background:#faf834
+ !important; color:#000 !important} #behave-header.failed a{color:#fff} pre {
+ white-space: pre-wrap} .step_duration{padding-left:1em}
+-->
+    </style>
+    <script type="text/javascript">
+      <!--
+function Collapsible_toggle(id)
+{
+    var elem = document.getElementById(id);
+    elem.style.display = (elem.style.display == 'none' ? 'block' : 'none');
+    return false;
+}
+
+function Collapsible_expandAll(className)
+{
+    var elems = document.getElementsByClassName(className);
+    for (var i=0; i < elems.length; i++) {
+        elems[i].style.display = 'block';
+    }
+}
+
+function Collapsible_collapseAll(className)
+{
+    var elems = document.getElementsByClassName(className);
+    for (var i=0; i < elems.length; i++) {
+        elems[i].style.display = 'none';
+    }
+}
+
+function Collapsible_expandAllFailed()
+{
+    var elems = document.getElementsByClassName('failed');
+    for (var i=0; i < elems.length; i++) {
+        var elem = elems[i];
+        if (elem.nodeName == 'H3'){
+            elem.parentElement.getElementsByTagName('ol')[0].style.display = 'block';
+        }
+    }
+}
+-->
+    </script>
+  </head>
+  <body>
+    <div class="behave">
+      <div id="behave-header" class="failed">
+        <div id="label">
+          <h1>Behave Test Report</h1>
+        </div>
+        <div id="summary">
+          <p id="totals">
+            <p id="feature_totals">Features: passed: 2, failed: 4</p>
+            <p id="scenario_totals">Scenarios: passed: 2, failed: 4</p>
+            <p id="step_totals">Steps: passed: 7, undefined: 6, skipped: 3, failed: 1, untested: 3</p>
+          </p>
+          <p id="duration">Finished in 15.1 seconds</p>
+          <div id="expand-collapse">
+            <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
+            <span> | </span>
+            <a id="collapser" href="#" onclick="Collapsible_collapseAll('scenario_steps')">Collapse All</a>
+            <span> | </span>
+            <a id="failed_expander" href="#" onclick="Collapsible_expandAllFailed()">Expand All Failed</a>
+          </div>
+        </div>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Autocomplete page from formy-project</span>
+        </h2>
+        <pre class="message">As a user I want to use autosuggest
+So that I do not have to fill in the whole content</pre>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">CheckAddressField.feature:6</span>
+        <span class="tag">@smoke</span>
+        <h3 onclick="Collapsible_toggle('scenario_0')">
+          <span class="val">Scenario: Check Address Field</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_0">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">I go to autocomplete page</span>
+              <small class="step_duration">(5.444s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:21</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">I type ko</span>
+              <small class="step_duration">(0.314s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:28</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">Cluj-Napoca should be available</span>
+              <small class="step_duration">(3.002s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:32</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Search something on Google</span>
+        </h2>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">GogoleSearch.feature:3</span>
+        <h3 onclick="Collapsible_toggle('scenario_1')">
+          <span class="val">Scenario: Open google and insert Flat Earth Society</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_1">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">I enter google.ro</span>
+              <small class="step_duration">(1.170s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:39</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">I enter something in the text field</span>
+              <small class="step_duration">(2.030s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:45</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">Results are displayed</span>
+              <small class="step_duration">(3.158s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:51</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: My first test with behave</span>
+        </h2>
+        <pre class="message">As a great automation tester
+I want to learn cucumber
+So that I can get rich faster</pre>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">MyFirstTestWithBehave.feature:7</span>
+        <h3 onclick="Collapsible_toggle('scenario_2')" class="failed">
+          <span class="val">Scenario: Testing my knowledge</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_2">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">I have cucumber installed</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:7</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step undefined">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">Winter season is coming</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>&lt;unknown&gt;</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: checkboxes</span>
+        </h2>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">lambdatest.feature:3</span>
+        <h3 onclick="Collapsible_toggle('scenario_3')" class="failed">
+          <span class="val">Scenario: lambdatest</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_3">
+          <li class="step undefined">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">I go to 4davanceboy to add item</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>&lt;unknown&gt;</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Login on herokuapp</span>
+        </h2>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">login.feature:2</span>
+        <h3 onclick="Collapsible_toggle('scenario_4')" class="failed">
+          <span class="val">Scenario: Login with valid credentials</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_4">
+          <li class="step failed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">I go to herokuapp.com</span>
+              <small class="step_duration">(0.021s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:59</span>
+            </div>
+            <span class="embed">
+              <a onclick="Collapsible_toggle('embed_1')">Error Message</a>
+              <pre id="embed_1" style="display: none">Traceback (most recent call last):
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connection.py&quot;, line 169, in _new_conn
+    conn = connection.create_connection(
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py&quot;, line 96, in create_connection
+    raise err
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py&quot;, line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py&quot;, line 699, in urlopen
+    httplib_response = self._make_request(
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py&quot;, line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connection.py&quot;, line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/http/client.py&quot;, line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/http/client.py&quot;, line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/http/client.py&quot;, line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/http/client.py&quot;, line 1010, in _send_output
+    self.send(msg)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/http/client.py&quot;, line 950, in send
+    self.connect()
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connection.py&quot;, line 200, in connect
+    conn = self._new_conn()
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connection.py&quot;, line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x7fbcd44f87f0&gt;: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/behave/model.py&quot;, line 1329, in run
+    match.run(runner.context)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/behave/matchers.py&quot;, line 98, in run
+    self.func(context, *args, **kwargs)
+  File &quot;steps/steps.py&quot;, line 61, in step_impl
+    context.browser.get(&quot;https://the-internet.herokuapp.com/login&quot;)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py&quot;, line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py&quot;, line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py&quot;, line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py&quot;, line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/request.py&quot;, line 78, in request
+    return self.request_encode_body(
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/request.py&quot;, line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/poolmanager.py&quot;, line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py&quot;, line 783, in urlopen
+    return self.urlopen(
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py&quot;, line 783, in urlopen
+    return self.urlopen(
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py&quot;, line 783, in urlopen
+    return self.urlopen(
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py&quot;, line 755, in urlopen
+    retries = retries.increment(
+  File &quot;/Users/gradulescu/opt/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py&quot;, line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=51762): Max retries exceeded with url: /session/4fb6edd07eca4b47e822fab2a3691502/url (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbcd44f87f0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbcd4483040&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/4fb6edd07eca4b47e822fab2a3691502/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbcd44e20a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/4fb6edd07eca4b47e822fab2a3691502/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fbcd44f8490&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/4fb6edd07eca4b47e822fab2a3691502/url</pre>
+                  
+            </span>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Alegem un nume</span>
+        </h2>
+        <pre class="message">As a GPS user
+I want to query for many addresses
+So that I will reuse the steps</pre>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">test1.feature:12</span>
+        <h3 onclick="Collapsible_toggle('scenario_5')" class="failed">
+          <span class="val">Scenario Outline: Opertiunea Monstrul -- @1.1 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_5">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">I enter the website</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:78</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>I search for &quot;</span>
+                <b>Fetesti</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:82</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step undefined">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">A list with &quot;Ialomita&quot; will be returned</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>&lt;unknown&gt;</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">test1.feature:13</span>
+        <h3 onclick="Collapsible_toggle('scenario_6')" class="failed">
+          <span class="val">Scenario Outline: Opertiunea Monstrul -- @1.2 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_6">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">I enter the website</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:78</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>I search for &quot;</span>
+                <b>Buftea</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:82</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step undefined">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">A list with &quot;Ilfov&quot; will be returned</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>&lt;unknown&gt;</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">test1.feature:14</span>
+        <h3 onclick="Collapsible_toggle('scenario_7')" class="failed">
+          <span class="val">Scenario Outline: Opertiunea Monstrul -- @1.3 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_7">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">I enter the website</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:78</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>I search for &quot;</span>
+                <b>Posta Calnau</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/steps.py:82</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step undefined">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">A list with &quot;Buzau&quot; will be returned</span>
+              <small class="step_duration">(0.000s)</small>
+            </div>
+            <div class="step_file">
+              <span>&lt;unknown&gt;</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+    </div>
+  </body>
+</html>
