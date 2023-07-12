@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36afc1ad-d63b-4518-b1e0-2932ce2aba9b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Automation27/curs_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Automation27/curs_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python Programming/curs_07/abstractizare.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python Programming/curs_07/abstractizare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/.idea/Automation39.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/.idea/API_Testing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/comenzi_utile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/concepte_teoretice_api" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/requests_folder/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/requests_folder/api_authentication.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/requests_folder/get_all_books.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/requests_folder/submit_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/tests/test_get_all_boooks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/API_Testing/tests/test_submit_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/.idea/BDD.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/behave.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/browser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/comenzi_utile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/concepte_teoretice_bdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/concepte_teoretice_framework_bdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/features/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/features/orange_hrm_add_user.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/features/orange_hrm_login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/features/orange_hrm_search_user.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/pages/add_user_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/pages/admin_module_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/pages/base_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/pages/home_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/pages/login_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/raport-de-executie.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/steps/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/steps/add_user_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/steps/admin_module_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/steps/orange_hrm_home_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/BDD/steps/orange_hrm_login_steps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune4_plus_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune7/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune7/abstractizare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune7/encapsulare1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune7/encapsulare2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune7/mostenire.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune7/notiuni_teoretice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune7/polimorfism.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/.idea/Recap_Sesiune8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/classname_tagname.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/concepte_teoretice" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/concepte_teoretice_css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/concepte_teoretice_xpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/link_text_partial_link_text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune8/xpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/.idea/Recap_Sesiune9_plus_10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/elefant_ro_login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/elefant_ro_search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/exercitii_elefant" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/notiuni_teoretice_unit_test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/reports/Test results_2023-04-28_20-49-46.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/reports/Test results_2023-04-28_20-54-46.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/reports/Test results_2023-04-28_20-56-50.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/Recap_Sesiune9_plus_10/suite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/elefant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Automation39/tema_daniela_orange_hrm.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Qz4dHgrMeFTPdhSDiRK0vvISUC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/gradulescu/Desktop/Personal/GIT/automation/Cursuri/Grupe/Automation28/Automation/curs_10"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36afc1ad-d63b-4518-b1e0-2932ce2aba9b" name="Changes" comment="" />
+      <created>1686343161715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686343161715</updated>
+    </task>
+    <servers />
+  </component>
+</project>

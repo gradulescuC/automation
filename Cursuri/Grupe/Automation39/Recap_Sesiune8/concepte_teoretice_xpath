@@ -18,7 +18,7 @@ Exemplu Xpath absolut: /html/body/div[2]/div/div[9]/div[1]/div/div[1]/div/form/d
 
 
 Modalitati prin care putem sa folosim XPATH-ul relativ:
-# 1.Cautare dupa atribut = valoare pentru un tag specific
+# 1.Cautare dupa un tag specific
         Acest lucru se va face prin scrierea caracterelor // ca sa anuntam sistemul
                 ca vrem sa facem cautare dupa xpath relativ
                 si apoi sa scriem tag-ul care ne intereseaza.

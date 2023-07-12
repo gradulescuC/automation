@@ -238,4 +238,3 @@ if(cnp_asteptat == cnp_introdus):
 else:
     input("CNP-ul dumneavoastra nu a fost gasit, va rugam sa introduceti un utilizator")
     assert parola_asteptata == parola_introdusa, "Error: parola introdusa nu este corecta. Va rugam sa incercati din nou"
-

@@ -24,3 +24,11 @@ class Cat(Animal):
 pisica_galbena = Cat()
 pisica_galbena.sound()
 pisica_galbena.sleep()
+
+class Pisica_europeana(Cat):
+		def sound(self):
+				print("miaaaaaaau")
+
+pisica_miti = Pisica_europeana()
+pisica_miti.sound()
+pisica_miti.sleep()
